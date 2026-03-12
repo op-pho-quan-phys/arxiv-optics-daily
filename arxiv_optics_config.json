@@ -1,0 +1,15 @@
+{
+  "categories": [
+    "cond-mat",
+    "physics",
+    "quant-ph",
+    "eess"
+  ],
+  "output_root": "optics_daily",
+  "timezone": "America/New_York",
+  "enable_translation": true,
+  "max_authors_shown": 6,
+  "enable_deepseek_summaries": true,
+  "deepseek_base_url": "https://api.deepseek.com",
+  "deepseek_model": "deepseek-chat"
+}
