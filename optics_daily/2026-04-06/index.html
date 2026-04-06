@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ArXiv Optics Daily - 2026-04-06</title>
+  <style>
+    :root {
+      --bg: #f2ece4;
+      --panel: rgba(255, 252, 247, 0.94);
+      --line: rgba(62, 45, 30, 0.14);
+      --text: #2c221c;
+      --muted: #6f5e50;
+      --accent: #8a3f2d;
+      --accent-2: #1c6270;
+      --shadow: 0 18px 48px rgba(58, 38, 24, 0.12);
+      --radius: 24px;
+      --ui-font: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
+      --title-font: "Iowan Old Style", "Georgia", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--ui-font);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.82), transparent 34%),
+        radial-gradient(circle at 84% 12%, rgba(28,98,112,0.12), transparent 22%),
+        linear-gradient(180deg, #faf6ef 0%, var(--bg) 44%, #eee4d8 100%);
+      min-height: 100vh;
+    }
+    .shell { width: min(1240px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0 64px; }
+    .hero {
+      padding: 30px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,248,240,0.76)),
+        linear-gradient(135deg, rgba(138,63,45,0.08), rgba(28,98,112,0.08));
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-family: var(--title-font);
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 960px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.72;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .stat {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+    }
+    .stat .label { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .stat .value { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; }
+    .controls {
+      position: sticky;
+      top: 12px;
+      z-index: 3;
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: rgba(249, 243, 235, 0.92);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 24px rgba(58, 38, 24, 0.08);
+    }
+    .control-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 16px;
+    }
+    .field { display: flex; flex-direction: column; gap: 10px; }
+    .field label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .search {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.92);
+      color: var(--text);
+      font: inherit;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.86);
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+    .chip.active {
+      border-color: rgba(138,63,45,0.34);
+      background: rgba(138,63,45,0.12);
+      color: #5e2619;
+    }
+    .meta-row {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .meta-row a { color: var(--accent); text-decoration: none; }
+    .paper-grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 18px;
+    }
+    .paper {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 10px 24px rgba(58, 38, 24, 0.06);
+    }
+    .paper-top { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag.category {
+      background: rgba(44,34,28,0.08);
+      color: var(--text);
+    }
+    .tag.topic {
+      background: rgba(28,98,112,0.1);
+      color: var(--accent-2);
+      border: 1px solid rgba(28,98,112,0.14);
+    }
+    .paper .id { color: var(--muted); font-size: 13px; }
+    .paper h2 {
+      margin: 0;
+      font-family: var(--title-font);
+      font-size: 23px;
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+    }
+    .paper h2 a { color: inherit; text-decoration: none; }
+    .paper h2 a:hover { color: var(--accent); }
+    .subtle {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+    }
+    .subtle .label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .author-line,
+    .subject-line,
+    .abstract-line {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.68;
+    }
+    .summary-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .summary-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+    }
+    .summary-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .summary-item p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.68;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.74);
+      padding: 14px 16px;
+    }
+    details summary {
+      cursor: pointer;
+      list-style: none;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      line-height: 1.72;
+    }
+    .paper footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .paper footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .empty {
+      display: none;
+      margin-top: 24px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      border-radius: 22px;
+      border: 1px dashed var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    @media (max-width: 980px) {
+      .control-grid { grid-template-columns: 1fr; }
+      .controls { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="eyebrow">ArXiv Optics Daily · 2026-04-06</div>
+      <h1>Daily ArXiv Papers in Optics</h1>
+      <p>
+        Data comes from arXiv's daily <code>new submissions</code> pages across
+        <code>cond-mat</code>, <code>physics</code>, <code>quant-ph</code>, and <code>eess</code>.
+        This version uses optics keywords as the baseline filter and provides one-sentence summaries in English, Chinese, and Japanese for each paper.
+      </p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="controls">
+      <div class="control-grid">
+        <div class="field">
+          <label for="search">Search</label>
+          <input id="search" class="search" type="search" placeholder="Search by title, author, topic, abstract, or arXiv ID">
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <div class="chip-row" id="category-filters"></div>
+        </div>
+        <div class="field">
+          <label>Topic</label>
+          <div class="chip-row" id="topic-filters"></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div id="result-count">Loading...</div>
+        <div><a href="../index.html">Back to archive</a></div>
+      </div>
+    </section>
+
+    <section class="paper-grid" id="paper-grid"></section>
+    <section class="empty" id="empty-state">No papers matched your current filters.</section>
+  </div>
+
+  <script>
+    const papers = [{"id": "2604.02805", "category": "cond-mat", "title": "Elasticity-Driven Periodic Polarization Patterns in Confined Chiral Ferroelectric Nematic Fluid", "abstract": "Ferroelectric nematic phases are a new class of polar fluids in which spontaneous polarization is directly coupled to the orientational order, providing unique opportunities for creating self-organized materils with spatially modulated electric polarization and nonlinear optical response. Here we report the spontaneous emergence of polarization modulated textures in a chiral ferroelectric nematic material close to the transition to the chiral twist-bend ferroelectric nematic phase. By systematically varying cell thickness and surface anchoring conditions, we map the formation of these modulated states, revealing stripe, square and hexagonal morphologies determined via confinement conditions. These structures are directly translated into periodic modulation of the nonlinear optical response, as evidenced by second-harmonic generation imaging. Comparison with an elasticity based theoretical framework and numerical free energy minimization shows that the instability originates from the softening of the bend elastic constant in the chiral nematic phase as the system approaches the lower-temperature heliconical polar phase. The resulting elastic frustration, combined with confinement, drives the formation of spatially periodic director distortions, highlighting ferroelectric nematic fluids as a promising platform for self-assembled nonlinear optical materials.", "url": "https://arxiv.org/abs/2604.02805", "authors": [{"name": "Anej Sterle"}, {"name": "Peter Medle-Rupnik"}, {"name": "Luka Cmok"}, {"name": "Aitor Erkoreka"}, {"name": "Marta Lavrič"}, {"name": "Natan Osterman"}, {"name": "Calum J. Gibb"}, {"name": "J. Hobbs"}, {"name": "Josu Martinez-Perdiguero"}, {"name": "Richard J. Mandle"}, {"name": "Alenka Mertelj"}, {"name": "Nerea Sebastián"}], "subjects": "Soft Condensed Matter (cond-mat.soft)", "author_count": 12, "topics": ["Nonlinear Optics", "Optical Materials"], "topic_hits": {"Nonlinear Optics": ["harmonic generation", "nonlinear optical"], "Optical Materials": ["optical material", "optical materials"]}, "featured_authors": [{"name": "Anej Sterle"}, {"name": "Peter Medle-Rupnik"}, {"name": "Luka Cmok"}, {"name": "Richard J. Mandle"}, {"name": "Alenka Mertelj"}, {"name": "Nerea Sebastián"}], "summaries": {"en": "This study demonstrates that confinement-induced elastic frustration in chiral ferroelectric nematic fluids drives spontaneous formation of periodic polarization patterns, which directly modulate nonlinear optical responses.", "zh": "该研究证明手性铁电向列流体中的约束诱导弹性失稳驱动了周期性极化图案的自发形成，并直接调制了非线性光学响应。", "ja": "本研究は、手性強誘電性ネマティック流体における閉じ込め誘起弾性フラストレーションが周期的分極パターンの自発的形成を駆動し、非線形光学応答を直接変調することを実証した。"}, "summary_source": "deepseek"}, {"id": "2604.02364", "category": "physics", "title": "Topological Anderson Random Laser", "abstract": "Topological lasers and random lasers embody two contrasting strategies for disorder management in photonics: the former suppresses disorder via protected edge transport, while the latter exploits multiple scattering for feedback. Here, we theoretically demonstrate that these seemingly incompatible paradigms can be unified through a topological Anderson random laser (TARL), where disorder itself induces a topological phase that enables robust lasing. Starting from a trivial photonic lattice, we show that engineered disorder drives the system into a topological Anderson insulator regime, generating emergent chiral edge states that serve as boundary-selective lasing channels. Remarkably, the TARL exhibits rapid mode selection toward a single edge state, producing an ultranarrow emission spectrum and enhanced slope efficiency optimized near disorder strength with maximal topological mobility gap. Furthermore, they exhibit single-mode-like coherence properties, deviating from Kardar-Parisi-Zhang behavior in conventional chiral topological lasers, while remaining significantly more robust against local perturbations than conventional random lasers. Our findings establish a disorder-enabled flexible route to topologically protected single-mode lasing and introduce a fundamentally new design principle for robust, high-coherence photonic light sources.", "url": "https://arxiv.org/abs/2604.02364", "authors": [{"name": "Hang-Zheng Shen"}, {"name": "Xian-Hao Wei"}, {"name": "Xi-Wang Luo"}, {"name": "Zheng-Wei Zhou"}], "subjects": "Optics (physics.optics) ; Quantum Physics (quant-ph)", "author_count": 4, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "lasers", "optics", "photonic"]}, "featured_authors": [{"name": "Hang-Zheng Shen"}, {"name": "Xian-Hao Wei"}, {"name": "Xi-Wang Luo"}, {"name": "Zheng-Wei Zhou"}], "summaries": {"en": "The paper introduces a topological Anderson random laser that uses engineered disorder to create a topological phase enabling robust single-mode lasing with enhanced coherence and efficiency.", "zh": "本文提出了一种拓扑安德森随机激光器，利用工程化无序产生拓扑相，实现了具有增强相干性和效率的鲁棒单模激光。", "ja": "本論文は、エンジニアリングされた無秩序を用いてトポロジカル相を生成し、強化されたコヒーレンスと効率を持つロバストな単一モードレーザーを実現するトポロジカルアンダーソンランダムレーザーを提案しています。"}, "summary_source": "deepseek"}, {"id": "2604.02494", "category": "physics", "title": "Simultaneous plane illumination and detection in confocal microscopy using a mode-selective photonic lantern", "abstract": "Confocal microscopy is the cornerstone of cellular biology and biomedical research due to its non-destructive imaging, compatibility with live cells, sensitivity, optical sectioning, and subcellular resolution. To meet the demand for rapid three-dimensional imaging, we propose a novel approach using a mode-selective photonic lantern (MSPL). This fiber-based device transforms single-mode light into multiple linearly polarized modes, allowing simultaneous detection of multiple planes. Using a four-port MSPL to manipulate three group modes (LP$_{01}$, LP$_{11}$, and LP$_{21}$), we demonstrate high-throughput imaging simultaneously with multiple planes. This technique exploits differences in focus sections across modes, enabling individual multi-plane detection via a spatial division multiplexer, with some trade-off in resolution and field of view.", "url": "https://arxiv.org/abs/2604.02494", "authors": [{"name": "Rodrigo Itzamná Becerra-Deana"}, {"name": "Simon Desrochers"}, {"name": "Raphaël Maltais-Tariant"}, {"name": "Simon Brais-Brunet"}, {"name": "Guillaume Ramadier"}, {"name": "Stéphane Virally"}, {"name": "Lucien E. Weiss"}, {"name": "Caroline Boudoux"}], "subjects": "Optics (physics.optics)", "author_count": 8, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["microscopy"]}, "featured_authors": [{"name": "Rodrigo Itzamná Becerra-Deana"}, {"name": "Simon Desrochers"}, {"name": "Raphaël Maltais-Tariant"}, {"name": "Stéphane Virally"}, {"name": "Lucien E. Weiss"}, {"name": "Caroline Boudoux"}], "summaries": {"en": "A novel confocal microscopy technique using a mode-selective photonic lantern enables simultaneous multi-plane imaging by transforming single-mode light into multiple linearly polarized modes for high-throughput three-dimensional imaging.", "zh": "一种使用模式选择性光子灯笼的新型共聚焦显微镜技术，通过将单模光转换为多个线性偏振模式，实现了同时多平面成像，用于高通量三维成像。", "ja": "モード選択型フォトニックランタンを用いた新しい共焦点顕微鏡技術は、単一モード光を複数の直線偏光モードに変換することで、同時多平面イメージングを可能にし、高スループットな三次元イメージングを実現します。"}, "summary_source": "deepseek"}, {"id": "2604.02517", "category": "physics", "title": "Tunable Asymmetric Acoustic Absorption in Ventilated Metasurfaces", "abstract": "Asymmetric sound absorption is essential for advanced acoustic manipulation. However, current frequency modulation and broadbanding highly depend on geometric reconfiguration, leading to inevitable structural complexity that impedes their practical applications. Here, we propose a tunable, highly efficient, asymmetric ventilated acoustic system comprising two heterogeneous resonators. Specifically, it couples a highly dissipative space-coiling resonator (SCR) as a dark mode for energy consumption, alongside a weakly damped Helmholtz resonator as a bright mode acting as a reflective soft boundary. Theoretical and numerical analyses reveal strong asymmetry within the deep-subwavelength region (with a resonator size of approximately \\lambda/9.4), achieving 99% absorption for left-incident waves and 98% reflection for right-incident ones. Furthermore, the SCR introduces an interesting degree of freedom for acoustic tuning. Simply rotating the resonator induces a 92% absorption drop (~11 dB attenuation), functioning as an \"Acoustic Switch\". Moreover, this rotation significantly shifts the operating band. By parallel-coupling multi-angle isomorphic resonators, we achieve efficient broadband absorption (>0.8) from 325 to 375 Hz, offering an attractive paradigm for tunable acoustic metasurfaces and ventilated absorbers.", "url": "https://arxiv.org/abs/2604.02517", "authors": [{"name": "Keqiang Lyu"}, {"name": "Mohamed Farhat"}, {"name": "Ying Wu"}], "subjects": "Applied Physics (physics.app-ph)", "author_count": 3, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["metasurface", "metasurfaces"]}, "featured_authors": [{"name": "Keqiang Lyu"}, {"name": "Mohamed Farhat"}, {"name": "Ying Wu"}], "summaries": {"en": "This paper presents a tunable asymmetric acoustic system using two heterogeneous resonators that achieves near-perfect absorption for left-incident sound waves and high reflection for right-incident ones in a deep-subwavelength design.", "zh": "本文提出了一种可调谐的非对称声学系统，采用两种异质谐振器，在深亚波长设计中实现了对左入射声波的近乎完美吸收和对右入射声波的高反射。", "ja": "本論文は、2つの異種共鳴器を用いた調整可能な非対称音響システムを提案し、深サブ波長設計において左入射音波に対してほぼ完全な吸収、右入射音波に対して高い反射を実現した。"}, "summary_source": "deepseek"}, {"id": "2604.02534", "category": "physics", "title": "Angle-resolved photoelectron spectroscopy of the DABCO molecule probed with VUV radiation", "abstract": "We report a study of the diazabicyclo[2.2.2]octane (DABCO) molecule photoionized using VUV synchrotron radiation in combination with an ion--electron coincidence spectrometer. We determine accurately the adiabatic ionization energy to $7.199\\pm0.006$~eV. Two vibrational progressions of DABCO cation ground state are resolved at $847~\\text{cm}^{-1}\\pm27~\\text{cm}^{-1}$ and $1257~\\text{cm}^{-1}\\pm67~\\text{cm}^{-1}$, which we assign to modes of $e'$ symmetry. Analysis of the photoelectron angular distribution shows that the anisotropy parameter depends on the vibrational excitation. This dependence of the $\\beta$ parameter with the vibrational excitation is attributed to the scattering of the outgoing wavefunction mediated by high-lying Rydberg states.", "url": "https://arxiv.org/abs/2604.02534", "authors": [{"name": "Audrey Scognamiglio"}, {"name": "Lou Barreau"}, {"name": "Constant Schouder"}, {"name": "Denis Cubaynes"}, {"name": "Bérenger Gans"}, {"name": "Éric Gloaguen"}, {"name": "Gustavo A. Garcias"}, {"name": "Laurent Nahon"}, {"name": "Lionel Poisson"}], "subjects": "Atomic Physics (physics.atom-ph) ; Chemical Physics (physics.chem-ph)", "author_count": 9, "topics": ["AMO Physics"], "topic_hits": {"AMO Physics": ["rydberg"]}, "featured_authors": [{"name": "Audrey Scognamiglio"}, {"name": "Lou Barreau"}, {"name": "Constant Schouder"}, {"name": "Gustavo A. Garcias"}, {"name": "Laurent Nahon"}, {"name": "Lionel Poisson"}], "summaries": {"en": "Angle-resolved photoelectron spectroscopy of DABCO using VUV radiation revealed an adiabatic ionization energy of 7.", "zh": "利用真空紫外辐射对DABCO分子进行角分辨光电子能谱研究，确定了7.", "ja": "VUV放射を用いたDABCO分子の角度分解光電子分光により、7."}, "summary_source": "deepseek"}, {"id": "2604.02602", "category": "physics", "title": "Dispersion Engineered Metastructures Enabling Broadband Angular Selectivity", "abstract": "Angle-selective optical devices are of importance to several applications such as photovoltaics, high-sensitivity photodetectors and displays. There are several approaches to realizing angular selectivity, but it remains challenging to obtain isotropic responses over large spectral bandwidths in optically thin structures. We introduce a dispersion engineering approach coupled with topology optimization to design 2D metastructures, leveraging guided-mode resonances (GMRs), that exhibit isotropic angular selectivity over relative bandwidths of approximately 20%. We experimentally demonstrate metastructures with complementary angular selectivities, either scattering light strongly near normal incidence and transmitting efficiently at higher incident angles, or vice versa. A key finding is that these designs enable operation over spectral bandwidths greater than the GMR linewidths would suggest, a result of carefully tailored interactions between the Fabry-Perot background and resonantly scattered light. This work marks a significant step forward for the realization of broadband, angle-selective scattering in readily fabricated structures of subwavelength thickness, and enables new possibilities in sensing, analog information processing, high-efficiency photovoltaics, and displays.", "url": "https://arxiv.org/abs/2604.02602", "authors": [{"name": "Phillippe Pearson"}, {"name": "Zhaowei Dai"}, {"name": "Yiran Gu"}, {"name": "Owen D. Miller"}, {"name": "Andrei Faraon"}], "subjects": "Optics (physics.optics)", "author_count": 5, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["optical", "optics"]}, "featured_authors": [{"name": "Phillippe Pearson"}, {"name": "Zhaowei Dai"}, {"name": "Yiran Gu"}, {"name": "Owen D. Miller"}, {"name": "Andrei Faraon"}], "summaries": {"en": "This paper introduces dispersion-engineered 2D metastructures using topology optimization and guided-mode resonances to achieve isotropic angular selectivity over approximately 20% bandwidths in thin optical devices.", "zh": "本文介绍了利用拓扑优化和导模共振设计的色散工程二维超结构，可在薄型光学器件中实现约20%带宽的各向同性角度选择性。", "ja": "本論文は、トポロジー最適化と導波モード共鳴を利用した分散設計2次元メタ構造を導入し、薄型光学デバイスにおいて約20％の帯域幅で等方性角度選択性を実現する。"}, "summary_source": "deepseek"}, {"id": "2604.02624", "category": "physics", "title": "Wavelength-multiplexed massively parallel diffractive optical information storage and image projection", "abstract": "We introduce a wavelength-multiplexed massively parallel diffractive information storage platform composed of dielectric surfaces that are structurally optimized at the wavelength scale using deep learning to store and project thousands of distinct image patterns, each assigned to a unique wavelength. Through numerical simulations in the visible spectrum, we demonstrated that our wavelength-multiplexed diffractive system can store and project over 4,000 independent desired images/patterns within its output field-of-view, with high image quality and minimal crosstalk between spectral channels. Furthermore, in a proof-of-concept experiment, we demonstrated a two-layer diffractive design that stored six distinct patterns and projected them onto the same output field of view at six different wavelengths (500, 548, 596, 644, 692, and 740 nm). This diffractive architecture is scalable and can operate at various parts of the electromagnetic spectrum without the need for material dispersion engineering or redesigning its optimized diffractive layers. The demonstrated storage capacity, reconstruction image fidelity, and wavelength-encoded massively parallel read-out of our diffractive platform offer a compact and fast-access solution for large-scale optical information storage, image projection applications.", "url": "https://arxiv.org/abs/2604.02624", "authors": [{"name": "Che-Yung Shen"}, {"name": "Yuhang Li"}, {"name": "Cagatay Isil"}, {"name": "Jingxi Li"}, {"name": "Leon Lenk"}, {"name": "Tianyi Gan"}, {"name": "Guangdong Ma"}, {"name": "Fazil Onuralp Ardic"}, {"name": "Mona Jarrahi"}, {"name": "Aydogan Ozcan"}], "subjects": "Optics (physics.optics) ; Computer Vision and Pattern Recognition (cs.CV); Neural and Evolutionary Computing (cs.NE); Applied Physics (physics.app-ph)", "author_count": 10, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["optical", "optics"]}, "featured_authors": [{"name": "Che-Yung Shen"}, {"name": "Yuhang Li"}, {"name": "Cagatay Isil"}, {"name": "Fazil Onuralp Ardic"}, {"name": "Mona Jarrahi"}, {"name": "Aydogan Ozcan"}], "summaries": {"en": "This paper introduces a wavelength-multiplexed diffractive optical platform that uses deep learning-optimized dielectric surfaces to store and project thousands of distinct image patterns, each assigned to a unique wavelength, with demonstrated capacity for over 4,000 images in simulations and six patterns in experimental validation.", "zh": "本文介绍了一种波长复用衍射光学平台，该平台使用深度学习优化的介电表面来存储和投射数千个不同的图像模式，每个模式分配一个独特的波长，在模拟中展示了超过4000个图像的容量，并在实验中验证了六个模式。", "ja": "本論文は、深層学習で最適化された誘電体表面を用いて、各々が固有の波長に割り当てられた数千の異なる画像パターンを保存・投影する波長多重化回折光学プラットフォームを紹介し、シミュレーションで4000以上の画像容量を実証し、実験で6つのパターンを検証しました。"}, "summary_source": "deepseek"}, {"id": "2604.02826", "category": "physics", "title": "Analytical model for the photomultiplier single photoelectron response including the electron back-scattering contribution", "abstract": "Many models exist to describe the single photoelectron response of single photon counting photomultipliers. Generally to describe the spectral region between the fully amplified primary photoelectron peak and the electronics pedestal an \\emph{ad hoc} function is used (often an exponentially modified gaussian) attributing this region to `noise'. In this paper, following the physical description of back-scattered primary photoelectrons at the first dynode described in the \"The Photomultiplier Handbook\" by A.~G. Wright published by Oxford University Press, we derive an analytical function describing these partially amplified primary photoelectron at the first dynode. This function depends only on intrinsic parameters of the photomultiplier such as the gain at the first dynode and the intrinsic resolution of the dynode chain following the first. Furthermore, analytical descriptions of the fully amplified peak and very low charge signals are derived. The model has been successfully validated with data from two different photomultipliers acquired with a low-noise amplifier.", "url": "https://arxiv.org/abs/2604.02826", "authors": [{"name": "Emanuele Angelino"}, {"name": "Veronica Beligotti"}, {"name": "Lorenzo Bellagamba"}, {"name": "Elena Bonali"}, {"name": "Graziano Bruni"}, {"name": "Pietro Di Gangi"}, {"name": "Gian Marco Lucchetti"}, {"name": "Andrea Mancuso"}, {"name": "Virginia Mazza"}, {"name": "Gabriella Sartorelli"}, {"name": "Franco Semeria"}, {"name": "Alessandro Razeto"}, {"name": "Stefania Vecchi"}, {"name": "Guido Zavattini"}], "subjects": "Instrumentation and Detectors (physics.ins-det) ; High Energy Physics - Experiment (hep-ex)", "author_count": 14, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["single photon"]}, "featured_authors": [{"name": "Emanuele Angelino"}, {"name": "Veronica Beligotti"}, {"name": "Lorenzo Bellagamba"}, {"name": "Alessandro Razeto"}, {"name": "Stefania Vecchi"}, {"name": "Guido Zavattini"}], "summaries": {"en": "This paper develops an analytical model for photomultiplier single photoelectron response that physically accounts for back-scattered electrons at the first dynode, deriving functions for partially amplified, fully amplified, and low-charge signals using intrinsic device parameters.", "zh": "本文开发了一种光电倍增管单光电子响应的分析模型，该模型基于第一倍增极的背散射电子物理描述，使用器件固有参数推导了部分放大、完全放大和低电荷信号的函数。", "ja": "本論文は、第一ダイノードでの後方散乱電子を物理的に考慮した光電子増倍管の単一光電子応答の解析モデルを開発し、デバイスの固有パラメータを用いて部分増幅、完全増幅、および低電荷信号の関数を導出した。"}, "summary_source": "deepseek"}, {"id": "2604.03041", "category": "physics", "title": "Spatial mapping of quantum-dot dynamics across multiple timescales at low temperature using remote asynchronous optical sampling", "abstract": "Quantum dots (QDs) offer significant potential for applications in quantum information and optoelectronic devices; however, conventional time-resolved spectroscopy cannot generally simultaneously extract both long-lived relaxation dynamics and short-lived quantum beats from ensemble measurements. This limitation arises from the inherent trade-off between temporal resolution and total acquisition time. Here, we demonstrate that asynchronous optical sampling based on a fiber-delivered frequency comb enables simultaneous observation of QD dynamics across multiple timescales. By integrating a galvanometric scanner, we achieve spatial mapping over a $1 \\times 1$-\\si{\\milli\\meter}$^2$ area at 441 discrete points in 30.1~min, a measurement that would otherwise require more than 12~days. At each location, both quantum beats and relaxation lifetimes are resolved, giving physical insights into QD ensembles that were previously inaccessible and paving the way for rapid feedback in device fabrication.", "url": "https://arxiv.org/abs/2604.03041", "authors": [{"name": "Gen Asambo"}, {"name": "Riku Shibata"}, {"name": "Yushiro Takahashi"}, {"name": "Kouichi Akahane"}, {"name": "Shinichi Watanabe"}, {"name": "Junko Ishi-Hayase"}], "subjects": "Optics (physics.optics)", "author_count": 6, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["frequency comb", "optical", "optics"]}, "featured_authors": [{"name": "Gen Asambo"}, {"name": "Riku Shibata"}, {"name": "Yushiro Takahashi"}, {"name": "Kouichi Akahane"}, {"name": "Shinichi Watanabe"}, {"name": "Junko Ishi-Hayase"}], "summaries": {"en": "Remote asynchronous optical sampling with a fiber-delivered frequency comb enables simultaneous spatial mapping of quantum-dot dynamics across multiple timescales, resolving both quantum beats and relaxation lifetimes at 441 points in 30.", "zh": "基于光纤传输频率梳的远程异步光学采样实现了量子点动力学的多时间尺度同步空间映射，在30.", "ja": "ファイバー伝送周波数コムを用いたリモート非同期光学サンプリングにより、量子ドットダイナミクスの多時間スケール同時空間マッピングが実現され、30."}, "summary_source": "deepseek"}, {"id": "2604.03052", "category": "physics", "title": "Ho:YAG Thin-Disk Laser with 230 W Multimode and 150 W Single-Mode Output", "abstract": "We report a continuous-wave Ho:YAG thin-disk laser operating at the hundred-watt power level. In multimode operation, the laser delivers a maximum output power of 230 W, with a slope efficiency of 35.9% and an optical-to-optical conversion efficiency of 35.3%. In single-mode operation, an output power of 152.3 W is achieved, with beam quality factors M2 of 1.08 and 1.06 in the horizontal and vertical directions, respectively.", "url": "https://arxiv.org/abs/2604.03052", "authors": [{"name": "Xiyi Wang"}, {"name": "Xudong Yan"}, {"name": "Weichao Yao"}, {"name": "Yuxin Leng"}], "subjects": "Optics (physics.optics)", "author_count": 4, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical", "optics"]}, "featured_authors": [{"name": "Xiyi Wang"}, {"name": "Xudong Yan"}, {"name": "Weichao Yao"}, {"name": "Yuxin Leng"}], "summaries": {"en": "A continuous-wave Ho:YAG thin-disk laser achieves 230 W multimode and 150 W single-mode output with high efficiency and excellent beam quality.", "zh": "连续波Ho:YAG薄片激光器实现了230瓦多模和150瓦单模输出，具有高效率和优异的光束质量。", "ja": "連続波Ho:YAG薄板レーザーは、高効率と優れたビーム品質で230Wマルチモードおよび150Wシングルモード出力を実現しました。"}, "summary_source": "deepseek"}, {"id": "2604.03148", "category": "physics", "title": "Localization of coherent light into photons in a single-crystalline material", "abstract": "The absorption of light by materials is one of the most fundamental processes in optics and condensed-matter physics. Here we investigate whether laser light is absorbed by a crystalline material as an electromagnetic wave or as localized photon energies. We excite the first-order phase transition of vanadium dioxide with laser pulses of sufficient frequency to overcome the band gap but with insufficient pulse energy to overcome the latent heat. According to Maxwell's equations and Bloch theory, no transition should occur, because nowhere in the material is enough energy. Nevertheless, we observe with ultrafast electron diffraction for short times a disordered crystal geometry with nanometer-sized spots of switched material. Their amount matches approximately to the number of photons in the absorbed laser wave. Two optical experiments confirm this phenomenon, and simulations of single absorbed photons reproduce all measurements results. Although laser light and Bloch electrons are extended quantum objects, the energy of the individual photons is localized into nanometer dimensions, enabling local consequences at substantially higher energy than average.", "url": "https://arxiv.org/abs/2604.03148", "authors": [{"name": "Daniel Kazenwadel"}, {"name": "Jacob Holder"}, {"name": "Livio Ciorciaro"}, {"name": "Noel Neathery"}, {"name": "Raphael Schwenzer"}, {"name": "Leon Oleschko"}, {"name": "Jannik Hertkorn"}, {"name": "Margaretha Sandor"}, {"name": "Peter Baum"}], "subjects": "Optics (physics.optics) ; Strongly Correlated Electrons (cond-mat.str-el); Quantum Physics (quant-ph)", "author_count": 9, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical", "optics"]}, "featured_authors": [{"name": "Daniel Kazenwadel"}, {"name": "Jacob Holder"}, {"name": "Livio Ciorciaro"}, {"name": "Jannik Hertkorn"}, {"name": "Margaretha Sandor"}, {"name": "Peter Baum"}], "summaries": {"en": "The study demonstrates that laser light is absorbed as localized photon energies rather than as an electromagnetic wave in vanadium dioxide, enabling nanometer-scale material switching despite insufficient average energy.", "zh": "该研究表明，在二氧化钒中，激光光以局域化光子能量的形式被吸收，而非作为电磁波，从而在平均能量不足的情况下实现了纳米尺度的材料转换。", "ja": "この研究は、酸化バナジウムにおいて、レーザー光が電磁波ではなく局在化した光子エネルギーとして吸収され、平均エネルギーが不足しているにもかかわらずナノメートルスケールの材料変換を可能にすることを実証しています。"}, "summary_source": "deepseek"}, {"id": "2604.03153", "category": "physics", "title": "Wideband integrated high-speed graphene-silicon slot-waveguide electro-absorption modulator at 2 μm and 1.5 μm wavebands", "abstract": "The 2-{\\mu}m waveband, emerging as a highly promising candidate for optical communication, offers an extended wavelength window for high-speed optical transmission. Despite its potential, the development of integrated electro-optic (E/O) modulators operating at this wavelength range has been limited. Such E/O modulators are crucial for high-speed optical communication systems at the 2-{\\mu}m waveband. In this work, we propose and experimentally demonstrate high-performance E/O absorption modulators based on a graphene-silicon slot waveguide. Our approach enables wideband, high-speed, efficient, robust and compact modulators at both 2-{\\mu}m and 1.5-{\\mu}m wavebands. This work represents a significant advancement towards the realization of high-speed integrated E/O modulators for optical communication systems operating at the 2-{\\mu}m wavelength range.", "url": "https://arxiv.org/abs/2604.03153", "authors": [{"name": "Chao Luan"}, {"name": "Deming Kong"}, {"name": "Yunhong Ding"}, {"name": "Hao Hu"}], "subjects": "Optics (physics.optics)", "author_count": 4, "topics": ["Integrated Optics", "Optical Materials"], "topic_hits": {"Integrated Optics": ["waveguide"], "Optical Materials": ["electro-optic"]}, "featured_authors": [{"name": "Chao Luan"}, {"name": "Deming Kong"}, {"name": "Yunhong Ding"}, {"name": "Hao Hu"}], "summaries": {"en": "This research demonstrates a high-performance graphene-silicon slot-waveguide electro-absorption modulator that operates efficiently at both 2 μm and 1.", "zh": "这项研究展示了一种高性能的石墨烯-硅槽波导电吸收调制器，可在2微米和1.", "ja": "この研究は、2μmおよび1."}, "summary_source": "deepseek"}, {"id": "2604.03229", "category": "physics", "title": "A scalable infrastructure for strontium optical clocks with integrated photonics", "abstract": "Optical atomic clocks provide exceptionally accurate and precise signals for timekeeping and precision measurements, but they require high-power, free-space laser configurations that limit scalability. We introduce and explore a scalable infrastructure for strontium (Sr) optical-lattice clocks that incorporates co-design of atomic-beam slowing and a magneto-optical trap (MOT) from an effusion source, generation of complex, three-dimensional free-space laser configurations with a photonic integrated circuit (PIC) and metasurface (MS) optics, and laser stabilization to a frequency-comb supercontinuum generated with integrated nonlinear photonics. With these elements, we realize MOTs of all stable strontium isotopes ($^{84}$Sr, $^{86}$Sr, $^{87}$Sr, $^{88}$Sr) with populations commensurate with natural abundances, demonstrating precise beam control and robustness. Access to laser-cooled alkaline-earth atoms with scalable integrated photonics enables system engineering for optical clocks, quantum sensing, and quantum information, and our experiments demonstrate extensible technologies that advance toward a Sr optical clock largely free of bulk optics.", "url": "https://arxiv.org/abs/2604.03229", "authors": [{"name": "Zheng Luo"}, {"name": "Travis C. Briles"}, {"name": "Zachary L. Newman"}, {"name": "Aidan R. Jones"}, {"name": "Andrew R. Ferdinand"}, {"name": "Sindhu Jammi"}, {"name": "Grisha Spektor"}, {"name": "David R. Carlson"}, {"name": "Akash Rakholia"}, {"name": "Dan Sheredy"}, {"name": "Parth Patel"}, {"name": "Martin M. Boyd"}, {"name": "Chad Ropp"}, {"name": "Daron Westly"}, {"name": "Vladimir A. Aksyuk"}, {"name": "Wenqi Zhu"}, {"name": "Junyeob Song"}, {"name": "Amit Agrawal"}, {"name": "Scott B. Papp"}], "subjects": "Applied Physics (physics.app-ph) ; Atomic Physics (physics.atom-ph)", "author_count": 19, "topics": ["Integrated Optics", "Nonlinear Optics", "Optical Materials", "AMO Physics"], "topic_hits": {"Integrated Optics": ["integrated photonic", "integrated photonics", "photonic integrated circuit"], "Nonlinear Optics": ["supercontinuum"], "Optical Materials": ["metasurface"], "AMO Physics": ["atomic clock", "atomic clocks", "magneto-optical trap", "optical clock", "optical clocks"]}, "featured_authors": [{"name": "Zheng Luo"}, {"name": "Travis C. Briles"}, {"name": "Zachary L. Newman"}, {"name": "Junyeob Song"}, {"name": "Amit Agrawal"}, {"name": "Scott B. Papp"}], "summaries": {"en": "This paper presents a scalable strontium optical clock infrastructure using integrated photonics and metasurface optics to replace bulk laser systems, enabling magneto-optical traps for all stable strontium isotopes.", "zh": "本文提出了一种可扩展的锶光学钟基础设施，利用集成光子学和超表面光学替代传统激光系统，实现了所有稳定锶同位素的磁光阱。", "ja": "本論文は、集積フォトニクスとメタ表面光学を用いて従来のレーザーシステムを置き換えることで、すべての安定なストロンチウム同位体の磁気光学トラップを実現する、スケーラブルなストロンチウム光時計インフラを提案しています。"}, "summary_source": "deepseek"}, {"id": "2604.02741", "category": "quant-ph", "title": "Computational framework for non-Markovian multi-emitter dynamics beyond the single-excitation limit", "abstract": "While non-Markovian dynamics have been extensively studied in the single-excitation limit to predict non-trivial phenomena, this regime remains an idealization. Moving beyond it is essential, as optical nonlinearities and phase-error accumulation in multi-photon processes render the Markovian approximation fragile. In this work, we present a Green's function-based framework for modeling non-Markovian multi-emitter quantum electrodynamics within the two-excitation manifold. The modified Langevin noise (M-LN) formalism is employed for first-principles treatment of dissipative environments, while the emitter-centered mode (ECM) framework ensures computational tractability. Unlike conventional approaches that integrate out the reservoir, we construct a non-Markovian hierarchy of coupled differential equations by explicitly retaining photonic amplitudes. Within the two-excitation hierarchy, the formulation preserves total probability and retains phase information necessary to capture multi-photon interference. As numerical demonstrations, we investigate non-Markovian atom-field interactions in structured semi-infinite waveguide environments. We first consider a homogeneous waveguide as a baseline, observing enhanced Bell-state fidelity in selected configurations. Next, we examine collective decay of symmetric Dicke states in a waveguide with an embedded lossy dielectric slab, revealing selective stabilization and delayed excitation transfer induced by the structured reservoir. Finally, we analyze entanglement dynamics in the same setting, highlighting entanglement sudden birth and oscillatory revivals. In principle, the framework applies to arbitrary electromagnetic environments for which the dyadic Green's function can be obtained numerically, providing a versatile tool for investigating complex non-Markovian multi-photon phenomena beyond the single-excitation limit.", "url": "https://arxiv.org/abs/2604.02741", "authors": [{"name": "Hyunwoo Choi"}, {"name": "Weng Cho Chew"}, {"name": "Dong-Yeop Na"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 3, "topics": ["Integrated Optics"], "topic_hits": {"Integrated Optics": ["waveguide"]}, "featured_authors": [{"name": "Hyunwoo Choi"}, {"name": "Weng Cho Chew"}, {"name": "Dong-Yeop Na"}], "summaries": {"en": "This paper presents a Green's function-based computational framework for modeling non-Markovian multi-emitter quantum electrodynamics beyond the single-excitation limit, combining modified Langevin noise formalism and emitter-centered mode framework to preserve total probability and phase information.", "zh": "本文提出了一种基于格林函数的计算框架，用于模拟超越单激发极限的非马尔可夫多发射器量子电动力学，结合改进的朗之万噪声形式和发射器中心模式框架，以保持总概率和相位信息。", "ja": "本論文は、単一励起限界を超えた非マルコフ的多エミッタ量子電磁力学をモデル化するためのグリーン関数ベースの計算フレームワークを提示し、修正ランジュバンノイズ形式とエミッタ中心モードフレームワークを組み合わせて総確率と位相情報を保持します。"}, "summary_source": "deepseek"}, {"id": "2604.03184", "category": "quant-ph", "title": "Quantum Contact Processes on a Topological Lattice", "abstract": "Contact processes play an important role in classical non-equilibrium dynamics, describing the spreading of diseases, the dynamics of earthquakes and forest fires, and the distribution of information through the internet. Here we show that their quantum counterpart, where the spreading occurs through coherent couplings, displays even richer dynamics and offers new means of control. A quantum contact process on a topologically non-trivial lattice can be confined to a protected subspace corresponding to either a single site or a fully excited lattice. Furthermore, excitation spreading can be controlled to occur in quantized steps and on demand when employing topological pumps. We show that the many-body dynamics of excited domains can be mapped to an effective single-particle model, which also determines the topological properties. Throughout this work, we consider a specific type of contact process corresponding to coherent Rydberg facilitation in a tweezer array of trapped atoms in a one-dimensional lattice.", "url": "https://arxiv.org/abs/2604.03184", "authors": [{"name": "Julius Bohm"}, {"name": "Richard Schmidt"}, {"name": "Michael Fleischhauer"}, {"name": "Daniel Brady"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 4, "topics": ["AMO Physics"], "topic_hits": {"AMO Physics": ["rydberg"]}, "featured_authors": [{"name": "Julius Bohm"}, {"name": "Richard Schmidt"}, {"name": "Michael Fleischhauer"}, {"name": "Daniel Brady"}], "summaries": {"en": "Quantum contact processes on topological lattices exhibit richer dynamics than classical versions, enabling controlled excitation spreading through topological pumps and confinement to protected subspaces.", "zh": "拓扑晶格上的量子接触过程展现出比经典版本更丰富的动力学特性，可通过拓扑泵实现受控激发传播并限制在受保护子空间中。", "ja": "トポロジカル格子における量子接触過程は、古典的なバージョンよりも豊かなダイナミクスを示し、トポロジカルポンプによる制御された励起伝播と保護された部分空間への閉じ込めを可能にします。"}, "summary_source": "deepseek"}, {"id": "2604.02800", "category": "eess", "title": "Mutual-Coupling-Aware Optimization of a Time-Floquet RIS for Harmonic Backscatter Communications", "abstract": "This Letter studies the optimization of a wireless communications system empowered by a periodically time-modulated reconfigurable intelligent surface, coined time-Floquet RIS (TF-RIS), in the presence of mutual coupling (MC) among the RIS elements. In contrast to a conventional RIS whose elements may be reconfigured between signaling intervals, a TF-RIS periodically modulates its elements within a signaling interval, thereby inducing frequency conversion. Periodic time modulation is particularly attractive for harmonic backscatter communications to avoid self-jamming. Based on time-Floquet multiport network theory, we formulate an MC-aware optimization problem for binary-amplitude-shift-keying (BASK) harmonic backscatter communications with practical 1-bit-programmable TF-RIS elements. We propose a general discrete-optimization algorithm and evaluate its performance based on realistic model parameters. We systematically examine the performance dependence on the time resolution of the periodic modulation and the number of retained harmonics. Benchmarking against an MC-unaware approach reveals the importance of MC awareness for the more challenging optimization problem of simultaneous desired-harmonic-channel-gain maximization and undesired-harmonic-channel-gain minimization.", "url": "https://arxiv.org/abs/2604.02800", "authors": [{"name": "Aleksandr D. Kuznetsov"}, {"name": "Ville Viikari"}, {"name": "Philipp del Hougne"}], "subjects": "Signal Processing (eess.SP) ; Applied Physics (physics.app-ph)", "author_count": 3, "topics": ["Nonlinear Optics"], "topic_hits": {"Nonlinear Optics": ["frequency conversion"]}, "featured_authors": [{"name": "Aleksandr D. Kuznetsov"}, {"name": "Ville Viikari"}, {"name": "Philipp del Hougne"}], "summaries": {"en": "This paper optimizes a time-Floquet reconfigurable intelligent surface (TF-RIS) for harmonic backscatter communications by formulating and solving a mutual-coupling-aware discrete optimization problem using time-Floquet network theory.", "zh": "本文基于时域Floquet网络理论，针对谐波反向散射通信，提出并解决了一个考虑互耦效应的时域Floquet可重构智能表面离散优化问题。", "ja": "本論文は、時変Floquetネットワーク理論に基づき、高調波バックスキャッタ通信のための相互結合を考慮した時変Floquet再構成可能インテリジェント表面の離散最適化問題を定式化し解決する。"}, "summary_source": "deepseek"}];
+    const categoryOrder = ["cond-mat", "physics", "quant-ph", "eess"];
+    const topicOrder = ["Integrated Optics", "Nonlinear Optics", "Quantum Optics & Quantum Computing", "Optical Computing", "Optical Imaging", "Optical Materials", "AMO Physics", "Other Optics"];
+    const state = {
+      search: "",
+      categories: new Set(categoryOrder),
+      topics: new Set(topicOrder),
+    };
+
+    const statsEl = document.getElementById("stats");
+    const gridEl = document.getElementById("paper-grid");
+    const resultCountEl = document.getElementById("result-count");
+    const emptyStateEl = document.getElementById("empty-state");
+    const searchEl = document.getElementById("search");
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function statCard(label, value) {
+      return `<article class="stat"><div class="label">${label}</div><div class="value">${value}</div></article>`;
+    }
+
+    function renderStats() {
+      const categoryCounts = Object.fromEntries(categoryOrder.map((cat) => [cat, 0]));
+      const topicCounts = Object.fromEntries(topicOrder.map((topic) => [topic, 0]));
+      papers.forEach((paper) => {
+        categoryCounts[paper.category] = (categoryCounts[paper.category] || 0) + 1;
+        (paper.topics || []).forEach((topic) => {
+          topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+        });
+      });
+      statsEl.innerHTML = [
+        statCard("Papers", papers.length),
+        ...categoryOrder.map((cat) => statCard(cat, categoryCounts[cat] || 0)),
+        ...topicOrder.map((topic) => statCard(topic, topicCounts[topic] || 0)),
+      ].join("");
+    }
+
+    function renderChips(containerId, values, selectedSet, onToggle) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = values.map((value) => {
+        const active = selectedSet.has(value) ? "active" : "";
+        return `<button class="chip ${active}" type="button" data-value="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
+      }).join("");
+      container.querySelectorAll(".chip").forEach((button) => {
+        button.addEventListener("click", () => onToggle(button.dataset.value));
+      });
+    }
+
+    function toggleFromSet(set, value) {
+      if (set.has(value)) {
+        if (set.size > 1) set.delete(value);
+      } else {
+        set.add(value);
+      }
+    }
+
+    function matches(paper) {
+      const authorText = (paper.authors || []).map((author) => author.name).join(" ");
+      const summaryText = [paper.summaries?.en, paper.summaries?.zh, paper.summaries?.ja].join(" ");
+      const topicText = (paper.topics || []).join(" ");
+      const haystack = [
+        paper.id,
+        paper.category,
+        paper.title,
+        paper.abstract,
+        paper.subjects,
+        authorText,
+        topicText,
+        summaryText,
+      ].join(" ").toLowerCase();
+      const topicMatch = (paper.topics || []).some((topic) => state.topics.has(topic));
+      return state.categories.has(paper.category) && topicMatch && haystack.includes(state.search);
+    }
+
+    function renderPapers() {
+      const filtered = papers.filter(matches);
+      resultCountEl.textContent = `Showing ${filtered.length} of ${papers.length} papers`;
+      emptyStateEl.style.display = filtered.length ? "none" : "block";
+      gridEl.innerHTML = filtered.map((paper) => {
+        const safeUrl = escapeHtml(paper.url);
+        const authors = (paper.featured_authors || []).map((author) => author.name).join(", ") || "Unknown";
+        const topics = (paper.topics || []).map((topic) => `<span class="tag topic">${escapeHtml(topic)}</span>`).join("");
+        const subjectHtml = paper.subjects
+          ? `<div class="subtle"><div class="label">Subjects</div><p class="subject-line">${escapeHtml(paper.subjects)}</p></div>`
+          : "";
+        return `
+        <article class="paper">
+          <div class="paper-top">
+            <span class="tag category">${escapeHtml(paper.category)}</span>
+            ${topics}
+          </div>
+          <div class="id">arXiv:${escapeHtml(paper.id)}</div>
+          <h2><a href="${safeUrl}" target="_blank" rel="noreferrer">${escapeHtml(paper.title)}</a></h2>
+          <div class="subtle">
+            <div class="label">Authors</div>
+            <p class="author-line">${escapeHtml(authors)}</p>
+          </div>
+          ${subjectHtml}
+          <div class="summary-grid">
+            <section class="summary-item">
+              <strong>English Summary</strong>
+              <p>${escapeHtml(paper.summaries?.en || "")}</p>
+            </section>
+            <section class="summary-item">
+              <strong>Chinese Summary</strong>
+              <p>${escapeHtml(paper.summaries?.zh || "")}</p>
+            </section>
+            <section class="summary-item">
+              <strong>Japanese Summary</strong>
+              <p>${escapeHtml(paper.summaries?.ja || "")}</p>
+            </section>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>${escapeHtml(paper.abstract)}</p>
+          </details>
+          <footer>
+            <span>Summary source: ${escapeHtml(paper.summary_source || "fallback")}</span>
+            <a href="${safeUrl}" target="_blank" rel="noreferrer">Open on arXiv</a>
+          </footer>
+        </article>`;
+      }).join("");
+    }
+
+    function rerenderFilters() {
+      renderChips("category-filters", categoryOrder, state.categories, (value) => {
+        toggleFromSet(state.categories, value);
+        rerenderFilters();
+        renderPapers();
+      });
+      renderChips("topic-filters", topicOrder, state.topics, (value) => {
+        toggleFromSet(state.topics, value);
+        rerenderFilters();
+        renderPapers();
+      });
+    }
+
+    searchEl.addEventListener("input", (event) => {
+      state.search = event.target.value.trim().toLowerCase();
+      renderPapers();
+    });
+
+    renderStats();
+    rerenderFilters();
+    renderPapers();
+  </script>
+</body>
+</html>
