@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "2607.19467",
+    "category": "cond-mat",
+    "title": "Quantum Simulation of Semiconductor Excitons in Ultracold Dipolar Fermi Gases",
+    "abstract": "Inspired by the progress on the study of exciton physics in atomically thin transition metal dichalcogenide (TMD) semiconductors, we investigate the formation of analogs of excitons in cold atomic systems. To this end, we consider single-component fermions comprised of ultracold ground-state molecules or dipolar atoms in a hexagonal optical lattice. An energy offset between triangular sublattices opens up a band gap with degeneracies at the K/K' points as in TMDs. We predict the existence of cold atomic excitons and show that cold atoms allow us to study excitons from the weak-coupling regime, where effective mass models apply, to the strong-interaction regime, described by flat-band models. We demonstrate how these excitons can be observed using lattice modulation spectroscopy, and how their wave functions can be mapped out using quantum gas microscopy. Firmly establishing the idea of quantum simulation of semiconductor physics, this work lays the foundation for simulating complex electronic states such as trions, polarons and excitonic insulators.",
+    "url": "https://arxiv.org/abs/2607.19467",
+    "authors": [
+      {
+        "name": "Florian Hirsch"
+      },
+      {
+        "name": "Oriana K. Diessel"
+      },
+      {
+        "name": "Rafał Ołdziejewski"
+      },
+      {
+        "name": "Richard Schmidt"
+      }
+    ],
+    "subjects": "Quantum Gases (cond-mat.quant-gas) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 4,
+    "topics": [
+      "Optical Imaging",
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ],
+      "AMO Physics": [
+        "cold atom",
+        "cold atoms",
+        "optical lattice"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Florian Hirsch"
+      },
+      {
+        "name": "Oriana K. Diessel"
+      },
+      {
+        "name": "Rafał Ołdziejewski"
+      },
+      {
+        "name": "Richard Schmidt"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes that ultracold dipolar Fermi gases in a hexagonal optical lattice can simulate semiconductor excitons, spanning from weak to strong coupling regimes, and can be observed via spectroscopy and microscopy.",
+      "zh": "本文提出在六方光学晶格中的超冷偶极费米气体可以模拟半导体激子，涵盖从弱耦合到强耦合区域，并可通过光谱学和显微镜进行观测。",
+      "ja": "本論文は、六方光学格子中の超冷双極性フェルミ気体が半導体励起子をシミュレートできることを提案し、弱結合から強結合領域までをカバーし、分光学と顕微鏡で観測可能であることを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19789",
+    "category": "cond-mat",
+    "title": "Numerical exploration on unveiling the photovoltaic potential of MgXS3(X = Ti, Zr, Hf) chalcogenide perovskites",
+    "abstract": "Lead-free chalcogenide perovskites offer a nontoxic and thermally robust path beyond Pb-based perovskite solar cells (PSCs), but their device-level behavior in realistic three-dimensional geometries remains insufficiently characterized. In this work, we investigate ZnSe/MgXS3(X = Ti, Zr, Hf)/Sb2S3 solar cell architecture where MgXS3 absorbers from the II-IV-VI chalcogenide perovskite family is employed as the absorber layer. The device is analyzed using 3D finite-element simulations in COMSOL Multiphysics that self-consistently couple optical generation, drift-diffusion carrier transport, and heat transfer under AM 1.5G 1-sun illumination, following a fully coupled opto-electro-thermal framework. For each absorber composition, the impacts of absorber thickness, doping, and defect density are systematically investigated, and the contribution of an Sb2S3 back-surface-field (BSF) layer to carrier collection and spectral response is quantified. Under optimized conditions, MgZrS3, MgTiS3, MgHfS3-based devices achieves a simulated power conversion efficiency (PCE) of 28.18%, 26.72%, and 28.16%, respectively. The corresponding open-circuit voltage (VOC) values are 0.94 V, 0.74 V, and, 1.07 V while the short-circuit current density (JSC) values are 34.46 mA/cm2, 42.69 mA/cm2, and 29.89 mA/cm2, with fill factor (FF) values of 86.99%, 84.58%, and 88.02%, respectively. Coupled electro-thermal simulations further reveal a small spatially non-uniform steady-state temperature rise across the ultrathin cell stack, mainly governed by non-radiative recombination and Joule dissipation within the active layers. Overall, these results confirm MgXS3(X = Ti, Zr, Hf) chalcogenide perovskites as promising lead-free absorber materials and offer practical design guidance for achieving high-efficiency, thermally stable three-dimensional device architectures.",
+    "url": "https://arxiv.org/abs/2607.19789",
+    "authors": [
+      {
+        "name": "Md. Mizanur Rahman"
+      },
+      {
+        "name": "Md. Nahid Hasan"
+      },
+      {
+        "name": "Tanvir Ahmed"
+      },
+      {
+        "name": "Jaker Hossain"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci) ; Optics (physics.optics)",
+    "author_count": 4,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Md. Mizanur Rahman"
+      },
+      {
+        "name": "Md. Nahid Hasan"
+      },
+      {
+        "name": "Tanvir Ahmed"
+      },
+      {
+        "name": "Jaker Hossain"
+      }
+    ],
+    "summaries": {
+      "en": "Using 3D opto-electro-thermal simulations, MgXS3 (X = Ti, Zr, Hf) chalcogenide perovskites are shown to achieve power conversion efficiencies up to 28.",
+      "zh": "通过三维光电热耦合模拟，MgXS3（X = Ti, Zr, Hf）硫族钙钛矿材料在ZnSe/MgXS3/Sb2S3太阳能电池结构中实现了高达28.",
+      "ja": "3次元光電熱連成シミュレーションにより、MgXS3（X = Ti, Zr, Hf）カルコパイライトペロブスカイトがZnSe/MgXS3/Sb2S3太陽電池構造で最大28."
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19821",
+    "category": "cond-mat",
+    "title": "Spatially Dispersive Second-Harmonic Generation in Ferroaxial Systems",
+    "abstract": "Spatially dispersive second-harmonic generation (SHG) provides a powerful probe of centrosymmetric multipolar states beyond the electric-dipole approximation. We develop a gauge-consistent microscopic theory of spatially dispersive SHG that treats electric-quadrupole (EQ) and magnetic-dipole (MD) processes on equal footing. Applying the formulation to a minimal triangular cluster model with ferroaxial order, which is closely related to an electric toroidal dipole, we show that the nonlinear optical response directly reflects the ferroaxial order parameter. The agreement between length- and velocity-gauge calculations confirms the gauge consistency of the formulation. We further demonstrate that the EQ and MD contributions exhibit different spectral weights despite sharing the same resonance energies. In particular, the MD channel can dominate over the EQ channel at selected resonances, indicating that it is not merely a perturbative correction. Our results establish that both EQ and MD processes are essential for a quantitative description of spatially dispersive SHG in ferroaxial materials and provide a microscopic basis for interpreting nonlinear optical signatures of centrosymmetric multipolar order.",
+    "url": "https://arxiv.org/abs/2607.19821",
+    "authors": [
+      {
+        "name": "Takumi Shiro"
+      },
+      {
+        "name": "Satoru Hayami"
+      }
+    ],
+    "subjects": "Strongly Correlated Electrons (cond-mat.str-el) ; Optics (physics.optics)",
+    "author_count": 2,
+    "topics": [
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "harmonic generation",
+        "nonlinear optical"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Takumi Shiro"
+      },
+      {
+        "name": "Satoru Hayami"
+      }
+    ],
+    "summaries": {
+      "en": "Spatially dispersive second-harmonic generation in ferroaxial systems reveals that both electric-quadrupole and magnetic-dipole processes contribute comparably, with the magnetic-dipole channel dominating at certain resonances.",
+      "zh": "在铁轴系统中，空间色散二次谐波产生表明电四极和磁偶极过程贡献相当，且在特定共振处磁偶极通道占主导。",
+      "ja": "強軸性系における空間分散第二高調波発生は、電気四重極と磁気双極子過程が同等に寄与し、特定の共鳴で磁気双極子チャネルが支配的になることを示す。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19828",
+    "category": "cond-mat",
+    "title": "Real-time probing of quadrupolar contributions to the absorption cross section of non-periodic systems",
+    "abstract": "The non-perturbative evaluation of multipolar cross sections is essential for probing atomic and molecular responses to spatially inhomogeneous electric fields characteristic of nanoscale environments where the conventional dipole approximation breaks down. Taking the hydrogen atom as an analytical and numerical benchmark, we map in real time quadrupole interactions driven by instantaneous electric field gradients. Our study explores two distinct interaction regimes. Under a uniform field, quadrupolar responses are activated by multi-step dipole transitions, responsible for sub-1~eV excited-state absorption. Conversely, under pure spatial gradients, the weak-field response is dominated by the single-photon $1s \\to 3d$ quadrupole resonance at 12.1~eV, while strong gradients induce low-energy stimulated emission via transiently driven coherent populations. This dynamical analysis is complemented by a rigorous evaluation of the symmetry aspects of the quadrupole response and the applied electric field. This methodology establishes the theoretical and computational foundation for future non-perturbative multipole simulations of molecules and nanostructures in the near-field regime.",
+    "url": "https://arxiv.org/abs/2607.19828",
+    "authors": [
+      {
+        "name": "Anvar Khujakulov"
+      },
+      {
+        "name": "Michele Guerrini"
+      },
+      {
+        "name": "Carlo Andrea Rozzi"
+      },
+      {
+        "name": "Caterina Cocchi"
+      }
+    ],
+    "subjects": "Quantum Gases (cond-mat.quant-gas)",
+    "author_count": 4,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "single-photon"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Anvar Khujakulov"
+      },
+      {
+        "name": "Michele Guerrini"
+      },
+      {
+        "name": "Carlo Andrea Rozzi"
+      },
+      {
+        "name": "Caterina Cocchi"
+      }
+    ],
+    "summaries": {
+      "en": "We demonstrate real-time tracking of quadrupolar absorption in hydrogen atoms under spatially inhomogeneous electric fields, revealing distinct mechanisms such as multi-step dipole transitions and a single-photon quadrupole resonance.",
+      "zh": "我们在氢原子中实时追踪了空间非均匀电场下的四极吸收，揭示了多步偶极跃迁和单光子四极共振等不同机制。",
+      "ja": "空間的に不均一な電場下での水素原子の四重極吸収をリアルタイムで追跡し、多段階双極子遷移や単一光子四重極共鳴などの異なるメカニズムを明らかにしました。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19937",
+    "category": "cond-mat",
+    "title": "Symmetry-Based Design Rules for Second-Harmonic Generation in Stacked and Twisted MoS2 Bilayers",
+    "abstract": "Understanding how stacking controls the nonlinear optical response of two-dimensional materials is key to designing van der Waals heterostructures with tailored functionalities. Here, we establish a comprehensive symmetry-based framework mapping the structural configuration of MoS2 bilayers across four point groups (D3h, D3d, C3v, C3) to their second-order susceptibility tensor chi^(2). Using group-theory arguments benchmarked against first-principles calculations, we demonstrate how symmetry breaking controls the activation and suppression of individual tensor elements in these systems. We show that the emergence of the in-plane component chi_xxx in twisted configurations (C3 group) induces a rigid azimuthal rotation of the second-harmonic generation polar lobes, which remains frequency-independent across the entire optical spectrum, locking to half of the structural twist angle. Our findings establish a direct, wavelength-independent optical route for twist-angle determination and provide a clear roadmap for engineering nonlinear optical responses in two-dimensional materials.",
+    "url": "https://arxiv.org/abs/2607.19937",
+    "authors": [
+      {
+        "name": "Sumanti Patra"
+      },
+      {
+        "name": "Caterina Cocchi"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 2,
+    "topics": [
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "harmonic generation",
+        "nonlinear optical"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Sumanti Patra"
+      },
+      {
+        "name": "Caterina Cocchi"
+      }
+    ],
+    "summaries": {
+      "en": "The paper establishes a symmetry-based framework predicting how stacking and twisting in MoS2 bilayers control second-harmonic generation through chi^(2) tensor elements.",
+      "zh": "该论文建立了一个基于对称性的框架，预测了MoS2双层中的堆叠和扭转如何通过chi^(2)张量元素控制二次谐波产生。",
+      "ja": "この論文は、MoS2二層膜における積層とねじれが二次高調波発生をchi^(2)テンソル要素を通じて制御する方法を予測する対称性に基づく枠組みを確立しています。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19979",
+    "category": "cond-mat",
+    "title": "Interface-resolved structural properties of epitaxial Y$_3$Fe$_5$O$_{12}$/ Gd$_3$Fe$_5$O$_{12}$ bilayers grown on GGG(111) by pulsed laser deposition",
+    "abstract": "Epitaxial Y$_3$Fe$_5$O$_{12}$ (YIG) and Gd$_3$Fe$_5$O$_{12}$ (GdIG) thin films, along with their bilayer heterostructures, were grown on Gd$_3$Ga$_5$O$_{12}$(GGG)(111) substrates using pulsed laser deposition. Structural properties were investigated using X-ray diffraction, reciprocal space mapping, and cross-sectional transmission electron microscopy. The results confirm high crystalline quality and coherent epitaxial growth, with RSM revealing a coexistence of strained and partially relaxed regions governed by layer sequence. TEM analysis shows sharp interfaces, columnar microstructures, and antiphase boundaries that facilitate strain relaxation. A comparative study indicates that the GGG/YIG/GdIG stacking sequence exhibits improved structural quality with reduced defect density, attributed to the superior epitaxial growth of YIG on the substrate. These findings highlight the critical role of growth sequence in controlling strain and interfacial structure in garnet heterostructures.",
+    "url": "https://arxiv.org/abs/2607.19979",
+    "authors": [
+      {
+        "name": "Kshitij Singh Rathore"
+      },
+      {
+        "name": "Abhisek Mishra"
+      },
+      {
+        "name": "Swayang Priya Mahanta"
+      },
+      {
+        "name": "Shubhransu Sahoo"
+      },
+      {
+        "name": "Anupama Swain"
+      },
+      {
+        "name": "Pushpendra Gupta"
+      },
+      {
+        "name": "Kapil Gupta"
+      },
+      {
+        "name": "Jose M. Caicedo-Roque"
+      },
+      {
+        "name": "Jessica Padilla-Pantoja"
+      },
+      {
+        "name": "Francisco J. Belarre"
+      },
+      {
+        "name": "Belen Ballesteros"
+      },
+      {
+        "name": "Jose Santiso"
+      },
+      {
+        "name": "Subhankar Bedanta"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 13,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Kshitij Singh Rathore"
+      },
+      {
+        "name": "Abhisek Mishra"
+      },
+      {
+        "name": "Swayang Priya Mahanta"
+      },
+      {
+        "name": "Belen Ballesteros"
+      },
+      {
+        "name": "Jose Santiso"
+      },
+      {
+        "name": "Subhankar Bedanta"
+      }
+    ],
+    "summaries": {
+      "en": "This study investigates the structural properties of epitaxial Y3Fe5O12/Gd3Fe5O12 bilayers on GGG(111) substrates grown by pulsed laser deposition, revealing sharp interfaces, columnar microstructures, and strain relaxation influenced by layer sequence.",
+      "zh": "本研究通过脉冲激光沉积在GGG(111)衬底上生长了外延Y3Fe5O12/Gd3Fe5O12双层薄膜，揭示了尖锐界面、柱状微结构和受层序影响的应变弛豫。",
+      "ja": "本研究は、パルスレーザー堆積法によりGGG(111)基板上にエピタキシャル成長させたY3Fe5O12/Gd3Fe5O12二層膜の構造特性を調査し、層順序に影響される鋭い界面、柱状微構造、およびひずみ緩和を明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19993",
+    "category": "cond-mat",
+    "title": "Spin-wave softening across the uniform-to-stripe domain transition in iron garnet film",
+    "abstract": "Spin-wave spectra across transitions between uniform and textured phases can offer deep insight into both symmetry-breaking physics and self-assembled magnonic bands. However, experiments require a material platform that combines low damping, well-defined textures, and spectroscopic access. Here, we study a Bi-doped iron-garnet film with perpendicular magnetic anisotropy (PMA), which undergoes a uniform-to-stripe-domain transition as a function of in-plane magnetic field. Real-space imaging by magnetic force microscopy reveals field-reorientable stripe domains aligned with the in-plane field, while reciprocal-space measurements using thermal microfocused Brillouin light scattering ($\\mu$-BLS) reveal the softening of a low-frequency spin-wave branch near the transition and the appearance of additional modes in the stripe-domain state. Calculated dispersion relations identify finite-$k$ softening in the Damon-Eshbach geometry ($k \\perp M$), with the corresponding wavelength matching the stripe periodicity at the transition. In addition, a $\\mu$-BLS spectral model reproduces the measured mode frequencies and relative intensities at selected fixed fields. Micromagnetic simulations capture the field-driven formation of the stripe state and reproduce the experimental thermal $\\mu$-BLS spectra. Our findings establish BiYIG with PMA as a model low-damping platform for studying spin-wave freezing, stripe-domain modes, and reconfigurable magnonic band structures.",
+    "url": "https://arxiv.org/abs/2607.19993",
+    "authors": [
+      {
+        "name": "Titiksha Srivastava"
+      },
+      {
+        "name": "Victor Leroy"
+      },
+      {
+        "name": "Nessrine Benaziz"
+      },
+      {
+        "name": "Nathaniel Findling"
+      },
+      {
+        "name": "Ludovic Largeau"
+      },
+      {
+        "name": "Jamal Ben Youssef"
+      },
+      {
+        "name": "Jean-Paul Adam"
+      },
+      {
+        "name": "Thibaut Devolder"
+      },
+      {
+        "name": "Joo-Von Kim"
+      }
+    ],
+    "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 9,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Titiksha Srivastava"
+      },
+      {
+        "name": "Victor Leroy"
+      },
+      {
+        "name": "Nessrine Benaziz"
+      },
+      {
+        "name": "Jean-Paul Adam"
+      },
+      {
+        "name": "Thibaut Devolder"
+      },
+      {
+        "name": "Joo-Von Kim"
+      }
+    ],
+    "summaries": {
+      "en": "This study investigates the spin-wave softening across the uniform-to-stripe domain transition in a Bi-doped iron garnet film, revealing mode evolution via microfocused Brillouin light scattering and micromagnetic simulations.",
+      "zh": "本研究探究了铋掺杂铁石榴石薄膜中从均匀相到条纹畴相转变过程中的自旋波软化现象，通过微聚焦布里渊光散射和微磁模拟揭示了模式的演化。",
+      "ja": "本研究では、ビスマス添加鉄ガーネット薄膜における一様状態からストライプドメインへの転移におけるスピン波の軟化を調査し、微焦点ブリルアン光散乱とマイクロ磁気シミュレーションによってモードの進化を明らかにしました。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20030",
+    "category": "cond-mat",
+    "title": "How to measure loop currents in scanning tunneling microscopy",
+    "abstract": "The emergence of loop current phases, where spontaneous loops of orbital currents give rise to a weak local magnetic moments, has been proposed to exist in a number of quantum materials based on measurements that pick up weak signatures of time reversal symmetry breaking or small magnetic moment order. The most prominent example is as an explanation of the pseudogap phase on the underdoped side of the phase diagram of the high-temperature cuprate superconductors, but more recently, it has been proposed to occur in Kagome materials and at the surface layer of Sr$_2$RuO$_4$. Experimental results have, however, been inconclusive so far, some detecting signatures that can be understood as emerging due to loop current phases, whilst others have not detected any significant proof. One of the techniques that should be able to pick up local signatures of loop current orders is low temperature scanning tunneling microscopy and spectroscopy (STM/STS), however firm predictions of how to detect them are missing. Here, we provide specific predictions for how loop current orders in a square lattice can be seen in spectroscopic maps, using models of the cuprate high-temperature superconductors and of the surface layer of Sr$_2$RuO$_4$. We find that, besides lifting degeneracies at the specific ordering vector of the loop current order, a finite spin polarisation emerges when spin-orbit coupling is present, signatures of which can be detected in spin-polarised STM.",
+    "url": "https://arxiv.org/abs/2607.20030",
+    "authors": [
+      {
+        "name": "Victoire Morisseau"
+      },
+      {
+        "name": "Luke C. Rhodes"
+      },
+      {
+        "name": "Peter Wahl"
+      },
+      {
+        "name": "Carolina A. Marques"
+      }
+    ],
+    "subjects": "Strongly Correlated Electrons (cond-mat.str-el)",
+    "author_count": 4,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Victoire Morisseau"
+      },
+      {
+        "name": "Luke C. Rhodes"
+      },
+      {
+        "name": "Peter Wahl"
+      },
+      {
+        "name": "Carolina A. Marques"
+      }
+    ],
+    "summaries": {
+      "en": "This study provides specific predictions for detecting loop current orders in square lattices using scanning tunneling microscopy and spectroscopy, revealing that spin-orbit coupling induces finite spin polarization detectable in spin-polarized STM.",
+      "zh": "这项研究为在方形晶格中使用扫描隧道显微镜和光谱学检测环路电流序提供了具体预测，发现自旋轨道耦合会导致有限的自旋极化，可通过自旋极化STM检测到。",
+      "ja": "この研究は、走査型トンネル顕微鏡と分光法を用いて正方格子上のループ電流秩序を検出するための具体的な予測を提供し、スピン軌道結合が有限のスピン分極を誘起し、スピン分極STMで検出可能であることを明らかにしている。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20054",
+    "category": "cond-mat",
+    "title": "Thickness-dependent crack suppression and wrinkle formation in freestanding BaTiO3 membranes",
+    "abstract": "Freestanding ferroelectric oxide membranes offer a promising route toward silicon-integrated low-power electronic and memory devices, but reproducible membrane quality remains challenging, particularly in ultrathin BaTiO3 (BTO), where cracking and wrinkling hinder integration. Here, we show that crack and wrinkle formation in released BaTiO3 membranes can be tuned by jointly controlling oxide thickness and polymer support thickness. Reducing the BaTiO3 thickness from 15 nm to 5 nm suppresses large-area, optically visible cracking across the analysed regions, but promotes dense nanoscale wrinkling, revealing a trade-off between fracture mitigation and morphological instability. In 10 nm BaTiO3 membranes, polymer support thickness further modulates wrinkling, with an intermediate thickness reducing wrinkle density. Piezoresponse force microscopy reveals time-dependent evolution of written contrast after release, indicating that apparent ferroelectric response is influenced by polarization switching, post-release morphology, interfacial contact, charge screening, and strain relaxation. These results establish processing guidelines for integrating freestanding ferroelectrics into future devices.",
+    "url": "https://arxiv.org/abs/2607.20054",
+    "authors": [
+      {
+        "name": "Rajesh Mandal"
+      },
+      {
+        "name": "Ajay Kumar"
+      },
+      {
+        "name": "Nini Pryds"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 3,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Rajesh Mandal"
+      },
+      {
+        "name": "Ajay Kumar"
+      },
+      {
+        "name": "Nini Pryds"
+      }
+    ],
+    "summaries": {
+      "en": "Reducing BaTiO3 thickness from 15 nm to 5 nm suppresses cracking but promotes nanoscale wrinkling, while polymer support thickness further modulates wrinkling in 10 nm membranes.",
+      "zh": "将BaTiO3厚度从15纳米减小到5纳米可抑制裂纹但促进纳米级起皱，而聚合物支撑层厚度进一步调节10纳米膜的起皱。",
+      "ja": "BaTiO3の厚さを15 nmから5 nmに減らすと、割れが抑制されるがナノスケールのしわが促進され、10 nm膜ではポリマー支持層の厚さがしわをさらに調節する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20066",
+    "category": "cond-mat",
+    "title": "Kinetically-Arrested Phase Separation leads to Tunable Domain Structures in Vapor-Deposited Glasses",
+    "abstract": "The characteristic length scale of phase-separated organic thin film blends is a critical structural parameter governing the performance and functionality of organic electronic devices. The arrested morphologies of vapor-deposited organic thin films result from the interplay between thermodynamic driving forces and kinetic constraints during deposition. Here, we aim to isolate the role of kinetic effects in phase separation by varying the deposition rate at a constant substrate temperature for a co-deposited molecular glass blend of N,N'-bis(3-methylphenyl)-N,N'-diphenylbenzidine (TPD) and Disperse Orange 37 (DO37). The dependence of morphology on deposition rate is quantified using power spectral density (PSD) analysis of atomic force microscopy (AFM) images. Two distinct deposition rate-dependent length scales at the surface reveal how deposition kinetics directly influence domain size and film topography. Complementary Resonant Soft X-ray Scattering (RSoXS) measurements indicate that phase separation extends throughout the film thickness. These observations are consistent with the surface equilibration mechanism previously described for homogeneous vapor-deposited films, in which enhanced surface mobility allows molecules in the growing film to partially equilibrate into distinct surface-templated states during deposition. In the current work, this mechanism allows the multi-component blend to phase separate and coarsen into a structure with multiple length scales before kinetically arresting to an extent that depends on the deposition rate. The demonstration of finely tunable domain size with deposition rate provides strategies to design new organic electronic devices with desired morphologies.",
+    "url": "https://arxiv.org/abs/2607.20066",
+    "authors": [
+      {
+        "name": "A T M Mahbub Alahe"
+      },
+      {
+        "name": "Thomas J. Ferron"
+      },
+      {
+        "name": "Camille E. Bishop"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci) ; Chemical Physics (physics.chem-ph)",
+    "author_count": 3,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "A T M Mahbub Alahe"
+      },
+      {
+        "name": "Thomas J. Ferron"
+      },
+      {
+        "name": "Camille E. Bishop"
+      }
+    ],
+    "summaries": {
+      "en": "This paper shows that varying the deposition rate during vapor deposition of a molecular glass blend allows fine control over the domain sizes of phase-separated structures, providing a strategy to engineer morphologies for organic electronic devices.",
+      "zh": "本文表明，在气相沉积分子玻璃混合物过程中改变沉积速率可以精细控制相分离结构的域尺寸，为设计具有所需形态的有机电子器件提供了策略。",
+      "ja": "本論文は、分子ガラス混合膜の蒸着速度を変化させることで、相分離構造のドメインサイズを精密に制御できることを示し、所望の形態を持つ有機電子デバイスを設計するための戦略を提供する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20096",
+    "category": "cond-mat",
+    "title": "Power-Law Suppression of Superfluid Stiffness in High-Kinetic-Inductance NbN Films",
+    "abstract": "Disorder is a powerful route to high kinetic inductance in superconducting ultrathin films, enabling compact high-impedance quantum circuits. This functionality, however, comes at the cost of reduced phase rigidity and potentially anomalous electrodynamics. Here, we use NbN microwave resonators with thicknesses down to 2.8 nm and sheet kinetic inductance up to 300 pH per square to probe how this trade-off reshapes the superconducting response. In the thinnest films, transport shows signatures of a Berezinskii-Kosterlitz-Thouless transition, while the microwave response reveals a pronounced low-temperature power-law suppression of the superfluid stiffness, inconsistent with Mattis-Bardeen theory. With increasing thickness, this anomalous regime is progressively suppressed, marking a continuous crossover toward conventional, gap-dominated electrodynamics. Cross-sectional transmission electron microscopy reveals a nanocrystalline twin-domain structure, pointing to oriented microstructural disorder as a crucial factor in the observed response. Overall, the crossover is governed by the ratio of superfluid stiffness to pairing energy, Theta(0)/Tc, identifying this ratio as a parameter governing the boundary between phase-fluctuation-dominated and gap-dominated superconducting electrodynamics in disordered nanofilms.",
+    "url": "https://arxiv.org/abs/2607.20096",
+    "authors": [
+      {
+        "name": "Meenakshi Sharma"
+      },
+      {
+        "name": "Hrishikesh Borah"
+      },
+      {
+        "name": "Sandeep Singh"
+      },
+      {
+        "name": "Berit H. Goodge"
+      },
+      {
+        "name": "Edouard Lesne"
+      },
+      {
+        "name": "Sandra Nestler"
+      },
+      {
+        "name": "Surinder P. Singh"
+      },
+      {
+        "name": "Haolin Jin"
+      },
+      {
+        "name": "Yejin Lee"
+      },
+      {
+        "name": "Bernd Büchner"
+      },
+      {
+        "name": "Uri Vool"
+      }
+    ],
+    "subjects": "Superconductivity (cond-mat.supr-con) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 11,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Meenakshi Sharma"
+      },
+      {
+        "name": "Hrishikesh Borah"
+      },
+      {
+        "name": "Sandeep Singh"
+      },
+      {
+        "name": "Yejin Lee"
+      },
+      {
+        "name": "Bernd Büchner"
+      },
+      {
+        "name": "Uri Vool"
+      }
+    ],
+    "summaries": {
+      "en": "The study reveals that in ultrathin NbN films, disorder causes a power-law suppression of superfluid stiffness at low temperatures, due to nanocrystalline twin domains and phase fluctuations, with the ratio of superfluid stiffness to pairing energy governing the crossover to conventional electrodynamics.",
+      "zh": "该研究表明，在超薄NbN薄膜中，无序导致低温下超流体刚度的幂律抑制，这归因于纳米晶孪晶域和相位波动，而超流体刚度与配对能量的比率决定了向常规电动力学的转变。",
+      "ja": "この研究は、超薄膜NbNにおいて、無秩序が低温での超流動剛性率のべき乗則抑制を引き起こし、これはナノ結晶双晶ドメインと位相揺らぎによるものであり、超流動剛性率とペアリングエネルギーの比が従来の電気力学へのクロスオーバーを制御することを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20102",
+    "category": "cond-mat",
+    "title": "Frequency-Division Multiplexing in Magnonic Waveguides",
+    "abstract": "Frequency-division multiplexing is a key functionality for wave-based information processing, enabling multiple information channels to coexist within the same physical medium. Here, we experimentally investigate spin-wave multiplexing in a CoFeB waveguide using all-electrical excitation and detection. Two independently generated microwave signals are simultaneously coupled into the same spin-wave waveguide through inductive antennas and characterized using broadband vector network analyzer measurements. The transmission spectra obtained under single-channel and multiplexed operation exhibit excellent agreement, demonstrating that spin waves with different frequencies and wavelengths propagate simultaneously without measurable interaction in the linear regime. The observation is confirmed using both dual-sweep and sweep-plus-single-tone excitation schemes. A theoretical analysis based on linear superposition and phase-sensitive detection explains the absence of observable inter-channel interference for independent microwave sources. Micromagnetic simulations further confirm that the amplitudes and wavevectors of the individual spin-wave modes remain unchanged during co-propagation, demonstrating the absence of interaction over the entire propagation distance. The results provide direct experimental evidence that independent spin-wave channels can coexist in a single waveguide and support the implementation of frequency-division multiplexing in future magnonic computing and microwave signal-processing architectures.",
+    "url": "https://arxiv.org/abs/2607.20102",
+    "authors": [
+      {
+        "name": "Alina-Cristina Bunea"
+      },
+      {
+        "name": "Laurentiu Stoleriu"
+      },
+      {
+        "name": "Giacomo Talmelli"
+      },
+      {
+        "name": "Dan Neculoiu"
+      },
+      {
+        "name": "Christoph Adelmann"
+      },
+      {
+        "name": "Florin Ciubotaru"
+      }
+    ],
+    "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 6,
+    "topics": [
+      "Integrated Optics"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "waveguide",
+        "waveguides"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Alina-Cristina Bunea"
+      },
+      {
+        "name": "Laurentiu Stoleriu"
+      },
+      {
+        "name": "Giacomo Talmelli"
+      },
+      {
+        "name": "Dan Neculoiu"
+      },
+      {
+        "name": "Christoph Adelmann"
+      },
+      {
+        "name": "Florin Ciubotaru"
+      }
+    ],
+    "summaries": {
+      "en": "We experimentally demonstrate spin-wave frequency-division multiplexing in a CoFeB waveguide, showing that independent microwave signals with different frequencies propagate simultaneously without interference.",
+      "zh": "我们在CoFeB波导中实验演示了自旋波频分复用，证明了不同频率的独立微波信号可同时传播而无干扰。",
+      "ja": "CoFeB導波路においてスピン波の周波数分割多重を実験的に実証し、異なる周波数の独立したマイクロ波信号が干渉なしに同時伝搬することを示した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20240",
+    "category": "cond-mat",
+    "title": "Role of Resonant $\\mathbf{k}$-Points in the Transient Optical Response of Pumped Germanium",
+    "abstract": "Pump-induced transient optical properties combine contributions from electronic states throughout the Brillouin zone, but the relative relevance of off-resonant and l-photon resonant crystal momenta has remained unexplored. We address this issue in pumped germanium by resolving the transient absorptive response into momentum-space classes defined by the presence or absence of 1-, 2-, and 3-photon resonances with respect to the pump. Using the Dynamical Projective Operatorial Approach together with the related generalized linear response theory, we compute the differential imaginary part of the dielectric function and evaluate the contributions of each resonance class. Resonant regions account for nearly the entire optical response, whereas points outside the identified resonance sets contribute only negligibly. Nevertheless, the 2-photon-resonant set, although containing more than 98% of the residual (post-pump) excitation population, does not reproduce the full transient spectrum. Conversely, resonance classes with very small residual populations generate non-negligible contributions to the transient optical properties. This mismatch shows that the transient optical weight is not determined solely by the real-charge dynamics (which results in post-pulse residual excitation population) and is consistent with substantial virtual pump-induced contributions, whose dominant optical weight nevertheless arises from the resonant regions of momentum space. The class-resolved phase of the dominant 2$\\omega_{\\mathrm{pu}}$ oscillations further shows that, whenever a class contributes appreciably, the phase of its oscillatory component follows that of the corresponding full signal. The resulting decomposition provides a momentum-resolved connection among multi-photon resonances and transient optical observables in a realistic material.",
+    "url": "https://arxiv.org/abs/2607.20240",
+    "authors": [
+      {
+        "name": "Amir Eskandari-asl"
+      },
+      {
+        "name": "Giacomo Inzani"
+      },
+      {
+        "name": "Matteo Lucchini"
+      },
+      {
+        "name": "Adolfo Avella"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci) ; Other Condensed Matter (cond-mat.other); Optics (physics.optics)",
+    "author_count": 4,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "dielectric function",
+        "optical properties"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Amir Eskandari-asl"
+      },
+      {
+        "name": "Giacomo Inzani"
+      },
+      {
+        "name": "Matteo Lucchini"
+      },
+      {
+        "name": "Adolfo Avella"
+      }
+    ],
+    "summaries": {
+      "en": "In pumped germanium, the transient optical response is dominated by momentum-space regions with multi-photon resonances, with off-resonant points contributing negligibly.",
+      "zh": "在泵浦锗中，瞬态光学响应由具有多光子共振的动量空间区域主导，非共振点贡献可忽略不计。",
+      "ja": "ポンプ照射されたゲルマニウムでは、過渡光学応答は多光子共鳴を持つ運動量空間領域によって支配され、非共鳴点の寄与は無視できる。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20297",
+    "category": "cond-mat",
+    "title": "Proximity-induced charge transfer, strain and magnetic exchange in graphene/CrSBr heterostructure",
+    "abstract": "Stacking van der Waals materials provides a powerful route to engineer emergent electronic and magnetic behaviors through proximity-driven interactions. The graphene/CrSBr heterostructure has emerged as a compelling platform in this frontier, exhibiting exotic macroscopic responses-- including uniaxial surface-plasmon-polariton propagation and an unconventional quantum Hall effect-- indicative of strong interfacial electronic and magnetic coupling. However, a microscopic electronic landscape governing these phenomena has remained elusive. Here, we provide a comprehensive spectroscopic characterization of the graphene/CrSBr interface using a combination of angle-resolved photoemission spectroscopy (ARPES), low-energy electron microscopy (LEEM), and density functional theory. We resolve a massive redistribution of interfacial charge that concurrently hole dopes graphene and populates the quasi-one-dimensional spin-polarized conduction band of CrSBr, resulting insulator-to-metal transition in the interfacial CrSBr layer. Furthermore, electronic structure of CrSBr exhibits strong momentum-dependent renormalization distinct from conventional charge doping, and theoretical modeling supported by Raman spectroscopy points to additional interfacial compressive strain. In addition, ARPES reveals a splitting-like feature in the graphene Dirac cone consistent with spin degeneracy lifting, providing possible evidence of magnetic proximity coupling. These findings provide crucial microscopic insight into the system's optical and transport responses and establish graphene/CrSBr as a versatile platform for charge-transfer control, strain-driven band engineering, magnetic-proximity coupling, and directionally confined excitations for next-generation spintronic and nanophotonic devices.",
+    "url": "https://arxiv.org/abs/2607.20297",
+    "authors": [
+      {
+        "name": "Asish K. Kundu"
+      },
+      {
+        "name": "Anil Rajapitamahuni"
+      },
+      {
+        "name": "Niraj Aryal"
+      },
+      {
+        "name": "Turgut Yilmaz"
+      },
+      {
+        "name": "Margalit L. Feuer"
+      },
+      {
+        "name": "Suji Park"
+      },
+      {
+        "name": "Houk Jang"
+      },
+      {
+        "name": "Abhay Pasupathy"
+      },
+      {
+        "name": "Xavier Roy"
+      },
+      {
+        "name": "Jerzy T. Sadowski"
+      },
+      {
+        "name": "Elio Vescovo"
+      }
+    ],
+    "subjects": "Strongly Correlated Electrons (cond-mat.str-el) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 11,
+    "topics": [
+      "Optical Imaging",
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ],
+      "Optical Materials": [
+        "polariton"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Asish K. Kundu"
+      },
+      {
+        "name": "Anil Rajapitamahuni"
+      },
+      {
+        "name": "Niraj Aryal"
+      },
+      {
+        "name": "Xavier Roy"
+      },
+      {
+        "name": "Jerzy T. Sadowski"
+      },
+      {
+        "name": "Elio Vescovo"
+      }
+    ],
+    "summaries": {
+      "en": "This study reveals that in a graphene/CrSBr heterostructure, interfacial charge transfer and compressive strain induce an insulator-to-metal transition in CrSBr and lift the spin degeneracy in graphene, indicating strong magnetic proximity coupling.",
+      "zh": "这项研究揭示了在石墨烯/CrSBr异质结中，界面电荷转移和压缩应变导致了CrSBr的绝缘体-金属转变，并消除了石墨烯的自旋简并，表明存在强磁近邻耦合。",
+      "ja": "この研究は、グラフェン/CrSBrヘテロ構造において、界面電荷移動と圧縮ひずみがCrSBrの絶縁体-金属転移を引き起こし、グラフェンのスピン縮退を解除し、強い磁気近接結合を示すことを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20335",
+    "category": "cond-mat",
+    "title": "Stacking-tuned superconductivity and competing charge-density-wave states in NbSe$_2$",
+    "abstract": "Layer stacking provides a powerful yet underexplored route for reshaping collective quantum order in van der Waals materials. Here we use high-resolution scanning tunneling microscopy and spectroscopy to show that the stacking sequence alone can qualitatively transform the charge density and superconducting orders in NbSe$_2$, while preserving the same in-plane atomic structure. Comparing the 4Ha and 2H polytypes, we find that, unlike the ubiquitous triangular incommensurate $3Q^\\mathrm{I}$ order of 2H-NbSe$_2$, 4Ha-NbSe$_2$ hosts two competing CDW states with no measurable correlation with local strain: a unidirectional commensurate $1Q^\\mathrm{C}$ phase and a triangular incommensurate $3Q^\\mathrm{I}$ phase, with $Q^\\mathrm{I}=Q^\\mathrm{C}+\\delta$. We introduce a phase-resolved analysis that directly maps the gradient of the CDW phases and reveals vortices bound to the $1Q^\\mathrm{C}$ - $3Q^\\mathrm{I}$ phase boundaries. These vortices accommodate the momentum mismatch $\\delta$ through abrupt $2\\pi$ phase slips, providing a mechanism by which distinct charge orders coexist. Superconductivity is also reshaped by stacking, while both polytypes exhibit multiband pairing.",
+    "url": "https://arxiv.org/abs/2607.20335",
+    "authors": [
+      {
+        "name": "Sandra Sajan"
+      },
+      {
+        "name": "Xinze Yang"
+      },
+      {
+        "name": "Haojie Guo"
+      },
+      {
+        "name": "Tarushi Agarwal"
+      },
+      {
+        "name": "Samuel Mañas-Valero"
+      },
+      {
+        "name": "Carla Boix-Constant"
+      },
+      {
+        "name": "Eugenio Coronado"
+      },
+      {
+        "name": "Fernando de Juan"
+      },
+      {
+        "name": "Eduardo H. da Silva Neto"
+      },
+      {
+        "name": "Ravi P. Singh"
+      },
+      {
+        "name": "Maria N. Gastiasoro"
+      },
+      {
+        "name": "Miguel M. Ugeda"
+      }
+    ],
+    "subjects": "Superconductivity (cond-mat.supr-con)",
+    "author_count": 12,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Sandra Sajan"
+      },
+      {
+        "name": "Xinze Yang"
+      },
+      {
+        "name": "Haojie Guo"
+      },
+      {
+        "name": "Ravi P. Singh"
+      },
+      {
+        "name": "Maria N. Gastiasoro"
+      },
+      {
+        "name": "Miguel M. Ugeda"
+      }
+    ],
+    "summaries": {
+      "en": "Stacking sequence in NbSe2 polytypes tunes the competition between unidirectional commensurate and triangular incommensurate charge-density-wave states, with superconducting properties also affected.",
+      "zh": "在NbSe2多型体中，堆叠序列调控了单向公度与三角非公度电荷密度波态之间的竞争，同时超导性质也受到影响。",
+      "ja": "NbSe2ポリタイプの積層順序は、一方向整合と三角非整合の電荷密度波状態間の競合を調整し、超伝導特性も影響を受ける。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20412",
+    "category": "cond-mat",
+    "title": "Fermionic pairs, from the surface to the bulk",
+    "abstract": "Fermion pairing underlies collective quantum phenomena across widely different forms of matter. In extended systems such as ultracold Fermi gases, pairing is commonly understood through the BCS--BEC crossover, where the pair size evolves from large, overlapping Cooper pairs to tightly bound dimers. In finite systems such as atomic nuclei, superconducting grains and quantum dots, however, the same pairing tendency competes with confinement, shell filling and spatial inhomogeneity, making the microscopic structure of pairs much harder to access. Here, we image pair correlations in a finite, tunable system of few fermionic atoms with single-particle resolution and full counting statistics. We observe that confinement and shell structure re-organize pairing in real space: In the weakly interacting, confinement-dominated regime, closed-shell configurations suppress correlations in the high-density trap center. Pairing is mainly observed toward the low-density surface. Open-shell systems, however, support substantially stronger central pairing. Already for surprisingly small systems, increasing either interaction strength or particle number restores a locally bulk-like Cooper-pair profile in the trap center, whereas the edge retains dimer-like correlations. By resolving where pairs form and how their character changes from localized dimers to overlapping Cooper pairs, our measurements provide a microscopic view of pairing in finite fermionic matter and connect the physics of mesoscopic cold atoms to pairing phenomena in nuclei and superconducting nanostructures.",
+    "url": "https://arxiv.org/abs/2607.20412",
+    "authors": [
+      {
+        "name": "Sandra Brandstetter"
+      },
+      {
+        "name": "Carl Heintze"
+      },
+      {
+        "name": "Fabian Brauneis"
+      },
+      {
+        "name": "Stephanie M. Reimann"
+      },
+      {
+        "name": "Georg Bruun"
+      },
+      {
+        "name": "Maciej Gałka"
+      },
+      {
+        "name": "Selim Jochim"
+      }
+    ],
+    "subjects": "Quantum Gases (cond-mat.quant-gas) ; Nuclear Experiment (nucl-ex); Nuclear Theory (nucl-th); Quantum Physics (quant-ph)",
+    "author_count": 7,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "cold atom",
+        "cold atoms"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Sandra Brandstetter"
+      },
+      {
+        "name": "Carl Heintze"
+      },
+      {
+        "name": "Fabian Brauneis"
+      },
+      {
+        "name": "Georg Bruun"
+      },
+      {
+        "name": "Maciej Gałka"
+      },
+      {
+        "name": "Selim Jochim"
+      }
+    ],
+    "summaries": {
+      "en": "This study images pair correlations in a finite, tunable system of few fermionic atoms with single-particle resolution, revealing that confinement and shell structure organize pairing in real space, transitioning from surface pairing in closed-shell systems to enhanced central pairing in open-shell systems and ultimately to bulk-like Cooper pairs with increasing interactions or particle number.",
+      "zh": "本研究通过单粒子分辨率和全计数统计，对有限、可调谐的少数费米子原子系统中的配对关联进行成像，揭示了约束和壳层结构在实空间中组织配对，从闭壳系统中的表面配对转变为开壳系统中增强的中心配对，并随着相互作用或粒子数增加最终在中心形成类似体材料的库珀对。",
+      "ja": "本研究では、単一粒子分解能と完全計数統計を用いて、有限で調整可能な少数フェルミオン原子系における対相関を画像化し、閉殻系では低密度表面での対形成が優勢であるのに対し、開殻系では中心での強い対形成が起こり、相互作用や粒子数の増加に伴い中心部でバルク的なクーパー対が形成されることを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19542",
+    "category": "physics",
+    "title": "Synthesizing superoscillations with just two frequencies",
+    "abstract": "Superoscillations, band-limited signals that locally oscillate faster than their highest Fourier component, have recently enabled superspectroscopy and super-sensing. Previous experiments [Phys. Rev. Lett. 131, 153803 (2023), this https URL and APL Photonics 10, 086107 (2025), this https URL ] relied on combining four quasi-sinusoidal harmonics to generate temporal superoscillations. Here, we show that just two harmonics are sufficient to produce superoscillations of comparable quality, as quantified by the local frequency. By reanalyzing prior experimental data with two harmonics (0.5 and 0.6 THz) and performing new experiments with 0.9 and 1 THz harmonics, we demonstrate a twofold enhancement in local frequency relative to the highest frequency component -- matching the enhancement previously achieved with four harmonics. We provide a simple analytical explanation for the bichromatic superoscillations based on near-complete destructive interference, and identify an optimal frequency separation of approximately 10% that balances the superoscillatory frequency enhancement against signal amplitude. This simplification substantially lowers the experimental barrier to implementing superoscillation-based technology.",
+    "url": "https://arxiv.org/abs/2607.19542",
+    "authors": [
+      {
+        "name": "Denys I. Bondar"
+      },
+      {
+        "name": "Diyar Talbayev"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Quantum Physics (quant-ph)",
+    "author_count": 2,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optics",
+        "photonic",
+        "photonics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Denys I. Bondar"
+      },
+      {
+        "name": "Diyar Talbayev"
+      }
+    ],
+    "summaries": {
+      "en": "This paper demonstrates that superoscillations can be generated using just two harmonics, achieving a twofold enhancement in local frequency comparable to previous four-harmonic setups, with an optimal frequency separation of about 10%.",
+      "zh": "本文证明仅使用两个谐波即可产生超振荡，其局部频率增强倍数与先前使用四个谐波的设置相当，最佳频率分离约为10%。",
+      "ja": "本論文は、わずか2つの高調波を用いて超振動を生成できることを示し、従来の4高調波設定と同等の2倍の局所周波数向上を達成し、最適な周波数分離は約10％であることを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19571",
+    "category": "physics",
+    "title": "Enantioselective optical trapping and characterization of all dielectric disorder-enabled chiral particles",
+    "abstract": "We trap submicroscopic silica spheres coated with randomly distributed titanium dioxide nanoparticles in optical tweezers with Laguerre-Gaussian modes and observe orbital dynamics that differ from those of achiral silica spheres. We show that the disordered nanoparticle coating generates an effective chiral geometry, giving rise to enhanced enantioselective chiral optical forces and a measurable modification of the orbital period. A theoretical model based on the Mie-Debye formalism, including optical aberrations, not only quantitatively explains the experimental results but also allows to characterize the Pasteur parameter quantifying the chiroptical response of individual composite particles. These findings constitute direct experimental evidence of chiral optical forces exerted by structured light beams on individual chiral particles and identify disorder-enabled, all-dielectric particles as a versatile material platform to tailor chiral optical forces at the nanoscale.",
+    "url": "https://arxiv.org/abs/2607.19571",
+    "authors": [
+      {
+        "name": "Guilherme T. Moura"
+      },
+      {
+        "name": "Tanja Schoger"
+      },
+      {
+        "name": "Kainã G. Diniz"
+      },
+      {
+        "name": "Marcel A. B. Morte"
+      },
+      {
+        "name": "Diney S. Ether Jr"
+      },
+      {
+        "name": "Leonardo de S. Menezes"
+      },
+      {
+        "name": "Yicui Kang"
+      },
+      {
+        "name": "Emiliano Cortés"
+      },
+      {
+        "name": "Cyriaque Genet"
+      },
+      {
+        "name": "Nathan B. Viana"
+      },
+      {
+        "name": "Felipe A. Pinheiro"
+      },
+      {
+        "name": "Paulo A. Maia Neto"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 12,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "optical tweezer",
+        "optical tweezers"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Guilherme T. Moura"
+      },
+      {
+        "name": "Tanja Schoger"
+      },
+      {
+        "name": "Kainã G. Diniz"
+      },
+      {
+        "name": "Nathan B. Viana"
+      },
+      {
+        "name": "Felipe A. Pinheiro"
+      },
+      {
+        "name": "Paulo A. Maia Neto"
+      }
+    ],
+    "summaries": {
+      "en": "We experimentally demonstrate that disordered dielectric nanoparticles on silica spheres generate effective chirality, enabling enantioselective trapping and characterization via Laguerre-Gaussian optical tweezers.",
+      "zh": "我们实验证明，二氧化硅球上无序的介电纳米颗粒产生有效手性，使得通过拉盖尔-高斯光镊进行对映选择性捕获和表征成为可能。",
+      "ja": "二酸化シリカ球上の無秩序な誘電体ナノ粒子が効果的なキラリティを生み出し、ラゲール・ガウシアン光ピンセットを用いた鏡像選択的捕捉と特性評価を可能にすることを実験的に示しました。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19614",
+    "category": "physics",
+    "title": "Self-stabilization of microcombs",
+    "abstract": "Optical frequency combs form phase-locked spectral lines arranged on an equidistant grid fully defined by two degrees of freedom, i.e., the repetition rate and frequency offset. Stabilizing these parameters to a common frequency reference results in a coherent frequency ruler, central for modern precision metrology. However, extending this level of stability to chip-scale microcombs remains an outstanding challenge. Here, we demonstrate a self-stabilizing mechanism based on self-injection locking of a selected comb line via an external feedback loop. This process establishes a second anchor point in addition to the pump, thereby constraining the comb's frequency noise dynamics. We show that, with an appropriate choice between pump frequency noise and feedback strength, collective fluctuations of the repetition rate are strongly suppressed. The result is a microcomb exhibiting ultralow phase noise and dramatically reduced timing jitter. In a 100 GHz silicon nitride soliton microcomb, we achieve an unprecedented combination of high-conversion efficiency, sub-Hertz intrinsic linewidth across the entire C band, and an integrated timing jitter of 1 fs. This approach enables chip-scale microcombs with remarkable noise performance and fs-level pulse stability, surpassing conventional noise limits and opening new avenues for precision metrology at the chip scale.",
+    "url": "https://arxiv.org/abs/2607.19614",
+    "authors": [
+      {
+        "name": "Krishna Twayana"
+      },
+      {
+        "name": "Fuchuan Lei"
+      },
+      {
+        "name": "Junyong Choi"
+      },
+      {
+        "name": "Jungwon Kim"
+      },
+      {
+        "name": "Victor Torres-Company"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 5,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "frequency comb",
+        "frequency combs",
+        "microcomb",
+        "microcombs"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Krishna Twayana"
+      },
+      {
+        "name": "Fuchuan Lei"
+      },
+      {
+        "name": "Junyong Choi"
+      },
+      {
+        "name": "Jungwon Kim"
+      },
+      {
+        "name": "Victor Torres-Company"
+      }
+    ],
+    "summaries": {
+      "en": "Self-injection locking of a selected comb line via an external feedback loop stabilizes microcombs, suppressing noise and achieving sub-Hertz linewidth and femtosecond timing jitter.",
+      "zh": "通过外部反馈回路对选定的梳齿线进行自注入锁定，实现了微梳的稳定化，抑制了噪声，并获得了亚赫兹线宽和飞秒级定时抖动。",
+      "ja": "外部フィードバックループを介した選択されたコム線の自己注入同期により、マイクロコムの安定化を実現し、ノイズを抑制し、サブヘルツ線幅とフェムト秒タイミングジッタを達成しました。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19630",
+    "category": "physics",
+    "title": "Controllable localization and manipulation of optical hollow traps by means of optical-vortex diffraction",
+    "abstract": "An optical vortex (OV) is coupled with the local intensity zero and is thus a field configuration suitable for \"hollow\" optical traps and optical tweezers. When an incident circular OV beam experiences diffraction at a rectilinear screen edge (SE), and the conditions of weak diffraction perturbation (the SE is far enough from the beam axis) are fulfilled, the main consequence is the OV-core displacement from its initial (axial) position. Based on the model of incident Laguerre-Gaussian (LG) beam, we investigate analytically and numerically the ways of controlling the OV-core position in the diffracted-field cross section by means of changing the SE position with respect to the incident-beam axis. The results show that regulating the SE position with ~1 mcm accuracy (which is available for existing mechanical tools), controllable OV-core motion with a sub-nanometer accuracy can be realized. Possible modifications of this motion depending on the incident beam topological charge, wavefront curvature, SE properties (semitransparent screen, phase-step screen) and the distance between the diffraction plane and the observation plane are analyzed. The conditions most favorable for the micro-object trapping and manipulation are specified and discussed.",
+    "url": "https://arxiv.org/abs/2607.19630",
+    "authors": [
+      {
+        "name": "O.V. Angelsky"
+      },
+      {
+        "name": "A.Y. Bekshaev"
+      },
+      {
+        "name": "C.Y. Zenkova"
+      },
+      {
+        "name": "I.I. Mokhun"
+      },
+      {
+        "name": "X. Zhang"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 5,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "optical tweezer",
+        "optical tweezers"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "O.V. Angelsky"
+      },
+      {
+        "name": "A.Y. Bekshaev"
+      },
+      {
+        "name": "C.Y. Zenkova"
+      },
+      {
+        "name": "I.I. Mokhun"
+      },
+      {
+        "name": "X. Zhang"
+      }
+    ],
+    "summaries": {
+      "en": "Optical vortex displacement in diffraction at a screen edge enables sub-nanometer-accurate control of hollow trap positions for micro-object manipulation.",
+      "zh": "通过屏幕边缘衍射产生的光学涡旋位移，可实现亚纳米精度的空心陷阱位置控制，用于微物体操纵。",
+      "ja": "スクリーンエッジでの回折による光渦の変位を利用して、サブナノメートル精度で中空トラップの位置を制御し、微小物体の操作を可能にする。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19652",
+    "category": "physics",
+    "title": "An integrated super resolution THz 3D imaging system based on a linear nonlocal achromatic freeform Bessel beam lens and high power oscillator radiator array",
+    "abstract": "High performance terahertz (THz) 3D imaging is critical for non-destructive evaluation. However, conventional architectures are fundamentally limited by severe chromatic aberrations, modest spatial resolution, restricted depths of focus (DOF), and the bulky nature of commercial transceivers. While metasurfaces offer a compact alternative, achieving broadband achromatic super-resolution with an extended DOF remains a formidable challenge. Here, we present a highly integrated 3D THz imaging platform that synergizes a 3D printed nonlocal freeform Bessel-beam lens with a high power, 65nm CMOS oscillator radiator array. Harnessing nonlocal interactions within the lens, we generate an achromatic super resolution Bessel beam (0.3 to 1 THz) with a subdiffraction full width at half maximum (FWHM) of 0.65{\\lambda} and a robust 4.7-mm DOF. Crucially, the system overcomes conventional sidelobe limitations, enabling high-fidelity 2D imaging of intricate sub-millimeter targets (e.g., USAF 1951 charts and QR codes) alongside robust 3D volumetric imaging through highly scattering media, such as printed circuit boards. By converging standard CMOS technology with additive manufacturing, this work establishes a versatile, cost-effective paradigm for next-generation integrated THz photonics",
+    "url": "https://arxiv.org/abs/2607.19652",
+    "authors": [
+      {
+        "name": "Jin Chen"
+      },
+      {
+        "name": "Liang Gao"
+      },
+      {
+        "name": "Hao Guo"
+      },
+      {
+        "name": "Zhi Chao Chen"
+      },
+      {
+        "name": "Kang Jie Lin"
+      },
+      {
+        "name": "Kam Man Shum"
+      },
+      {
+        "name": "Ka Fai Chan"
+      },
+      {
+        "name": "Chi Hou Chan"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 8,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "metasurface",
+        "metasurfaces"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Jin Chen"
+      },
+      {
+        "name": "Liang Gao"
+      },
+      {
+        "name": "Hao Guo"
+      },
+      {
+        "name": "Kam Man Shum"
+      },
+      {
+        "name": "Ka Fai Chan"
+      },
+      {
+        "name": "Chi Hou Chan"
+      }
+    ],
+    "summaries": {
+      "en": "This work presents a highly integrated 3D THz imaging platform combining a 3D printed freeform Bessel-beam lens with a high-power CMOS oscillator array, achieving achromatic super-resolution and extended depth of focus for non-destructive evaluation.",
+      "zh": "本工作展示了一种高度集成的三维太赫兹成像平台，该平台结合了3D打印的自由形态贝塞尔光束透镜和高功率CMOS振荡器阵列，实现了消色差超分辨率和扩展的焦深，用于无损检测。",
+      "ja": "本研究は、3Dプリントされた自由形状ベッセルビームレンズと高出力CMOS発振器アレイを組み合わせた高度に統合された3次元テラヘルツイメージングプラットフォームを提示し、非破壊評価のための無収差超解像と拡張焦点深度を実現する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19819",
+    "category": "physics",
+    "title": "Super-Resonance: Interference-Driven Suppression of Radiative Decay Across Wave Physics",
+    "abstract": "Super-resonance has been coined independently for collective modes of acoustic cavity arrays (Tolstoy), extreme high-$Q$ states of dielectric resonators in photonics, and magnon-polaron bound states in magnonics, and is now applied interchangeably to physically distinct phenomena. We organise this review around the one usage admitting a precise, field-agnostic definition: a mode whose radiative linewidth is driven toward zero by destructive interference among its radiation channels, $\\gamma_{\\rm rad}/\\gamma_{\\rm rad}^{\\rm cl}\\to0$, while the bare single-channel coupling remains large. The canonical realisation is the Friedrich-Wintgen scenario of two modes sharing a continuum. The same non-Hermitian eigenvalue structure recurs in Tolstoy's acoustic arrays, photonic bound states in the continuum and quasi-BIC supercavity modes, anapoles, dark modes of coherent perfect absorbers, parity-time-symmetric devices near exceptional points, magnonic dark modes, and topological edge modes. We survey these realisations field by field and distil transferable design rules and figures of merit. We then disambiguate super-resonance from two families sharing the \"super-\" prefix: coherent enhancement, in which coupling to the continuum is collectively increased rather than suppressed (Dicke super-radiance, superscattering, whispering-gallery modes); and integer-commensurability locking (mean-motion, wave-particle, and Floquet resonances). Amplification, as in black-hole super-radiance, is likewise distinguished.",
+    "url": "https://arxiv.org/abs/2607.19819",
+    "authors": [
+      {
+        "name": "Igor V. Minin"
+      },
+      {
+        "name": "Oleg V. Minin"
+      },
+      {
+        "name": "Ilia L. Rasskazov"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 3,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optics",
+        "photonic",
+        "photonics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Igor V. Minin"
+      },
+      {
+        "name": "Oleg V. Minin"
+      },
+      {
+        "name": "Ilia L. Rasskazov"
+      }
+    ],
+    "summaries": {
+      "en": "Super-resonance is a mode where radiative decay is suppressed by destructive interference among radiation channels, with the canonical example being the Friedrich-Wintgen scenario of two modes sharing a continuum.",
+      "zh": "超共振是一种通过辐射通道间的相消干涉抑制辐射衰减的模式，其典型实例是两个模式共享一个连续谱的弗里德里希-温特根场景。",
+      "ja": "超共振とは、放射チャネル間の破壊的干渉により放射減衰が抑制されるモードであり、その典型的な例は、連続体を共有する二つのモードによるフリードリッヒ-ウィントゲンシナリオである。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19868",
+    "category": "physics",
+    "title": "Band Engineering of Exciton Polaritons in Resonant Polaritonic Metasurfaces",
+    "abstract": "Polaritonic metasurfaces provide a versatile platform for engineering hybrid light-matter states through the interplay of optical resonances and excitonic excitations. Yet, predictive models often remain phenomenological and rely on coupled-mode equations. Here, we develop an effective Hamiltonian framework for exciton polaritons in resonant polaritonic metasurfaces, derived from a semiclassical single-pole description of excitonic polarization and a Green's-function description of guided-mode resonances. The resulting non-Hermitian Hamiltonian rigorously incorporates resonant photonic harmonics, multiple excitonic degrees of freedom, and radiative losses. The model reveals selection rules governing photonic-excitonic coupling classified by orbital multipole index and polarization, and shows that the minimal number of excitonic degrees of freedom equals the number of relevant photonic modes. We apply the framework to a bulk van der Waals WS$_2$ metasurface patterned into a hexagonal lattice of triangular holes and uncover a new geometry-controlled topological transition driven by dipole-quadrupole band inversion, distinct from the conventional breathing-honeycomb-lattice transition. Full-wave simulations confirm the predicted topological phase diagram and the emergence of photonic and polaritonic edge states at a topological interface. Our results establish a theoretical multimode framework for geometry-controlled bandstructure engineering in polaritonic metasurfaces, with applications in topological, chiral, and quantum integrated photonics.",
+    "url": "https://arxiv.org/abs/2607.19868",
+    "authors": [
+      {
+        "name": "Polina Pantiukhina"
+      },
+      {
+        "name": "Daria Smirnova"
+      },
+      {
+        "name": "Kirill Koshelev"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 3,
+    "topics": [
+      "Integrated Optics",
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "integrated photonic",
+        "integrated photonics"
+      ],
+      "Optical Materials": [
+        "metasurface",
+        "metasurfaces",
+        "polariton",
+        "polaritons"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Polina Pantiukhina"
+      },
+      {
+        "name": "Daria Smirnova"
+      },
+      {
+        "name": "Kirill Koshelev"
+      }
+    ],
+    "summaries": {
+      "en": "This paper develops an effective Hamiltonian framework for exciton polaritons in resonant polaritonic metasurfaces, revealing selection rules and a geometry-controlled topological transition from dipole-quadrupole band inversion in WS2 metasurfaces.",
+      "zh": "本文为共振极化激元超表面中的激子极化激元建立了一个有效的哈密顿量框架，揭示了选择规则和由偶极-四极能带反转驱动的几何控制拓扑相变。",
+      "ja": "本論文は、共振性ポラリトニックメタ表面における励起子ポラリトンのための有効ハミルトニアンフレームワークを開発し、選択則とWS₂メタ表面における双極子-四極子バンド反転による幾何学的制御されたトポロジカル転移を明らかにする。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20000",
+    "category": "physics",
+    "title": "Dirac-vortex modes beyond the continuum limit",
+    "abstract": "Dirac-vortex modes (DVMs) in Kekule-modulated lattices provide a topological route to wave confinement and are commonly described by the continuum Jackiw-Rossi model, in which the initial phase acts as a redundant gauge degree of freedom and does not affect observables of the mode. Here we show that this picture breaks down in discrete lattices when the complex mass texture that induces the DVMs no longer satisfies the slowly varying envelope approximation. In this regime, lattice discreteness turns the initial phase into a physically observable parameter that shifts the DVM center. By further introducing a sublattice-antisymmetric perturbation, we convert this phase-dependent center motion into a continuous spectral response of the DVM, enabling its frequency tuning across nearly the entire topological bandgap. Our simulation and experimental results agree well with a revised continuum model accounting for the mode-center motion. Within this perturbative framework, the model shows that the frequency shift exhibits a sinusoidal-like dependence on the initial phase. These findings reveal initial phase-sensitivity of the DVMs realized in lattices, an important and basic feature absent from the ideal continuum Jackiw-Rossi model, and demonstrate initial phase engineering as a potential pathway towards reconfigurable photonic devices.",
+    "url": "https://arxiv.org/abs/2607.20000",
+    "authors": [
+      {
+        "name": "Jiayu Fan"
+      },
+      {
+        "name": "Jiusi Yu"
+      },
+      {
+        "name": "Aoning Luo"
+      },
+      {
+        "name": "Yiyi Yao"
+      },
+      {
+        "name": "Shijie Kang"
+      },
+      {
+        "name": "Xiexuan Zhang"
+      },
+      {
+        "name": "Haitao Li"
+      },
+      {
+        "name": "Biye Xie"
+      },
+      {
+        "name": "Xiao-Dong Chen"
+      },
+      {
+        "name": "Xiaoxiao Wu"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Applied Physics (physics.app-ph)",
+    "author_count": 10,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optics",
+        "photonic"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Jiayu Fan"
+      },
+      {
+        "name": "Jiusi Yu"
+      },
+      {
+        "name": "Aoning Luo"
+      },
+      {
+        "name": "Biye Xie"
+      },
+      {
+        "name": "Xiao-Dong Chen"
+      },
+      {
+        "name": "Xiaoxiao Wu"
+      }
+    ],
+    "summaries": {
+      "en": "In discrete Kekule-modulated lattices, the initial phase of the mass texture becomes a physically observable parameter that shifts the Dirac-vortex mode center, enabling frequency tuning across the topological bandgap under sublattice-antisymmetric perturbation.",
+      "zh": "在离散凯库勒调制晶格中，质量纹理的初始相位成为可物理观测的参数，会移动狄拉克涡旋模式中心，并在子晶格反对称扰动下实现跨越拓扑带隙的频率调谐。",
+      "ja": "離散ケクレ変調格子では、質量テクスチャの初期位相が物理的に観測可能なパラメータとなり、ディラック渦モードの中心をシフトさせ、副格子反対称摂動下でトポロジカルバンドギャップ全体にわたる周波数同調を可能にする。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20017",
+    "category": "physics",
+    "title": "Investigating aqueous mineral interfaces using sum frequency generation spectroscopy",
+    "abstract": "Sum frequency generation spectroscopy can be utilized to address the challenge of studying solid-liquid interfaces under ambient pressure and with macroscopic amounts of liquid, while still retrieving molecular level information. By utilizing a non-linear optical process, this method allows to selectively measure vibrations of interfacial species. Within this chapter sum frequency generation spectroscopy is first briefly introduced and then comprehensively evaluated as an investigative tool for solid-liquid interfaces, with mineral-water interfaces as model system. Additionally, it is explained how the actual probing depth of this method depends on both the experimental setup and the properties of the investigated system, such as surface charges.",
+    "url": "https://arxiv.org/abs/2607.20017",
+    "authors": [
+      {
+        "name": "Moritz Zelenka"
+      },
+      {
+        "name": "Ellen H.G. Backus"
+      }
+    ],
+    "subjects": "Chemical Physics (physics.chem-ph)",
+    "author_count": 2,
+    "topics": [
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "sum frequency"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Moritz Zelenka"
+      },
+      {
+        "name": "Ellen H.G. Backus"
+      }
+    ],
+    "summaries": {
+      "en": "Sum frequency generation spectroscopy, a nonlinear optical technique, selectively measures interfacial vibrations to study mineral-water interfaces at the molecular level.",
+      "zh": "和频振动光谱作为一种非线性光学技术，能够选择性地测量界面振动，从而在分子水平上研究矿物-水界面。",
+      "ja": "和周波発生分光法は非線形光学技術であり、界面の振動を選択的に測定することで、分子レベルでの鉱物-水界面の研究を可能にする。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20053",
+    "category": "physics",
+    "title": "Three-dimensional field of view of remote focusing microscopy system",
+    "abstract": "Remote focusing (RF) microscopy is well known for its ability to sharply image a wide range of planes away from the working distance of the microscope objective. However, the exact nature of the three-dimensional (3D) field of view (FOV) is not known. In this letter we report an optical ray tracing based FOV study of a remote focusing microscopy system. We numerically simulate the Strehl ratio of two configurations of the remote focusing systems, and use this for the evaluation of the 3D FOV. The FOV tapers down as the sample plane moves away from the working distance. To cross-verify our simulation results, we experimentally measured the FOV at various offset planes. This rate of taper depends on the numerical aperture. We also discuss the advantages and limitations of remote focusing in microscopy.",
+    "url": "https://arxiv.org/abs/2607.20053",
+    "authors": [
+      {
+        "name": "Dinesh Saini"
+      },
+      {
+        "name": "Manish Kumar"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 2,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Dinesh Saini"
+      },
+      {
+        "name": "Manish Kumar"
+      }
+    ],
+    "summaries": {
+      "en": "This study uses ray tracing to analyze the three-dimensional field of view of remote focusing microscopy, finding that it tapers as the sample plane moves away from the working distance and that the taper rate depends on numerical aperture.",
+      "zh": "本研究利用射线追踪分析了远程聚焦显微镜的三维视场，发现视场随着样品平面偏离工作距离而逐渐缩小，且缩小速率取决于数值孔径。",
+      "ja": "この研究では、リモートフォーカス顕微鏡の三次元視野を光線追跡で分析し、試料面が作動距離から離れるにつれて視野が先細りになり、その先細り率は開口数に依存することを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20138",
+    "category": "physics",
+    "title": "Conjugate Gradient Unrolled Network with PSF Conditioning for Non-Diagonal Data Fidelity in CASSI Reconstruction",
+    "abstract": "Deep unfolding methods achieve state-of-the-art performance in coded aperture snapshot spectral imaging (CASSI) reconstruction but typically rely on closed-form data-fidelity updates that assume an ideal optical system. In practical CASSI systems, the field-dependent and wavelength-dependent point spread function (PSF) introduces convolutional coupling that breaks the diagonal structure of the normal equation, rendering closed-form updates inapplicable. We propose a deep unfolding framework that addresses this fundamental algorithmic challenge through three contributions: (1)~a $K$-step conjugate gradient (CG) unrolling that explicitly solves the non-diagonal normal equation under PSF-inclusive forward operators; (2)~a learned gradient refinement module with wavelength-adaptive step sizes generated from a per-wavelength PSF embedding; and (3)~a PSF-conditioned penalty estimator that adapts the ADMM regularization strength to the optical degradation severity. A Monte Carlo PSF training strategy further improves robustness to manufacturing-induced PSF variations. Our method achieves 30.53~dB on the KAIST dataset, +2.73~dB over the DPU baseline (1.27M) using a comparable number of parameters (1.42M), and +1.70~dB over a larger baseline (DPU-B+, 2.12M) using 33\\% fewer parameters.",
+    "url": "https://arxiv.org/abs/2607.20138",
+    "authors": [
+      {
+        "name": "Xiang Li"
+      },
+      {
+        "name": "Qiuyu Yue"
+      },
+      {
+        "name": "Yang Zhang"
+      },
+      {
+        "name": "Zhenrong Zheng"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 4,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Xiang Li"
+      },
+      {
+        "name": "Qiuyu Yue"
+      },
+      {
+        "name": "Yang Zhang"
+      },
+      {
+        "name": "Zhenrong Zheng"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes a deep unfolding framework for CASSI reconstruction that uses conjugate gradient unrolling and PSF conditioning to handle non-diagonal data fidelity caused by field- and wavelength-dependent point spread functions.",
+      "zh": "本文提出了一种用于CASSI重建的深度展开框架，通过共轭梯度展开和PSF条件化处理由场相关和波长相关点扩散函数引起的非对角数据保真度问题。",
+      "ja": "本論文では、CASSI再構成のための深層展開フレームワークを提案し、共役勾配法の展開とPSF条件付けにより、視野依存および波長依存の点像分布関数に起因する非対角データ忠実性を処理する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20167",
+    "category": "physics",
+    "title": "Two Complementary Approaches to Determine the Effective Index of Dielectric Ring Resonators",
+    "abstract": "Open-source finite-element frameworks for modal analysis of dielectric ring resonators are presented based on two complementary approaches. The first computes resonant wavelengths for discrete azimuthal mode numbers and obtains the effective index at a target wavelength by interpolation; the second solves directly for the azimuthal mode number at a prescribed wavelength via a quadratic eigenvalue formulation. Both approaches are validated against a commercial electromagnetic mode solver and yield nearly identical effective indices and dispersion curves. The fixed-mode-number approach requires slightly longer computation time but uses half as much memory, making it the preferred choice for memory-limited computers.",
+    "url": "https://arxiv.org/abs/2607.20167",
+    "authors": [
+      {
+        "name": "Ergun Simsek"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 1,
+    "topics": [
+      "Integrated Optics"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "ring resonator",
+        "ring resonators"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Ergun Simsek"
+      }
+    ],
+    "summaries": {
+      "en": "Two open-source finite-element approaches for determining the effective index of dielectric ring resonators are validated against commercial solvers, showing nearly identical results with trade-offs in computation time and memory usage.",
+      "zh": "两种基于开源有限元的方法用于确定介质环形谐振器的有效折射率，经验证与商业求解器结果几乎一致，但在计算时间和内存使用上各有优劣。",
+      "ja": "誘電体リング共振器の実効屈折率を決定するための二つのオープンソース有限要素法が商用ソルバーに対して検証され、ほぼ同一の結果を示し、計算時間とメモリ使用量にトレードオフがある。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20193",
+    "category": "physics",
+    "title": "Parameter mapping and physical reconstruction of Akhmediev breathers at the interface of two fluid half-spaces",
+    "abstract": "A methodology combining parameter mapping and physical reconstruction of Akhmediev breathers at the interface between two fluid half-spaces is developed on the basis of the Nayfeh model. Parameter maps are constructed to characterize the breather modulation period, the modulational instability growth rate, and the relative contribution of the bound second harmonic to the reconstructed interfacial profile. Their combined analysis provides a physically meaningful classification of breather regimes beyond the conventional focusing condition of the nonlinear Schrödinger equation. Reconstruction of the physical interfacial profile establishes a quantitative relation between nonlinear wave deformation and the contribution of the bound second harmonic, making it possible to identify the range of applicability of the weakly nonlinear approximation. Representative regimes from different modulational instability regions are analyzed to demonstrate the influence of resonance and focusing boundaries on breather characteristics and interfacial wave profiles. The proposed approach provides a direct link between the mathematical description of Akhmediev breathers and their physical interpretation and can be extended to other localized solutions of the nonlinear Schrödinger equation and to a broad class of stratified hydrodynamic systems.",
+    "url": "https://arxiv.org/abs/2607.20193",
+    "authors": [
+      {
+        "name": "Olga Avramenko"
+      },
+      {
+        "name": "Volodymyr Naradovyi"
+      }
+    ],
+    "subjects": "Fluid Dynamics (physics.flu-dyn)",
+    "author_count": 2,
+    "topics": [
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "second harmonic"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Olga Avramenko"
+      },
+      {
+        "name": "Volodymyr Naradovyi"
+      }
+    ],
+    "summaries": {
+      "en": "This study develops a method to map and reconstruct Akhmediev breathers at a fluid interface using the Nayfeh model, linking nonlinear wave deformation to the bound second harmonic and classifying breather regimes beyond the focusing condition of the nonlinear Schrödinger equation.",
+      "zh": "本研究基于Nayfeh模型开发了一种在两种流体界面处映射和重构Akhmediev呼吸子的方法，将非线性波形畸变与束缚二次谐波联系起来，并在非线性薛定谔方程的聚焦条件之外对呼吸子态进行了分类。",
+      "ja": "本研究は、Nayfehモデルに基づいて2つの流体半空間界面におけるAkhmedievブリーザのパラメータマッピングと物理的再構成を行う手法を開発し、非線形波動変形と束縛第二次高調波の寄与を結びつけ、非線形シュレーディンガー方程式の集束条件を超えたブリーザ領域の分類を可能にした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20282",
+    "category": "physics",
+    "title": "Fabrication status and expected performance of the inner-core X-ray optic for BabyIAXO",
+    "abstract": "BabyIAXO, a pathfinder for the International Axion Observatory (IAXO), is designed to demonstrate all key technologies at scale while achieving an improvement in sensitivity over the recent CERN Axion Solar Telescope (CAST) experiment by approximately a factor of five. Such improvement is enabled by the X-ray optics, which allow for maintaining a high signal-to-noise ratio at the detector despite a cross-sectional area of the magnetic bore being over 250 times larger than that of CAST. The optic employs a hybrid design consisting of co-aligned inner core and outer corona optics that share a common optical axis and vacuum vessel but differ in focal length and manufacturing approach. Both are segmented glass optics, with the inner core fabricated from thermally slumped borosilicate glass and the outer corona from cold-slumped Corning Willow glass. To fabricate the inner-core optic, leveraging techniques developed for NuSTAR and HEFT optics, we reoptimized and streamlined the thermal-forming procedure. The quality of free-standing glass substrates was characterized by laser metrology, X-ray reflectometry, and atomic force microscopy. We developed a cutting technique that produces smooth edges at the micron scale. We used flat stacks of glass-epoxy-graphite layers to evaluate the performance of the epoxy bondline. The optic is expected to achieve an on-axis point spread function (PSF) with a half-power diameter (HPD) of < 90\", enhancing the signal-to-noise ratio by more than 55 times.",
+    "url": "https://arxiv.org/abs/2607.20282",
+    "authors": [
+      {
+        "name": "Jooyun Woo"
+      },
+      {
+        "name": "Yue Yu"
+      },
+      {
+        "name": "Ipek Altunyurt"
+      },
+      {
+        "name": "Todd Decker"
+      },
+      {
+        "name": "Desiree Della Monica Ferreira"
+      },
+      {
+        "name": "Peter Lindquist Henriksen"
+      },
+      {
+        "name": "Eftychia Kotsiou"
+      },
+      {
+        "name": "Sonny Massahi"
+      },
+      {
+        "name": "Kerstin Perez"
+      },
+      {
+        "name": "Anacorina Romero"
+      },
+      {
+        "name": "Jaime Ruz"
+      },
+      {
+        "name": "Vyshnavi Sabbi"
+      },
+      {
+        "name": "Marcela Stern"
+      },
+      {
+        "name": "Julia Katharina Vogel"
+      }
+    ],
+    "subjects": "Instrumentation and Detectors (physics.ins-det) ; High Energy Astrophysical Phenomena (astro-ph.HE); Instrumentation and Methods for Astrophysics (astro-ph.IM); High Energy Physics - Experiment (hep-ex); High Energy Physics - Phenomenology (hep-ph)",
+    "author_count": 14,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Jooyun Woo"
+      },
+      {
+        "name": "Yue Yu"
+      },
+      {
+        "name": "Ipek Altunyurt"
+      },
+      {
+        "name": "Vyshnavi Sabbi"
+      },
+      {
+        "name": "Marcela Stern"
+      },
+      {
+        "name": "Julia Katharina Vogel"
+      }
+    ],
+    "summaries": {
+      "en": "The inner-core X-ray optic for BabyIAXO, fabricated using improved thermal-slumping of borosilicate glass, is expected to achieve a point spread function with a half-power diameter below 90 arcseconds, significantly enhancing sensitivity.",
+      "zh": "BabyIAXO的内核X射线光学器件采用改进的热坍落硼硅酸盐玻璃制造，预计可实现半功率直径低于90角秒的点扩散函数，从而显著提高灵敏度。",
+      "ja": "BabyIAXOの内側コアX線光学系は、改良された熱スランプ法によるホウケイ酸ガラスで作製され、半値幅90秒角未満の点広がり関数を達成し、感度を大幅に向上させることが期待されています。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20344",
+    "category": "physics",
+    "title": "Probing the temperature dependence of dielectric function of ternary transition metal dichalcogenides: towards thermo-driven ultrathin photonic components",
+    "abstract": "Transition metal dichalcogenides (TMDs), along with their ternary derivatives, have attracted considerable attention mostly due to pronounced excitonic resonances emerging in visible (Vis) and near-infrared (NIR) spectral regions, enabling strong light-matter interaction. Nevertheless, a comprehensive insight of the temperature-dependent optical dispersions for the most of representatives of the family remains yet unrevealed. Here, we report on systematic studies of dielectric permittivity functions of uniaxial ternary MoSSe and WSSe across 430-1000 nm spectral region over a broad temperature window of 80-670 K. We show that the temperature evolution of their dielectric responses is governed by Varshni's formalism in Vis spectral region further affecting their high refractive index properties at the lossless NIR spectral tails. Furthermore, we exploit the measured optical dispersion of ternary WSSe designing ultrathin plano-convex NIR photonic lenses that demonstrate continuous modulation of performance with temperature variation. Our work provides critical insights for the creation of next-generation thermo-driven nanophotonic and optoelectronic devices.",
+    "url": "https://arxiv.org/abs/2607.20344",
+    "authors": [
+      {
+        "name": "Artsruni Margaryan"
+      },
+      {
+        "name": "Maria Levonyan"
+      },
+      {
+        "name": "Maksim Sargsyan"
+      },
+      {
+        "name": "David Karakhanyan"
+      },
+      {
+        "name": "Meri Hayrapetyan"
+      },
+      {
+        "name": "Kostya S. Novoselov"
+      },
+      {
+        "name": "Davit A. Ghazaryan"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 7,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "dielectric function",
+        "permittivity",
+        "refractive index"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Artsruni Margaryan"
+      },
+      {
+        "name": "Maria Levonyan"
+      },
+      {
+        "name": "Maksim Sargsyan"
+      },
+      {
+        "name": "Meri Hayrapetyan"
+      },
+      {
+        "name": "Kostya S. Novoselov"
+      },
+      {
+        "name": "Davit A. Ghazaryan"
+      }
+    ],
+    "summaries": {
+      "en": "Temperature-dependent dielectric functions of ternary TMDs MoSSe and WSSe are measured, revealing Varshni-governed refractive index changes enabling tunable ultrathin NIR photonic lenses.",
+      "zh": "三元过渡金属二硫化物MoSSe和WSSe的介电函数温度依赖性被测量，揭示了Varshni形式控制的折射率变化，实现了可调谐超薄近红外光子透镜。",
+      "ja": "三元遷移金属ダイカルコゲナイドMoSSeとWSSeの温度依存誘電関数を測定し、Varshni形式に従う屈折率変化により、調整可能な超薄型NIRフォトニックレンズを実現した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19499",
+    "category": "quant-ph",
+    "title": "A unified framework for anomalous boson bunching",
+    "abstract": "Anomalous bunching is a paradoxical quantum interferometric phenomenon in which partially distinguishable photons exhibit a higher probability of bunching into two or more modes than fully indistinguishable photons [Nat. Photonics 17, 702 (2023)]. While this effect is directly linked to violations of certain conjectures on matrix permanents, the mechanism underlying the anomaly is not yet fully understood. Here, we show that boson bunching is governed not by internal indistinguishability alone, but by the total indistinguishability of the postselected output state. Total indistinguishability combines the internal degrees of freedom, such as polarization or arrival time, with the spatial degrees of freedom of their wave functions restricted to the measured output modes of the interferometer. This reformulation preserves the expected connection between boson bunching and total indistinguishability, while clarifying how anomalous bunching can arise. It also reveals several additional facets of the same phenomenon, which are captured within a unified framework. In particular, we exhibit situations in which adding an independent source of distinguishability, either internal or spatial, can enhance multimode or even single-mode bunching probabilities, offering new insights into the subtle role of distinguishability in multiphoton interference.",
+    "url": "https://arxiv.org/abs/2607.19499",
+    "authors": [
+      {
+        "name": "Léo Pioge"
+      },
+      {
+        "name": "Leonardo Novo"
+      },
+      {
+        "name": "Nicolas J. Cerf"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 3,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "photonic",
+        "photonics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Léo Pioge"
+      },
+      {
+        "name": "Leonardo Novo"
+      },
+      {
+        "name": "Nicolas J. Cerf"
+      }
+    ],
+    "summaries": {
+      "en": "This paper reveals that boson bunching is governed by total indistinguishability of the output state, combining internal and spatial degrees of freedom, which explains anomalous bunching and shows that adding distinguishability can enhance bunching probabilities.",
+      "zh": "本文揭示了玻色子聚束由输出态的总不可区分性（结合内部和空间自由度）调控，这解释了反常聚束现象，并表明增加可区分性可以增强聚束概率。",
+      "ja": "この論文は、ボソンのバンチングが内部自由度と空間自由度を組み合わせた出力状態の総合的な識別不能性によって支配され、異常バンチングを説明し、識別可能性を追加することでバンチング確率が向上することを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19543",
+    "category": "quant-ph",
+    "title": "Simple, accurate lumped-element models of distributed resonators for superconducting quantum circuits",
+    "abstract": "Superconducting quantum circuit design is reliant on accurately mapping design parameters to a quantum Hamiltonian. Designers typically rely on computationally intensive finite-element electromagnetic simulations. However, effective circuit-level models can in principle capture much of the relevant physics for these systems, reducing the need for finite-element simulations. A barrier to implementing these simpler models has been the prevalence of distributed elements such as coplanar waveguides resonators in device designs. Techniques for modeling these distributed elements have been developed, but may be difficult to scale, reduce intuition, and give inaccurate results under strong coupling. In this work we describe a simple effective circuit-level model that faithfully reproduces the scattering parameters, and subsequently can predict certain Hamiltonian parameters, for a coupled, distributed element within a broader two-port network even up to strong coupling. Our approach does not explicitly require an electromagnetic simulation. Our model, along with other common lumped models used in black box quantization, is publicly available to researchers via an open-source code package, $\\texttt{simpleLOMs}$.",
+    "url": "https://arxiv.org/abs/2607.19543",
+    "authors": [
+      {
+        "name": "Elizabeth H. Kunz"
+      },
+      {
+        "name": "Eli M. Levenson-Falk"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 2,
+    "topics": [
+      "Integrated Optics"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "waveguide",
+        "waveguides"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Elizabeth H. Kunz"
+      },
+      {
+        "name": "Eli M. Levenson-Falk"
+      }
+    ],
+    "summaries": {
+      "en": "This paper presents a simple lumped-element model for distributed resonators in superconducting quantum circuits that accurately reproduces scattering parameters and Hamiltonian parameters without requiring full electromagnetic simulations.",
+      "zh": "该论文提出了一种用于超导量子电路中分布式谐振器的简单集总元件模型，无需电磁仿真即可准确再现散射参数和哈密顿参数。",
+      "ja": "本論文では、超伝導量子回路における分布共振器のための単純な集中定数モデルを提案し、電磁場シミュレーションを必要とせずに散乱パラメータとハミルトニアンパラメータを正確に再現する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19715",
+    "category": "quant-ph",
+    "title": "Structured-light-mediated hybrid entanglement between photon polarization and electronic orbital angular momentum",
+    "abstract": "We propose a minimal quantum-optical scheme for generating hybrid entanglement between photon polarization and electronic orbital angular momentum in a semiconductor quantum disk. A spin--orbit structured two-photon state excites two channels in the same disk: a radiatively recombining zero-orbital-angular-momentum channel and a finite-orbital-angular-momentum channel that stores the electronic orbital qubit. An effective coherent mapping prepares a selected two-excitation state, followed by emission of a photon whose polarization is entangled with the residual electronic orbital state. A master-equation analysis shows that the heralded state conditioned on single-photon occupation of the selected output mode approaches the target entangled state in the ideal coherent limit. We also discuss orbital relaxation and perturbative validity conditions for branch-dependent Coulomb shifts, orbital-angular-momentum mixing, and finite-orbital-angular-momentum radiative leakage. This proof-of-principle effective model suggests a route toward structured-light-mediated photon--electron hybrid entanglement in semiconductor nanostructures.",
+    "url": "https://arxiv.org/abs/2607.19715",
+    "authors": [
+      {
+        "name": "Hiroaki Saito"
+      },
+      {
+        "name": "Nobuhiko Yokoshi"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 2,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "single-photon"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Hiroaki Saito"
+      },
+      {
+        "name": "Nobuhiko Yokoshi"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes a scheme to generate hybrid entanglement between photon polarization and electronic orbital angular momentum in a quantum disk using structured-light-mediated two-photon excitation.",
+      "zh": "该论文提出了一种在半导体量子盘中利用结构化光介导的双光子激发来生成光子偏振与电子轨道角动量之间混合纠缠的方案。",
+      "ja": "本論文は、半導体量子ディスクにおいて構造光を介した二光子励起を用いて、光子の偏光と電子の軌道角運動量の間のハイブリッドもつれを生成する方式を提案している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19849",
+    "category": "quant-ph",
+    "title": "Distributed Entanglement Distribution Using Multiple Entanglement Sources in WDM-based Quantum Optical Networks",
+    "abstract": "Quantum network implementations using single spontaneous parametric downconversion (SPDC)-based broadband entangled photon pair source (EPPS) have been reported recently. Here, leveraging the wavelength-correlation between entangled photon pairs, the traditional wavelength division multiplexing (WDM) method is utilized to route photons based on their wavelengths. From single EPPS, entangled photon pairs are distributed in a centralized way to different node pairs in the network. However, the number of nodes pairs that can be entangled in a network is limited by the number of entangled wavelength pairs that an EPPS can generate. To entangle a higher number of node pairs in a network, multiple EPPSs can be employed. In this work, we present a WDM-based entanglement distribution approach using multiple EPPSs in multi-hop repeaterless mesh optical networks. We experimentally characterize two EPPSs developed in-house and consider multiple such EPPSs in the network to perform network-level simulations. We consider heterogeneous entanglement demands requiring different entanglement bit (ebit) rates and entanglement visibility. For each entanglement demand, EPPS placement/selection, wavelength-pair assignment, and photon pair routing are performed considering the degradation in both ebit rate and visibility with fiber length and hops in the network. Two main findings of this study include: (i) a hybrid approach of one-photon (OP) and both-photon (BP) entanglement distribution provides higher flexibility in multi-EPPS placement and (ii) distributed entanglement distribution using multiple EPPSs enables better entanglement resource utilization and higher entanglement demand acceptance as compared to centralized entanglement distribution.",
+    "url": "https://arxiv.org/abs/2607.19849",
+    "authors": [
+      {
+        "name": "Anuj Agrawal"
+      },
+      {
+        "name": "Abhay Singh Dulta"
+      },
+      {
+        "name": "Bhaskar Kanseri"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Emerging Technologies (cs.ET); Networking and Internet Architecture (cs.NI)",
+    "author_count": 3,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "entangled photon",
+        "photon pair",
+        "photon pairs",
+        "quantum optical",
+        "spdc"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Anuj Agrawal"
+      },
+      {
+        "name": "Abhay Singh Dulta"
+      },
+      {
+        "name": "Bhaskar Kanseri"
+      }
+    ],
+    "summaries": {
+      "en": "This work proposes a WDM-based entanglement distribution approach using multiple spontaneous parametric downconversion sources in mesh optical networks, showing improved resource utilization and demand acceptance over centralized schemes.",
+      "zh": "该工作提出了一种基于波分复用的纠缠分发方法，在网状光网络中利用多个自发参量下转换光源，相比集中式方案提高了资源利用率和需求接受率。",
+      "ja": "本研究は、メッシュ光ネットワークにおいて複数の自発パラメトリック下方変換光源を使用したWDMベースのエンタングルメント分散手法を提案し、集中型方式と比較してリソース利用率と需要受入率の向上を示す。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19853",
+    "category": "quant-ph",
+    "title": "Generation of vortex-squeezed light in a coherently prepared medium",
+    "abstract": "In this Letter, we theoretically propose an alternative scheme for generating vortex optical squeezing, based on the Raman scattering process in a coherently prepared medium, distinct from approaches such as parametric down-conversion and four-wave mixing. Our analysis reveals that both the input control field and the generated signal field can exhibit squeezing upon adjusting the relevant system parameters, with the control field exhibiting a greater degree of squeezing under identical conditions. We further demonstrate the existence of optimal squeezing values over a range of tuning parameters, highlighting the flexibility and robustness of the proposed scheme. These findings may offer a new reference for continuous-variable vortex optical squeezing and possess potential applications in domains such as quantum information processing, quantum precision measurement, and quantum sensing.",
+    "url": "https://arxiv.org/abs/2607.19853",
+    "authors": [
+      {
+        "name": "Fan Meng"
+      },
+      {
+        "name": "Hao Zhu"
+      },
+      {
+        "name": "Xin-Yao Huang"
+      },
+      {
+        "name": "Guo-Feng Zhang"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 4,
+    "topics": [
+      "Nonlinear Optics",
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "four-wave mixing"
+      ],
+      "Quantum Optics & Quantum Computing": [
+        "down-conversion",
+        "parametric down-conversion",
+        "squeezed light"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Fan Meng"
+      },
+      {
+        "name": "Hao Zhu"
+      },
+      {
+        "name": "Xin-Yao Huang"
+      },
+      {
+        "name": "Guo-Feng Zhang"
+      }
+    ],
+    "summaries": {
+      "en": "This work theoretically proposes a scheme to generate vortex-squeezed light through Raman scattering in a coherently prepared medium, showing that both the control and signal fields can be squeezed, with the control field exhibiting stronger squeezing.",
+      "zh": "该工作理论提出了一种基于相干制备介质中拉曼散射过程产生涡旋压缩光的方案，表明控制场和信号场均可实现压缩，且控制场的压缩程度更强。",
+      "ja": "本研究は、コヒーレントに準備された媒質中のラマン散乱過程を利用して、渦スクイーズド光を生成する理論的スキームを提案し、制御場と信号場の両方がスクイーズされ、制御場の方がより強いスクイーズを示すことを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.19872",
+    "category": "quant-ph",
+    "title": "Nonreciprocal phonon blockade in spin quadratic optomechanical systems",
+    "abstract": "We propose a scheme for achieving nonreciprocal phonon blockade in a quadratic optomechanical (QOM) system consisting of two spinning resonators near-field coupled to a nanomechanical oscillator. Due to the Sagnac-Fizeau effect, pump fields propagating in opposite directions experience distinct effective detunings,thereby leading to asymmetric intracavity intensities. Through the optical spring effect, this intensity imbalance gives rise to direction-dependent shifts in the effective mechanical frequency, providing the core mechanism for nonreciprocal phonon blockade. By judiciously setting parameters, single-phonon resonant excitation leads to conventional phonon blockade for one pump direction, whereas two-phonon resonance facilitates phononinduced tunneling (PIT) for the other. The pronounced nonreciprocity is quantified by a contrast ratio in the phonon second-order correlation function exceeding 55 dB. To elucidate the nonreciprocal statistics, the phonon blockade is further analyzed in terms of interference between the coherent component and squeezed fluctuations. Incorporating thermal phonons, we reveal an extended nonreciprocal thermal effect, where increasing thermal noise degrades antibunching toward Poissonian statistics in one direction, yet reverses the statistics from bunching to antibunching in the opposite direction. Our work provides a pathway toward nonreciprocal phonon devices and directional phonon switches, with potential applications in chiral networks and phononic information processing.",
+    "url": "https://arxiv.org/abs/2607.19872",
+    "authors": [
+      {
+        "name": "Yao Dong"
+      },
+      {
+        "name": "Guo-Feng Zhang"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 2,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "optomechanical"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Yao Dong"
+      },
+      {
+        "name": "Guo-Feng Zhang"
+      }
+    ],
+    "summaries": {
+      "en": "We propose a scheme for achieving nonreciprocal phonon blockade in a quadratic optomechanical system with two spinning resonators coupled to a nanomechanical oscillator, enabled by direction-dependent mechanical frequency shifts from the optical spring effect and achieving a contrast ratio exceeding 55 dB.",
+      "zh": "我们提出了一种方案，在由两个旋转谐振器与纳米机械振荡器近场耦合的二次光力学系统中实现非互易声子阻塞，该方案通过光学弹簧效应引起的方向依赖机械频率偏移实现，声子二阶关联函数对比度超过55分贝。",
+      "ja": "2つの回転共振器とナノメカニカル発振器が近接結合した二次光力学系において、光バネ効果による方向依存の機械周波数シフトを利用した非相反フォノンブロッケードを実現し、フォノン二次相関関数のコントラスト比が55dBを超える方式を提案する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20231",
+    "category": "quant-ph",
+    "title": "Lattice quantum electrodynamics of a molecular emitter in a topological gap",
+    "abstract": "Engineering the photonic environment using lattices of coupled resonators, which we refer to as lattice quantum electrodynamics (QED), provides a route to control both the spontaneous emission of individual quantum emitters and the photon-mediated interactions between them. Here we introduce an optical lattice QED platform based on individual dibenzoterrylene (DBT) molecules embedded in anthracene crystals and coupled to lattices of open optical microcavities. This hybrid architecture benefits from narrow-linewidth molecular emitters, site-resolved optical access, engineered coupled-resonator bands, and compatibility with established molecular frequency-tuning techniques. As a proof-of-principle demonstration, we observe emitter-photon bound states formed when the optical transition of a single molecule is tuned to the band gap of a Su-Schrieffer-Heeger (SSH) cavity lattice. These in-gap states display directional localization and photon emission on a single sublattice, inherited from the vacancy-induced topological edge modes of the underlying SSH lattice. Our results establish open-cavity lattices coupled to DBT molecules as a versatile architecture for engineering many-emitter quantum optical systems with controllable photon-mediated interactions.",
+    "url": "https://arxiv.org/abs/2607.20231",
+    "authors": [
+      {
+        "name": "Clarisse Fournier"
+      },
+      {
+        "name": "Johannes Düreth"
+      },
+      {
+        "name": "Elena Fanella"
+      },
+      {
+        "name": "Hugo Levy-Falk"
+      },
+      {
+        "name": "Maja Colautti"
+      },
+      {
+        "name": "Anna Beauvironnet"
+      },
+      {
+        "name": "Gauthier Dekyndt"
+      },
+      {
+        "name": "Clément Hainaut"
+      },
+      {
+        "name": "Tomáš Neuman"
+      },
+      {
+        "name": "Simon Betzold"
+      },
+      {
+        "name": "Sven Höfling"
+      },
+      {
+        "name": "Sebastian Klembt"
+      },
+      {
+        "name": "Alejandro González-Tudela"
+      },
+      {
+        "name": "Costanza Toninelli"
+      },
+      {
+        "name": "Alberto Amo"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Optics (physics.optics)",
+    "author_count": 15,
+    "topics": [
+      "Quantum Optics & Quantum Computing",
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "quantum emitter",
+        "quantum emitters",
+        "quantum optical"
+      ],
+      "AMO Physics": [
+        "optical lattice"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Clarisse Fournier"
+      },
+      {
+        "name": "Johannes Düreth"
+      },
+      {
+        "name": "Elena Fanella"
+      },
+      {
+        "name": "Alejandro González-Tudela"
+      },
+      {
+        "name": "Costanza Toninelli"
+      },
+      {
+        "name": "Alberto Amo"
+      }
+    ],
+    "summaries": {
+      "en": "We demonstrate a lattice quantum electrodynamics platform coupling dibenzoterrylene molecules in anthracene to open microcavity arrays, observing emitter-photon bound states with topological localization in an SSH lattice bandgap.",
+      "zh": "我们展示了一种将蒽晶体中的二苯并三联苯分子与开放微腔阵列耦合的晶格量子电动力学平台，并观察到在SSH晶格带隙中具有拓扑局域性的发射体-光子束缚态。",
+      "ja": "アントラセン結晶中のジベンゾテリレン分子を開放型マイクロキャビティアレイに結合させた格子量子電磁力学プラットフォームを実証し、SSH格子のバンドギャップ内でトポロジカルな局在を示すエミッター-光子束縛状態を観測した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20292",
+    "category": "quant-ph",
+    "title": "Microwave-driven same-species sympathetic cooling for trapped ions",
+    "abstract": "Sympathetic cooling of data qubits by coolant ions is an essential technique for trapped-ion quantum computing. Conventionally a second ion species is used, requiring additional lasers and complicating optical setups. We propose a scheme for sympathetic cooling using the same species and test it for $^{43}$Ca$^+$ ions. Pulsed sideband cooling and ion addressing are implemented via integrated microwave control, further simplifying optical requirements. We cool a two-ion gate mode close to its ground state ($\\bar{n}\\approx 0.16$) and benchmark an induced error on the data qubit of $1.7(4)\\times 10^{-4}$ per cooling cycle.",
+    "url": "https://arxiv.org/abs/2607.20292",
+    "authors": [
+      {
+        "name": "M. C. Smith"
+      },
+      {
+        "name": "E. Vandrey"
+      },
+      {
+        "name": "A. D. Leu"
+      },
+      {
+        "name": "N. Drotleff"
+      },
+      {
+        "name": "A. Agrawal"
+      },
+      {
+        "name": "K. Miyanishi"
+      },
+      {
+        "name": "D. M. Lucas"
+      },
+      {
+        "name": "M. F. Gely"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 8,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "trapped ion",
+        "trapped ions"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "M. C. Smith"
+      },
+      {
+        "name": "E. Vandrey"
+      },
+      {
+        "name": "A. D. Leu"
+      },
+      {
+        "name": "K. Miyanishi"
+      },
+      {
+        "name": "D. M. Lucas"
+      },
+      {
+        "name": "M. F. Gely"
+      }
+    ],
+    "summaries": {
+      "en": "We propose and demonstrate a scheme for sympathetic cooling of trapped ions using the same species via microwave-driven pulsed sideband cooling, achieving near-ground-state cooling and low induced error.",
+      "zh": "我们提出并演示了一种通过微波驱动的脉冲边带冷却实现同种离子协同冷却的方案，达到了接近基态的冷却和低诱导误差。",
+      "ja": "マイクロ波駆動パルスサイドバンド冷却を用いた同一種イオンによる共鳴冷却方式を提案・実証し、基底状態近傍への冷却と低い誘導誤差を達成した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2607.20333",
+    "category": "quant-ph",
+    "title": "Collective Electronic Entanglement via Infrared Cavity-Induced Vibronic Transduction",
+    "abstract": "Polaritonic architectures seek to engineer molecular properties by hybridizing localized degrees of freedom with delocalized optical cavity fields. However, scaling laws impose a severe bottleneck on N-molecule collective strong coupling: because each molecule contributes only a fractional share to the collective state, localized responses undergo O(1/N) ensemble dilution. We demonstrate a violation of this scaling using fluorescence-encoded infrared spectroscopy of molecular ensembles under vibrational strong coupling, where macroscopically synchronized electronic responses scale as O(1). This scale-invariance reveals a regime of vibronic quantum transduction, where non-local vibrational entanglement is translated into collective electronic entanglement. By demonstrating the generation of macroscopically entangled electronic states from vibro-polaritons without an O(1/N) penalty, these results provide a scalable framework for room-temperature quantum technologies and coherent steering of non-adiabatic chemical pathways.",
+    "url": "https://arxiv.org/abs/2607.20333",
+    "authors": [
+      {
+        "name": "Vivek Yadav"
+      },
+      {
+        "name": "Bar Cohn"
+      },
+      {
+        "name": "Shmuel Sufrin"
+      },
+      {
+        "name": "Uri Peskin"
+      },
+      {
+        "name": "Lev Chuntonov"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Chemical Physics (physics.chem-ph)",
+    "author_count": 5,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "polariton",
+        "polaritons"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Vivek Yadav"
+      },
+      {
+        "name": "Bar Cohn"
+      },
+      {
+        "name": "Shmuel Sufrin"
+      },
+      {
+        "name": "Uri Peskin"
+      },
+      {
+        "name": "Lev Chuntonov"
+      }
+    ],
+    "summaries": {
+      "en": "Macroscopically synchronized electronic responses under vibrational strong coupling violate the conventional O(1/N) ensemble dilution, enabling scalable collective electronic entanglement via vibronic transduction.",
+      "zh": "在振动强耦合下，宏观同步的电子响应违反了传统的O(1/N)系综稀释，通过振动电子转换实现了可扩展的集体电子纠缠。",
+      "ja": "振動強結合下での巨視的に同期した電子応答は、従来のO(1/N)集団希釈に違反し、振動電子変換を介してスケーラブルな集団電子絡み合いを実現する。"
+    },
+    "summary_source": "deepseek"
+  }
+]
