@@ -1,0 +1,2267 @@
+[
+  {
+    "id": "2608.04151",
+    "category": "cond-mat",
+    "title": "Valley polarization of moiré interlayer exciton complexes driven by many-body interactions",
+    "abstract": "Localized interlayer excitons (IX) in moiré transition metal dichalcogenide heterostructures can both probe and participate in many-body states hosted by the moiré superlattice. When the IX density is small compared to the moiré lattice density, the formation of incompressible charge crystals at fractional electronic moiré fillings modifies exciton-charge scattering, leading to enhanced lifetimes in photoluminescence (PL) measurements. At high IX densities, the exciton dynamics are altered by the emergence of an excitonic Mott insulator and the formation of doubly-occupied sites (IXX). Here, we investigate the IX PL lifetime and valley polarization in an R-type $\\mathrm{WSe_2}$/$\\mathrm{WS_2}$ bilayer across a wide range of IX and charge densities. While previous studies reported a decrease of polarization in time-integrated measurements in charge-incompressible phases, our results show that this arises not from enhanced intervalley scattering, but from a dilution of the valley polarization by the dramatic enhancement of IX lifetimes. At high excitation densities, we probe the dynamics of the IXX and show that despite the nominal antiparallel valley configuration of the two constituent excitons, a strong, anomalous valley polarization develops as the IXX population decays. Our results shed light on the complex exciton and valley dynamics of IX and demonstrate that they are strongly modified by the rich many-body physics of moiré heterobilayers.",
+    "url": "https://arxiv.org/abs/2608.04151",
+    "authors": [
+      {
+        "name": "Adrian O. Paulus"
+      },
+      {
+        "name": "Mikołaj J. Metelski"
+      },
+      {
+        "name": "Alain Dijkstra"
+      },
+      {
+        "name": "Kenji Watanabe"
+      },
+      {
+        "name": "Takashi Taniguchi"
+      },
+      {
+        "name": "Nathan P. Wilson"
+      },
+      {
+        "name": "Jonathan J. Finley"
+      }
+    ],
+    "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall) ; Strongly Correlated Electrons (cond-mat.str-el)",
+    "author_count": 7,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "luminescence",
+        "photoluminescence"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Adrian O. Paulus"
+      },
+      {
+        "name": "Mikołaj J. Metelski"
+      },
+      {
+        "name": "Alain Dijkstra"
+      },
+      {
+        "name": "Takashi Taniguchi"
+      },
+      {
+        "name": "Nathan P. Wilson"
+      },
+      {
+        "name": "Jonathan J. Finley"
+      }
+    ],
+    "summaries": {
+      "en": "This paper investigates interlayer exciton valley polarization in moiré WSe2/WS2 bilayers, revealing that reduced time-integrated polarization in incompressible charge phases arises from lifetime lengthening rather than intervalley scattering, and that doubly-occupied exciton complexes exhibit anomalous valley polarization.",
+      "zh": "本文研究了莫尔WSe2/WS2双层中间层激子的谷极化，发现在不可压缩电荷相中时间积分极化的降低源于激子寿命的延长而非谷间散射，且双占据激子复合物表现出异常的谷极化。",
+      "ja": "本論文は、モアレWSe2/WS2二層膜における層間励起子の谷偏極を調べ、非圧縮電荷相における時間積分偏極の減少が谷間散乱ではなく励起子寿命の延長に起因すること、および二重占有励起子複合体が異常な谷偏極を示すことを明らかにした。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04216",
+    "category": "cond-mat",
+    "title": "Computational Microstructure Analysis of Sintered Ceramics",
+    "abstract": "Characterizing materials through manual extraction of physical properties from microstructure images is a laborious process. This work presents a workflow to extract porosity, solid fraction, grain size distribution, and pore size distribution from scanning electron microscopy (SEM) images of sintered ceramic samples using an automated pipeline. The primary challenge for extracting physical properties from SEM images is the presence of unimodal histograms in SEM images as a result of the overlapping intensity ranges for the grain and pore phases. We evaluated several different methods for noise reduction and local thresholding of SEM images. We find that topological filtering in combination with Sauvola thresholding enables segmentation and extraction of physical property data from SEM images. We validated the automated pipeline by comparing our results with the results of manual analyses performed for samples sintered at 1200$^o$C and 1400$^o$C and achieved an Intersection over Union (IoU) score of 95.14% and 99.85%, respectively. The workflow provides an efficient means to automatically extract microstructure properties from SEM images as a crucial step in generating materials datasets for machine learning.",
+    "url": "https://arxiv.org/abs/2608.04216",
+    "authors": [
+      {
+        "name": "Nikhil Dhanankam"
+      },
+      {
+        "name": "Deeksha Kodangal"
+      },
+      {
+        "name": "Rajendra K. Bordia"
+      },
+      {
+        "name": "Ulf D. Schiller"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci) ; Computational Engineering, Finance, and Science (cs.CE)",
+    "author_count": 4,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Nikhil Dhanankam"
+      },
+      {
+        "name": "Deeksha Kodangal"
+      },
+      {
+        "name": "Rajendra K. Bordia"
+      },
+      {
+        "name": "Ulf D. Schiller"
+      }
+    ],
+    "summaries": {
+      "en": "The paper presents an automated computational workflow that combines topological filtering with Sauvola thresholding to segment and extract porosity, grain size, and pore size distributions from SEM images of sintered ceramics, achieving high IoU scores compared to manual analysis.",
+      "zh": "本文介绍了一种自动计算流程，结合拓扑滤波和Sauvola阈值分割法，从烧结陶瓷的扫描电镜图像中提取孔隙率、晶粒尺寸和孔径分布，并与人工分析结果相比获得了较高的IoU分数。",
+      "ja": "本論文では、トポロジーフィルタリングとSauvola閾値処理を組み合わせた自動計算ワークフローを提案し、焼結セラミックスのSEM画像から気孔率、粒径分布、細孔径分布を抽出し、手動解析と比較して高いIoUスコアを達成した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04418",
+    "category": "cond-mat",
+    "title": "Monolithic integration of optically anisotropic GeSe-based films on GaAs by templated solid-phase epitaxy",
+    "abstract": "Layered IV-VI semiconductors such as GeSe exhibit strong in-plane optical anisotropy, making them promising candidates for polarization-sensitive photonic devices. However, realizing these properties in scalable platforms requires heteroepitaxial integration on technologically relevant substrates like GaAs. Direct growth of GeSe is complicated by its glass formation at low temperatures and high vapor pressure at elevated temperatures. To overcome this, we develop a method for ex-situ solid-phase epitaxy utilizing a SnSe buffer and offcut GaAs substrate to enable single-orientation crystalline GeSe films. Using polarized reflection measurements, we find that stabilizing a single-in-plane-orientation results in a 2x increase in anisotropic response between the armchair and zigzag directions. This work provides a new integration route to harness the anisotropic optical properties of GeSe and its alloys for polarization-sensitive technologies.",
+    "url": "https://arxiv.org/abs/2608.04418",
+    "authors": [
+      {
+        "name": "Kira J. Martin"
+      },
+      {
+        "name": "Autumn Y. Lee"
+      },
+      {
+        "name": "Pranav Mahaadev"
+      },
+      {
+        "name": "Pooja D. Reddy"
+      },
+      {
+        "name": "Kelly Xiao"
+      },
+      {
+        "name": "Tri Nguyen"
+      },
+      {
+        "name": "Ashlee M. García"
+      },
+      {
+        "name": "Aaron M. Lindenberg"
+      },
+      {
+        "name": "Kunal Mukherjee"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 9,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "optical properties"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Kira J. Martin"
+      },
+      {
+        "name": "Autumn Y. Lee"
+      },
+      {
+        "name": "Pranav Mahaadev"
+      },
+      {
+        "name": "Ashlee M. García"
+      },
+      {
+        "name": "Aaron M. Lindenberg"
+      },
+      {
+        "name": "Kunal Mukherjee"
+      }
+    ],
+    "summaries": {
+      "en": "A templated solid-phase epitaxy technique using a SnSe buffer and offcut GaAs substrate enables single-orientation crystalline GeSe films, doubling the in-plane optical anisotropy for polarization-sensitive devices.",
+      "zh": "利用SnSe缓冲层和偏切GaAs衬底的模板固相外延技术，实现了单取向GeSe晶体薄膜，并将面内光学各向异性提高了一倍，有望用于偏振敏感器件。",
+      "ja": "SnSeバッファ層とオフカットGaAs基板を用いたテンプレート固相エピタキシーにより、単一配向のGeSe結晶膜を実現し、面内光学異方性を2倍に高めて、偏光感応デバイスへの応用が期待される。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04490",
+    "category": "cond-mat",
+    "title": "Nano-scale visualization of magnetic vortices in metal nanoparticles",
+    "abstract": "Magnetic vortices in individual nanoparticles are fundamental spin structures that govern the properties of next-generation magnetic devices and biomedical applications. However, directly imaging their complete structure, from the circulating in-plane magnetization to the nanometer scale out-of-plane core, remains challenging. Here, direct and quantitative visualization of magnetic vortex structures in individual cobalt nanoparticles is achieved by integrating a time-reversal methodology with tilt-scan-averaged differential phase contrast scanning transmission electron microscopy in a magnetic-field-free environment. This approach enables magnetic imaging in conjunction with atomic-scale analysis and reveals a correlation between particle geometry and internal demagnetizing fields. In addition, dynamic evolution of the vortex under in situ magnetic-field application is tracked, enabling unambiguous determination of the out-of-plane core polarity. This approach provides a powerful platform for correlating atomic-scale structure and magnetism within individual nanoparticles and for understanding the origins of nanoscale magnetic properties, thereby supporting the rational design of advanced nanomagnetic materials and devices.",
+    "url": "https://arxiv.org/abs/2608.04490",
+    "authors": [
+      {
+        "name": "Satoko Toyama"
+      },
+      {
+        "name": "Yoshiki O. Murakami"
+      },
+      {
+        "name": "Ayako Nishikawa"
+      },
+      {
+        "name": "Takehito Seki"
+      },
+      {
+        "name": "Akihito Kumamoto"
+      },
+      {
+        "name": "Yuichi Ikuhara"
+      },
+      {
+        "name": "Naoya Shibata"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 7,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Satoko Toyama"
+      },
+      {
+        "name": "Yoshiki O. Murakami"
+      },
+      {
+        "name": "Ayako Nishikawa"
+      },
+      {
+        "name": "Akihito Kumamoto"
+      },
+      {
+        "name": "Yuichi Ikuhara"
+      },
+      {
+        "name": "Naoya Shibata"
+      }
+    ],
+    "summaries": {
+      "en": "This paper demonstrates direct and quantitative imaging of magnetic vortex structures in individual cobalt nanoparticles by integrating a time-reversal methodology with tilt-scan-averaged differential phase contrast scanning transmission electron microscopy in a magnetic-field-free environment, revealing correlations between particle geometry and demagnetizing fields, and tracking dynamic vortex evolution to determine core polarity.",
+      "zh": "该论文通过在无磁场环境中集成时间反转方法与倾斜扫描平均差分相衬扫描透射电子显微镜，直接定量成像单个钴纳米颗粒中的磁涡旋结构，揭示了颗粒几何形状与内部退磁场之间的关联，并追踪涡旋在外加磁场下的动态演化以确定核心极性。",
+      "ja": "本論文では、磁場のない環境で時間反転法と傾斜走査平均微分位相コントラスト走査透過電子顕微鏡を統合し、個々のコバルトナノ粒子の磁気渦構造を直接かつ定量的に可視化し、粒子形状と内部反磁場の相関を明らかにし、in-situ磁場印加下での渦の動的進化を追跡してコアの極性を決定した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04725",
+    "category": "cond-mat",
+    "title": "Nanomechanics of MXene flakes at gold interfaces",
+    "abstract": "The demand for novel self-powering and sustainable electronics requires major efforts in identifying new advanced materials for nano-applications. MXene have gathered attention due to their electronic and mechanical properties, however, their nanomechanical compliance against a metal-like interface is still not clearly identified. In this work, we employ atomic force microscopy to characterize the nanomechanical properties of a self-assembled thin flake of titanium carbide MXene (Ti3C2Tx) against a gold probe. The investigation returns an interfacial shear stress of 399 MPa, and the observation of nano-wear localized in the center of the MXene flake. Nevertheless, MXene flakes retained their crystallinity in the tribofilms as confirmed by transmission electron microscopy and electron energy loss spectroscopy. The outcomes of this work set the basis for the use of Ti3C2Tx in novel nano harvesting systems involving metal interfaces (e.g., tribovoltaic nanogenerators) with large scope in nanoelectronics, wearable sensing, electric vehicles, and robotics.",
+    "url": "https://arxiv.org/abs/2608.04725",
+    "authors": [
+      {
+        "name": "Pierluigi Bilotto"
+      },
+      {
+        "name": "Sabine Schwarz"
+      },
+      {
+        "name": "Marko Piljevic"
+      },
+      {
+        "name": "Iago Peters"
+      },
+      {
+        "name": "Michael Stöger-Pollach"
+      },
+      {
+        "name": "Carsten Gachot"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)",
+    "author_count": 6,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Pierluigi Bilotto"
+      },
+      {
+        "name": "Sabine Schwarz"
+      },
+      {
+        "name": "Marko Piljevic"
+      },
+      {
+        "name": "Iago Peters"
+      },
+      {
+        "name": "Michael Stöger-Pollach"
+      },
+      {
+        "name": "Carsten Gachot"
+      }
+    ],
+    "summaries": {
+      "en": "Atomic force microscopy reveals that MXene flakes at a gold interface exhibit an interfacial shear stress of 399 MPa and localized nanowear while retaining crystallinity, supporting their use in energy harvesting devices.",
+      "zh": "原子力显微镜揭示，MXene薄片在金界面上的 interfacial 剪切应力为399 MPa，并出现局部纳米磨损，但仍保持结晶性，这支持其在能量收集装置中的应用。",
+      "ja": "原子間力顕微鏡により、MXeneフレークと金界面の間の界面せん断応力が399 MPaであり、局所的なナノ摩耗が生じる一方で結晶性が維持されることが明らかになり、エネルギー収穫デバイスへの応用が支持される。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04813",
+    "category": "cond-mat",
+    "title": "Growth and characterization of GaN/Ga2O3 Nanowire Heterostructures for Ultraviolet Optoelectronics",
+    "abstract": "Ultraviolet-range GaN/b-Ga2O3 heterostructures were fabricated and investigated in both planar and nanowire geometries using pulsed laser deposition and reactive magnetron sputtering from a liquid gallium target for b-Ga2O3 deposition, while both GaN nanowire arrays and planar p-type Mg-doped GaN layers were grown by metal-organic chemical vapor deposition. Precise control of film uniformity and thickness was achieved as confirmed by structural and morphology studies using X-ray diffraction, X-ray photoelectron spectroscopy, atomic force microscopy and scanning electron microscopy. Planar n-Ga2O3/p-GaN heterojunction diodes were electrically and photoelectronically characterized, exhibiting pronounced rectifying behavior, high forward current and a visible-blind ultraviolet photoresponse under zero external bias, demonstrating intrinsic self-powered operation. Furthermore, GaN/b-Ga2O3 core/shell nanowire heterostructures were developed and systematically studied with a focus on morphology control and process optimization. The influence of deposition parameters on shell thickness, uniformity, and tapering was investigated, enabling improved conformality of the b-Ga2O3 coating on the M-plane facets of GaN nanowires. The results highlight the viability of physical vapor deposition techniques for forming GaN/b-Ga2O3 heterostructures and establish a pathway toward nanowire-based ultraviolet optoelectronic devices.",
+    "url": "https://arxiv.org/abs/2608.04813",
+    "authors": [
+      {
+        "name": "Edgars Butanovs"
+      },
+      {
+        "name": "Eriks Dipans"
+      },
+      {
+        "name": "Martins Zubkins"
+      },
+      {
+        "name": "Edvards Strods"
+      },
+      {
+        "name": "Anatolijs Sarakovskis"
+      },
+      {
+        "name": "Juris Purans"
+      },
+      {
+        "name": "Ashutosh Kumar"
+      },
+      {
+        "name": "Sergiy Khartsev"
+      },
+      {
+        "name": "Martin Berg"
+      },
+      {
+        "name": "Anders Hallen"
+      },
+      {
+        "name": "Qin Wang"
+      },
+      {
+        "name": "Joseph le Pluart"
+      },
+      {
+        "name": "Peter Ramvall"
+      }
+    ],
+    "subjects": "Materials Science (cond-mat.mtrl-sci)",
+    "author_count": 13,
+    "topics": [
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Optical Imaging": [
+        "microscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Edgars Butanovs"
+      },
+      {
+        "name": "Eriks Dipans"
+      },
+      {
+        "name": "Martins Zubkins"
+      },
+      {
+        "name": "Qin Wang"
+      },
+      {
+        "name": "Joseph le Pluart"
+      },
+      {
+        "name": "Peter Ramvall"
+      }
+    ],
+    "summaries": {
+      "en": "This paper reports the fabrication and characterization of GaN/beta-Ga2O3 heterostructures in planar and nanowire geometries, demonstrating self-powered visible-blind ultraviolet photoresponse in planar diodes and improved conformal coating of beta-Ga2O3 on GaN nanowires for potential ultraviolet optoelectronics.",
+      "zh": "本文报道了平面和纳米线几何结构中GaN/β-Ga2O3异质结构的制备与表征，平面二极管展示了自供电的可见盲紫外光响应，并改善了β-Ga2O3在GaN纳米线上的共形包覆，为紫外光电子学提供了途径。",
+      "ja": "本論文は、平面およびナノワイヤ形状のGaN/β-Ga2O3ヘテロ構造の作製と特性評価を報告し、平面ダイオードでの自己駆動型可視盲紫外光応答と、GaNナノワイヤ上へのβ-Ga2O3のコンフォーマルコーティングの改善を示し、紫外オプトエレクトロニクスへの道を開くものである。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04090",
+    "category": "physics",
+    "title": "Structured light under turbulence",
+    "abstract": "Structured light has emerged as a promising resource for high-capacity and secure free-space optical communication, where atmospheric turbulence remains a major source of signal degradation. In this work, we investigate the resilience of different transverse mode structures of an optical beam with respect to the random action of turbulence. A spatial light modulator (SLM) is programmed to apply amplitude and phase modulation corresponding to the desired transverse mode, which is then transmitted through a turbulent medium emulated by a second SLM. Laguerre-Gauss, Hermite-Gauss, and Airy beams are investigated through the resulting intensity distributions measured with a camera. Different figures of merit are used to evaluate and compare the resilience of these modes.",
+    "url": "https://arxiv.org/abs/2608.04090",
+    "authors": [
+      {
+        "name": "Guilherme S. Barros"
+      },
+      {
+        "name": "Lucas C. Céleri"
+      },
+      {
+        "name": "Antonio Zelaquett Khoury"
+      },
+      {
+        "name": "André L. S. Santos Junior"
+      },
+      {
+        "name": "Rafael M. Gomes"
+      },
+      {
+        "name": "Guilherme L. Zanin"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 6,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Guilherme S. Barros"
+      },
+      {
+        "name": "Lucas C. Céleri"
+      },
+      {
+        "name": "Antonio Zelaquett Khoury"
+      },
+      {
+        "name": "André L. S. Santos Junior"
+      },
+      {
+        "name": "Rafael M. Gomes"
+      },
+      {
+        "name": "Guilherme L. Zanin"
+      }
+    ],
+    "summaries": {
+      "en": "The paper investigates the resilience of Laguerre-Gauss, Hermite-Gauss, and Airy beams to atmospheric turbulence by using spatial light modulators to emulate turbulence and measure intensity distributions.",
+      "zh": "该论文通过空间光调制器模拟大气湍流并测量强度分布，研究了拉盖尔-高斯、厄米-高斯和艾里光束对湍流的鲁棒性。",
+      "ja": "本論文では、空間光変調器を用いて大気乱流を模擬し強度分布を測定することで、ラゲール・ガウス、エルミート・ガウス、エアリービームの乱流に対する耐性を調査した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04238",
+    "category": "physics",
+    "title": "Fully optoelectronic coherent THz spectroscopy",
+    "abstract": "Coherent terahertz spectroscopy of molecular transients has so far relied on electronic sources whose bandwidth is limited to a fraction of their center frequency. Photoconductive devices offer a complementary approach, combining intrinsically broadband operation with coherent optoelectronic generation and detection. We report free-induction-decay spectroscopy of carbonyl sulfide at 0.29 THz in which, to our knowledge for the first time, both the pulsed emitter and the coherent heterodyne receiver are LT-GaAs photoconductors simultaneously pumped by a single free-running dual-frequency Ti:Sa laser. The receiver operates within 15 dB of the thermal noise limit, and the shared optical reference maintains phase coherence over more than 1000 averaged acquisitions. The measured transients agree with a time-domain Maxwell-Bloch model based on HITRAN parameters. These results demonstrate the feasibility of fully optoelectronic coherent THz spectroscopy and establish photoconductive optoelectronic mixing as a practical route toward frequency-agile, high-resolution coherent THz spectrometers over broad spectral ranges.",
+    "url": "https://arxiv.org/abs/2608.04238",
+    "authors": [
+      {
+        "name": "François Parnet"
+      },
+      {
+        "name": "Francis Hindle"
+      },
+      {
+        "name": "Ulysse Mao"
+      },
+      {
+        "name": "Guillaume Ducournau"
+      },
+      {
+        "name": "Jean-François Lampin"
+      },
+      {
+        "name": "Sophie Eliet"
+      },
+      {
+        "name": "François Bondu"
+      },
+      {
+        "name": "Romain Peretti"
+      },
+      {
+        "name": "Gaël Mouret"
+      },
+      {
+        "name": "Daniele Fontanari"
+      },
+      {
+        "name": "Goulc'hen Loas"
+      },
+      {
+        "name": "Emilien Peytavit"
+      }
+    ],
+    "subjects": "Applied Physics (physics.app-ph)",
+    "author_count": 12,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "laser",
+        "optical"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "François Parnet"
+      },
+      {
+        "name": "Francis Hindle"
+      },
+      {
+        "name": "Ulysse Mao"
+      },
+      {
+        "name": "Daniele Fontanari"
+      },
+      {
+        "name": "Goulc'hen Loas"
+      },
+      {
+        "name": "Emilien Peytavit"
+      }
+    ],
+    "summaries": {
+      "en": "The paper demonstrates the first fully optoelectronic coherent terahertz spectroscopy system using dual-frequency laser-pumped photoconductors, achieving high phase coherence and near-thermal-noise detection for gas spectroscopy.",
+      "zh": "该论文展示了首个全光电子相干太赫兹光谱系统，利用双频激光泵浦的光电导器件，实现了高相位相干性和接近热噪声极限的检测，用于气体光谱测量。",
+      "ja": "本論文は、二周波レーザー励起の光導電デバイスを用いた初の全光電子コヒーレントテラヘルツ分光システムを実証し、高位相コヒーレンスと熱雑音限界に近い検出を達成した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04328",
+    "category": "physics",
+    "title": "Quantum optoelectronics in semiconductor solar cell materials and devices",
+    "abstract": "We analyze the integration of quantum optical phenomena, such as cavity quantum electrodynamics (CQED), Fabry Perot resonances, and strong light-matter coupling, into the design and engineering of next generation photovoltaic systems. We examine how these phenomena can be harnessed through photonic structures including optical cavities, plasmonic materials, and metasurfaces to improve light trapping, absorption, and carrier dynamics in future solar cell devices. Specific focus is given to semiconductor materials such as perovskites, organics, transition metal dichalcogenides (TMD), cadmium telluride (CdTe), and silicon. For perovskite solar cells, we analyze device architectures, interfacial engineering with hyperbranched polymers, and additive optimization using molecular dopants and nanosheets to enhance film morphology and stability. We further examine laser-based metrology for thin-film characterization and coherent spectroscopy techniques involving frequency combs and high-harmonic generation. The paper also shows how machine learning (ML), combined with density functional theory (DFT), accelerates material screening and performance prediction for next-generation solar cell absorbers. These developments demonstrate how quantum optoelectronic design principles are transforming photovoltaic research and enabling higher efficiency, stability, and functionality in solar energy devices.",
+    "url": "https://arxiv.org/abs/2608.04328",
+    "authors": [
+      {
+        "name": "Xi Liu"
+      },
+      {
+        "name": "Wenxi Fang"
+      },
+      {
+        "name": "Ken Perlin"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 3,
+    "topics": [
+      "Nonlinear Optics",
+      "Quantum Optics & Quantum Computing",
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "harmonic generation"
+      ],
+      "Quantum Optics & Quantum Computing": [
+        "quantum optical"
+      ],
+      "Optical Materials": [
+        "metasurface",
+        "metasurfaces",
+        "plasmonic"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Xi Liu"
+      },
+      {
+        "name": "Wenxi Fang"
+      },
+      {
+        "name": "Ken Perlin"
+      }
+    ],
+    "summaries": {
+      "en": "This paper analyzes how quantum optical phenomena like cavity quantum electrodynamics and strong light-matter coupling, combined with photonic structures and advanced materials, can improve the efficiency and stability of next-generation solar cells, with machine learning accelerating material discovery.",
+      "zh": "本文分析了如何利用腔量子电动力学和强光-物质耦合等量子光学现象，结合光子结构和先进材料，提高下一代太阳能电池的效率和稳定性，并通过机器学习加速材料发现。",
+      "ja": "本論文は、共振器量子電気力学や強い光-物質結合などの量子光学現象を、フォトニック構造や先端材料と組み合わせることで、次世代太陽電池の効率と安定性を向上させ、機械学習が材料発見を加速することを分析している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04493",
+    "category": "physics",
+    "title": "All-Optical Field-Resolved Spectroscopy With Interferometric Nonlinear Cross-Correlations",
+    "abstract": "Direct time-domain measurements of electric fields enable sub-cycle spectroscopy of light-matter interactions, but established techniques such as electro-optic sampling are constrained in their bandwidth by gate-pulse duration and phase-matching limitations. Alternative approaches have emerged in recent years based on asymmetric interferometric nonlinear cross-correlations with highly nonlinear media, and have demonstrated, for example, the field-resolved study of exciton ensembles. However, these nonlinear cross-correlation-based techniques have been benchmarked almost exclusively by self-referenced pulse characterization rather than by their quantitative spectroscopic performance, and all-optical approaches have received less attention than those based on direct charge emission. Here we extend all-optical asymmetric interferometric cross-correlation to higher nonlinearities in sub-wavelength films and demonstrate field-resolved spectroscopy of the free-induction decay of two ro-vibrational bands of ambient water vapor with a performance comparable to state of the art electro-optic sampling. The measurement spans 190 THz of bandwidth (80 THz to 270 THz) with sub-500 GHz spectral resolution, a spectral intensity dynamic range of six orders of magnitude, and a field-strength noise floor of 100 kV per meter. We anticipate the rapid adoption of here presented all-optical sampling to many experimental settings and a broad impact beyond the ultrafast optics research community as it is drastically simplified in comparison to ionization based techniques and allows the translation of electro-optic-sampling-level sensitivity into higher frequency ranges not previously accessible by conventional tools.",
+    "url": "https://arxiv.org/abs/2608.04493",
+    "authors": [
+      {
+        "name": "Felix Ritzkowsky"
+      },
+      {
+        "name": "Gian Luca Dolso"
+      },
+      {
+        "name": "Benjamin Mazur"
+      },
+      {
+        "name": "Matthew Yeung"
+      },
+      {
+        "name": "Phillip D. Keathley"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 5,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "electro-optic"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Felix Ritzkowsky"
+      },
+      {
+        "name": "Gian Luca Dolso"
+      },
+      {
+        "name": "Benjamin Mazur"
+      },
+      {
+        "name": "Matthew Yeung"
+      },
+      {
+        "name": "Phillip D. Keathley"
+      }
+    ],
+    "summaries": {
+      "en": "This paper extends all-optical asymmetric interferometric nonlinear cross-correlation to higher nonlinearities in sub-wavelength films, demonstrating field-resolved spectroscopy of water vapor's ro-vibrational bands with performance comparable to electro-optic sampling, across 80-270 THz with high resolution and sensitivity.",
+      "zh": "本文将全光学非对称干涉非线性互相关扩展到亚波长薄膜中的更高非线性，实现了对水蒸气转动振动带的场分辨光谱测量，其性能可与最先进电光采样相媲美，覆盖80至270太赫兹带宽并具有高分辨率和灵敏度。",
+      "ja": "本論文は、サブ波長膜における高次非線形性を利用した全光学的非対称干渉非線形相互相関法を拡張し、水蒸気の回転振動バンドの場分解分光を実証し、その性能は最先端の電気光学サンプリングに匹敵し、80〜270 THzの帯域、高分解能と高感度を達成した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04517",
+    "category": "physics",
+    "title": "On the relationship between the gain of Stimulated Raman Backscatter of a short-pulse laser in a plasma and the Pierce parameter for XFELs",
+    "abstract": "It is shown that the convective gain of Stimulated Raman Backscatter (SRBS) within a single laser wavelength in the strongly coupled regime is equivalent to the Pierce parameter commonly used to describe high gain x-ray Free Electron Lasers (XFELs). The comparison utilizes the fact that the gain is a Lorentz invariant so the Pierce parameter is written in terms of the FEL parameters in the electron beam's rest frame. It is thus inferred that there is a direct correspondence of the physics between SRBS in the strong-coupled regime and high gain XFELs in the Compton regime.",
+    "url": "https://arxiv.org/abs/2608.04517",
+    "authors": [
+      {
+        "name": "Xinlu Xu"
+      },
+      {
+        "name": "Warren Mori"
+      }
+    ],
+    "subjects": "Plasma Physics (physics.plasm-ph) ; Accelerator Physics (physics.acc-ph)",
+    "author_count": 2,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "laser",
+        "lasers"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Xinlu Xu"
+      },
+      {
+        "name": "Warren Mori"
+      }
+    ],
+    "summaries": {
+      "en": "This paper shows that the convective gain of Stimulated Raman Backscatter (SRBS) in a plasma within a single laser wavelength in the strongly coupled regime is equivalent to the Pierce parameter used for high-gain X-ray Free Electron Lasers (XFELs), indicating a direct correspondence between the physics of SRBS in the strong-coupling regime and high-gain XFELs in the Compton regime.",
+      "zh": "本文表明，在强耦合机制下，单个激光波长内受激拉曼背向散射（SRBS）的对流增益等效于用于描述高增益X射线自由电子激光器（XFELs）的Pierce参数，从而推断SRBS在强耦合机制与高增益XFELs在康普顿机制之间存在直接的物理对应关系。",
+      "ja": "この論文は、強結合状態での単一レーザー波長内の誘導ラマン後方散乱（SRBS）の対流利得が、高利得X線自由電子レーザー（XFEL）を記述するPierceパラメータと等価であることを示し、強結合状態のSRBSとコンプトン状態の高利得XFELの間に直接的な物理的対応関係があると推測している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04555",
+    "category": "physics",
+    "title": "Photogalvanic second harmonic generation in Si3N4 for 1 Hz level on-chip metrology and spectroscopy",
+    "abstract": "The coherent photogalvanic (PG) effect induces an effective $\\chi^{(2)}$ nonlinearity in natively $\\chi^{(3)}$ silicon nitride integrated photonics, unlocking pathways toward chip-scale precision spectroscopy and optical clockworks via second harmonic generation (SHG). While quasi-phase-matched PG-SHG using spatially varying internal electric fields offers tuning flexibility, it is often accompanied by pump-power- and detuning-dependent frequency offsets. Here, we investigate whether direct phase-matching---utilizing an intermodal scheme that generates a spatially uniform electric field---can support metrologically compatible SHG. By comparing the fundamental and doubled optical frequencies in a silicon nitride microresonator, we test the preservation of the (2:1) frequency ratio in directly phase-matched PG-SHG. We observe a frequency offset of $< 1\\mathrm{~Hz}$, contrasting with previous limitations in quasi-phase-matched configurations. Furthermore, we measure a residual fractional frequency instability of $2\\times 10^{-15}$ at $1\\mathrm{~s}$, averaging down to the $10^{-16}$ level at $1000\\mathrm{~s}$, with multi-hour deviations remaining below $1\\mathrm{~Hz}$. These results establish directly phase-matched PG-SHG as a robust, metrologically compatible route to effective $\\chi^{(2)}$ functionality, combining sub-Hz frequency-ratio fidelity and high coherence on a mature integrated platform for optical clockworks, self-referencing, and precision spectroscopy.",
+    "url": "https://arxiv.org/abs/2608.04555",
+    "authors": [
+      {
+        "name": "Andrei Diakonov"
+      },
+      {
+        "name": "Roy Zektzer"
+      },
+      {
+        "name": "Xiyuan Lu"
+      },
+      {
+        "name": "Kartik Srinivasan"
+      },
+      {
+        "name": "Liron Stern"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Applied Physics (physics.app-ph)",
+    "author_count": 5,
+    "topics": [
+      "Integrated Optics",
+      "Nonlinear Optics",
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "integrated photonic",
+        "integrated photonics"
+      ],
+      "Nonlinear Optics": [
+        "harmonic generation",
+        "second harmonic"
+      ],
+      "AMO Physics": [
+        "optical clock",
+        "precision spectroscopy"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Andrei Diakonov"
+      },
+      {
+        "name": "Roy Zektzer"
+      },
+      {
+        "name": "Xiyuan Lu"
+      },
+      {
+        "name": "Kartik Srinivasan"
+      },
+      {
+        "name": "Liron Stern"
+      }
+    ],
+    "summaries": {
+      "en": "Directly phase-matched photogalvanic second harmonic generation in silicon nitride microresonators achieves sub-Hz frequency ratio fidelity, enabling metrology-compatible on-chip spectroscopy and optical clockworks.",
+      "zh": "在氮化硅微谐振器中直接相位匹配的光电光伏二次谐波产生实现了亚赫兹频率比保真度，为计量兼容的片上光谱学和光学钟工作提供了途径。",
+      "ja": "シリコン窒化物マイクロ共振器における直接位相整合フォトガルバニック第二高調波発生は、サブHzの周波数比忠実度を達成し、メトロロジーに適合したオンチップ分光と光時計を可能にします。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04580",
+    "category": "physics",
+    "title": "Design of a thermal loading resilient optical enhancement cavity for operation at 515 nm for X-ray production through inverse Compton scattering in an energy recovery linac",
+    "abstract": "A fast and simple method to optimize a high-power optical enhancement cavity is proposed. It is applied to a four-mirror bow-tie cavity operating at 515 nm, which is to be implemented within the PERLE ERL for the production of X-rays through inverse Compton scattering. The optimized figure of merit is the expected X-ray photon rate. Thermal loading is carefully evaluated, giving also a path towards very high average power operation in infrared. One shows that photon rates exceeding 10^11 per second at average energies above 280 keV in apertures of a few miliradians are within reach. For easier comparison with existing Compact X-ray sources providing high rates of photons, the performance of the proposed design is also evaluated for a system delivering infrared laser pulses. It is shown that a source delivering more than 10^13 photons per second is achievable with this design, an unprecedented performance for existing Compton X-ray sources. The design procedure employed here can be easily applied to other applications of high-power high-finesse optical cavities.",
+    "url": "https://arxiv.org/abs/2608.04580",
+    "authors": [
+      {
+        "name": "Alice Renaux"
+      },
+      {
+        "name": "Aurelien Martens"
+      },
+      {
+        "name": "Yann Peinaud"
+      },
+      {
+        "name": "Ronic Chiche"
+      },
+      {
+        "name": "Kevin Dupraz"
+      },
+      {
+        "name": "Marie Jacquet"
+      },
+      {
+        "name": "Daniele Nutarelli"
+      },
+      {
+        "name": "Fabian Zomer"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 8,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "laser",
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Alice Renaux"
+      },
+      {
+        "name": "Aurelien Martens"
+      },
+      {
+        "name": "Yann Peinaud"
+      },
+      {
+        "name": "Marie Jacquet"
+      },
+      {
+        "name": "Daniele Nutarelli"
+      },
+      {
+        "name": "Fabian Zomer"
+      }
+    ],
+    "summaries": {
+      "en": "This paper presents a fast and simple optimization method for high-power optical enhancement cavities, demonstrating that a four-mirror bow-tie cavity at 515 nm for inverse Compton scattering in the PERLE ERL can achieve X-ray photon rates over 10^11 per second, and over 10^13 per second in the infrared, while managing thermal loading.",
+      "zh": "本文提出了一种快速简便的高功率光学增强腔优化方法，并证明用于PERLE ERL中逆康普顿散射的515 nm四镜 bow-tie 腔在管理热负荷的同时，可实现每秒超过10^11的X射线光子产率，红外模式下更可超过每秒10^13。",
+      "ja": "本論文は、高出力光増強共振器の迅速かつ簡便な最適化法を提案し、PERLE ERLにおける逆コンプトン散乱用の515 nm四鏡ボウタイ共振器が、熱負荷を管理しつつ、X線光子率で毎秒10^11以上、赤外線モードでは毎秒10^13以上を達成可能であることを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04582",
+    "category": "physics",
+    "title": "Universal Function Approximation via Diffractive Optical Processors: Physical Limits, Error Bounds, and Learnability",
+    "abstract": "We present a unified theoretical framework connecting classical universal approximation theory, Fourier-feature approximation, and diffractive optical processors. We show that phase-encoded diffractive processors implement finite Fourier-feature expansions whose mathematical completeness follows from Fourier/Stone-Weierstrass arguments, while their physical realizability is governed by finite coefficient synthesis through optimized spatially varying coherent point-spread functions (PSFs). Our analyses derive approximation-error bounds that separate Fourier truncation, PSF-synthesis, input phase error, optical hardware, readout, and noise contributions; establish scaling relationships linking approximation complexity to optical degrees of freedom and input/output space-bandwidth products; derive photon-budget and throughput limits imposed by photon statistics; formulate finite-class statistical learnability bounds for phase-quantized diffractive function approximators; and analyze the impact of spatially incoherent illumination. We further analyze coherent optical cascadability and show that quadratic feature expansion through coherent mixing and optical readout provides a mechanism for enhanced representation while remaining fundamentally distinct from the depth-separation results established for digital neural networks. Our analyses provide a rigorous theoretical foundation for diffractive nonlinear function approximation and establish quantitative relationships among mathematical expressivity, optical hardware resources, statistical learning, and physical performance limits, thereby offering general design principles for large-scale analog optical computing systems.",
+    "url": "https://arxiv.org/abs/2608.04582",
+    "authors": [
+      {
+        "name": "Md Sadman Sakib Rahman"
+      },
+      {
+        "name": "Che-Yung Shen"
+      },
+      {
+        "name": "Aydogan Ozcan"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Neural and Evolutionary Computing (cs.NE); Applied Physics (physics.app-ph)",
+    "author_count": 3,
+    "topics": [
+      "Optical Computing"
+    ],
+    "topic_hits": {
+      "Optical Computing": [
+        "optical computing"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Md Sadman Sakib Rahman"
+      },
+      {
+        "name": "Che-Yung Shen"
+      },
+      {
+        "name": "Aydogan Ozcan"
+      }
+    ],
+    "summaries": {
+      "en": "This paper establishes a unified theoretical framework for diffractive optical processors, deriving approximation-error bounds, physical limits, and learnability guarantees that connect universal approximation theory with Fourier-feature expansions and coherent optical hardware.",
+      "zh": "本文为衍射光学处理器建立了统一的理论框架，推导了逼近误差界、物理极限和可学习性保证，将通用逼近理论与傅里叶特征展开及相干光学硬件联系起来。",
+      "ja": "本論文は、回折光学プロセッサのための統一的な理論的枠組みを確立し、近似誤差限界、物理的限界、学習可能性の保証を導出し、普遍近似理論とフーリエ特徴展開およびコヒーレント光学ハードウェアを結び付けています。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04660",
+    "category": "physics",
+    "title": "Photo-ionization Compensation of Stray Electric Fields for Cold Rydberg Atoms",
+    "abstract": "Neurtal atoms in optical tweezer arrays constitute a highly promising platform for quantum computing and quantum simulation. Their operation relies on precise control of the Rydberg excitation, which is highly sensitive to background electric fields. Here, we identify a previously overlooked source of stray electric fields arising from trapped charges within the antireflection coating layers of glass vacuum cells. In contrast to the conventional approach of removing surface charges through ultraviolet-light-induced desorption, we compensate these clamped charges by generating additional charges via photo-ionization of a cold atomic ensemble. We verify the resulting suppression of stray electric fields through Rydberg excitation spectroscopy in an atomic array and further confirm that the residual electric field inside the vacuum cell is effectively eradicated with the aid of external electrodes. Our work identifies and mitigates a previously unrecognized source of residual electric field, providing a practical solution for improving the performance of neutral atomic quantum processors and other Rydberg-based quantum technologies, as well as surface-sensitive atomic systems.",
+    "url": "https://arxiv.org/abs/2608.04660",
+    "authors": [
+      {
+        "name": "Z.-Y. Chen"
+      },
+      {
+        "name": "Z.-X. Fu"
+      },
+      {
+        "name": "Z.-R He"
+      },
+      {
+        "name": "Z.-Y. Chen"
+      },
+      {
+        "name": "S.-A. Cheng"
+      },
+      {
+        "name": "J.-H. Liang"
+      },
+      {
+        "name": "S.-C. Zhang"
+      },
+      {
+        "name": "Y.-X. Du"
+      },
+      {
+        "name": "C. Li"
+      }
+    ],
+    "subjects": "Atomic Physics (physics.atom-ph)",
+    "author_count": 9,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "cold atom",
+        "neutral atom",
+        "optical tweezer",
+        "rydberg"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Z.-Y. Chen"
+      },
+      {
+        "name": "Z.-X. Fu"
+      },
+      {
+        "name": "Z.-R He"
+      },
+      {
+        "name": "S.-C. Zhang"
+      },
+      {
+        "name": "Y.-X. Du"
+      },
+      {
+        "name": "C. Li"
+      }
+    ],
+    "summaries": {
+      "en": "This paper identifies trapped charges in the antireflection coating of glass vacuum cells as a stray electric field source for cold Rydberg atoms, and compensates them by photo-ionization of a cold atomic ensemble, effectively suppressing residual fields as verified by Rydberg excitation spectroscopy.",
+      "zh": "本文发现玻璃真空室抗反射涂层内的被困电荷是冷里德伯原子杂散电场的来源，并利用冷原子集体的光电离产生额外电荷来补偿这些电荷，通过里德伯激发光谱验证了残余电场的有效抑制。",
+      "ja": "本論文は、ガラス真空セルの反射防止コーティング内のトラップ電荷が冷リュードベリ原子の迷走電場の原因であることを特定し、冷原子集団の光イオン化によって追加電荷を生成してこれを補償し、リュードベリ励起分光法で残留電場の効果的な抑制を検証した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04681",
+    "category": "physics",
+    "title": "Field Deviations in Dipole-Driven Linear Paul Traps: Effects of Endcap Boundaries and their Minimization",
+    "abstract": "Deviations from both the ideal linear Paul trap (LPT) geometry as well as the ideal quadrupole driving scheme introduce imperfections to ion trapping potentials. We investigate the effects of these imperfections in a LPT operated in a conventional dipole-drive configuration. We demonstrate the trapping of the Li$^+$ ions along the axial direction with zero and negative end-cap voltages. This occurs due to the modified axial $a-q$ space resulting from radial-to-axial coupling of the electric field. The dipole drive configuration lifts the degeneracy of the radial trapping potentials, resulting in unequal radial secular frequencies, and this is demonstrated experimentally. The combined effects of dipole drive and trap dimensions are summarized in a two-dimensional map that quantifies deviations from ideal behaviour. Based on this map, we propose a geometric modification that significantly reduces radial-to-axial coupling of the potential.",
+    "url": "https://arxiv.org/abs/2608.04681",
+    "authors": [
+      {
+        "name": "Vaibhav Mahendrakar"
+      },
+      {
+        "name": "Nishant Joshi"
+      },
+      {
+        "name": "S. A. Rangwala"
+      }
+    ],
+    "subjects": "Atomic Physics (physics.atom-ph)",
+    "author_count": 3,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "ion trap"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Vaibhav Mahendrakar"
+      },
+      {
+        "name": "Nishant Joshi"
+      },
+      {
+        "name": "S. A. Rangwala"
+      }
+    ],
+    "summaries": {
+      "en": "This paper investigates imperfections in dipole-driven linear Paul traps, showing that endcap boundary effects cause radial-to-axial coupling, which can trap ions with zero or negative endcap voltages and lift the degeneracy of radial secular frequencies, and proposes a geometric modification to minimize these deviations.",
+      "zh": "本文研究了偶极驱动线性保罗阱中的不完美性，表明端盖边界效应引起径向-轴向耦合，这可以在零或负端盖电压下囚禁离子并提升径向久期频率的简并性，并提出了一种几何修改来最小化这些偏差。",
+      "ja": "この論文は、双極子駆動の線形ポールトラップにおける不完全性を調査し、エンドキャップ境界効果が径方向-軸方向の結合を引き起こし、ゼロまたは負のエンドキャップ電圧でのイオン閉じ込めを可能にし、径方向の基準周波数の縮退を解くことを示し、これらの偏差を最小化する幾何学的修正を提案しています。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04711",
+    "category": "physics",
+    "title": "Freeform super-oscillatory optics for CMOS-integrated THz super-resolution imaging",
+    "abstract": "The diffraction limit fundamentally constrains the spatial resolution of far-field imaging systems. While near-field techniques can circumvent this limit, their inherently short working distances (WD) severely restrict practical applications. Super-oscillatory lenses (SOLs) offer a far-field alternative; however, conventional SOLs are plagued by discrete operating wavelengths, low efficiencies (below 5%), and formidable trade-offs among numerical aperture, chromatic aberration, and depth of focus (DOF). Here, we introduce a nonlocal, nonlinear-curvature mechanism to design a freeform SOL that achieves ultrabroadband (0.3 to 1 THz), achromatic super-resolution focusing with an unprecedented efficiency of 44%. Operating at a 9 mm WD, the lens maintains a consistent sub-diffraction full-width at half-maximum (FWHM) of around 0.45 wavelength alongside an extended DOF of around 10 wavelengths. By integrating a compact 65-nm CMOS oscillator-radiator array, we establish an advanced imaging platform capable of resolving complex 2D and 3D sub-millimeter features (down to 0.15 mm). Readily scalable to the optical regime via two-photon lithography, this freeform SOL paradigm paves the way for next-generation, high-performance integrated photonics.",
+    "url": "https://arxiv.org/abs/2608.04711",
+    "authors": [
+      {
+        "name": "Jin Chen"
+      },
+      {
+        "name": "Liang Gao"
+      },
+      {
+        "name": "Hao Guo"
+      },
+      {
+        "name": "Zhi Chao Chen"
+      },
+      {
+        "name": "Kang Jie Lin"
+      },
+      {
+        "name": "Kam Man Shum"
+      },
+      {
+        "name": "Ka Fai Chan"
+      },
+      {
+        "name": "Chi Hou Chan"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 8,
+    "topics": [
+      "Integrated Optics",
+      "Optical Imaging"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "integrated photonic",
+        "integrated photonics"
+      ],
+      "Optical Imaging": [
+        "super-resolution imaging"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Jin Chen"
+      },
+      {
+        "name": "Liang Gao"
+      },
+      {
+        "name": "Hao Guo"
+      },
+      {
+        "name": "Kam Man Shum"
+      },
+      {
+        "name": "Ka Fai Chan"
+      },
+      {
+        "name": "Chi Hou Chan"
+      }
+    ],
+    "summaries": {
+      "en": "This paper introduces a freeform super-oscillatory lens that achieves ultrabroadband, achromatic THz super-resolution imaging with 44% efficiency and a 9 mm working distance, integrated with a CMOS array for high-resolution 2D/3D imaging.",
+      "zh": "本文提出了一种自由曲面超振荡透镜，实现了超宽带、消色差的太赫兹超分辨成像，效率达44%，工作距离9毫米，并与CMOS阵列集成实现高分辨率2D/3D成像。",
+      "ja": "本論文は、広帯域・無色収差のテラヘルツ超解像イメージングを44%の効率と9 mmの作業距離で実現する自由曲面超振動レンズを紹介し、CMOSアレイと統合して高解像度の2D/3Dイメージングを可能にする。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04931",
+    "category": "physics",
+    "title": "Photonic-chip-based generation of sub-100-femtosecond optical frequency combs",
+    "abstract": "Sub-100-fs optical pulses and frequency comb sources have been revolutionizing a wide range of applications, from ultrafast optical science to optical frequency standard and measurement. To date, the leading techniques for generating such pulses in practical systems rely on tabletop mode-locked lasers, which inherently suffer from high system complexity, limited long-term reliability, and pronounced environmental sensitivity. Meanwhile, driven by advances in photonic integration, chip-scale approaches have sought to realize miniaturized pulse sources. However, simultaneously achieving sub-100-fs duration, ideal pulse shape, and a broadband flat-topped spectrum remains a significant challenge. Here, we address these challenges by combining two key photonic chip technologies: TFLN EO modulators for picosecond seed pulse generation, and highly nonlinear optical loop mirrors (NOLM) based on AlGaAsOI nanowaveguides for efficient temporal pulse cleaning and spectral broadening. In theoretical simulation and experiment, we show that for an input seed pulse centred at ~1550nm, a single-stage AlGaAs NOLM with a loop length of 1cm can produce flat-topped, nearly tenfold spectral broadening and over tenfold compression of pulse width, and more than 10dB suppression of pulse pedestals. Using initial EO comb pulses with ps-level durations at repetition rates of 10-20GHz, we demonstrate photonic-chip-enabled pulses with an unprecedented duration of 55fs and a flat-topped comb spectrum whose 10dB optical bandwidth exceeds 90nm. Our results highlight the remarkable potential of photonic chip technologies to realize high-repetition-rate, miniaturized sub-100-fs optical pulse generators with the prospect of superior stability and operability. The demonstrated photonic-chip-based sub-100-fs optical frequency comb sources may establish a new paradigm for both scientific research and practical applications.",
+    "url": "https://arxiv.org/abs/2608.04931",
+    "authors": [
+      {
+        "name": "Weiqiang Xie"
+      },
+      {
+        "name": "Zhengshun Lei"
+      },
+      {
+        "name": "Zeyu Xiao"
+      },
+      {
+        "name": "Yudi Zhao"
+      },
+      {
+        "name": "Xing Zou"
+      },
+      {
+        "name": "Wenqi Wei"
+      },
+      {
+        "name": "Zihao Wang"
+      },
+      {
+        "name": "Ting Wang"
+      },
+      {
+        "name": "Jianjun Zhang"
+      },
+      {
+        "name": "Bofang Zheng"
+      },
+      {
+        "name": "Yikai Su"
+      }
+    ],
+    "subjects": "Optics (physics.optics)",
+    "author_count": 11,
+    "topics": [
+      "Integrated Optics",
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Integrated Optics": [
+        "waveguide",
+        "waveguides"
+      ],
+      "Nonlinear Optics": [
+        "nonlinear optical"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Weiqiang Xie"
+      },
+      {
+        "name": "Zhengshun Lei"
+      },
+      {
+        "name": "Zeyu Xiao"
+      },
+      {
+        "name": "Jianjun Zhang"
+      },
+      {
+        "name": "Bofang Zheng"
+      },
+      {
+        "name": "Yikai Su"
+      }
+    ],
+    "summaries": {
+      "en": "This work demonstrates photonic-chip-based generation of sub-100-fs optical frequency combs by combining TFLN electro-optic modulators and AlGaAsOI nonlinear loop mirrors, achieving 55-fs pulses with a flat-topped spectrum over 90 nm.",
+      "zh": "该工作通过在光子芯片上结合TFLN电光调制器和AlGaAsOI非线性环镜，实现了亚100飞秒光学频率梳的生成，获得了55飞秒脉冲和超过90纳米的平坦光谱。",
+      "ja": "本研究では、TFLN電気光学変調器とAlGaAsOI非線形ループミラーを組み合わせたフォトニックチップ上で、55フェムト秒のパルスと90ナノメートル以上の平坦なスペクトルを実現し、サブ100フェムト秒の光周波数コムを生成しました。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05067",
+    "category": "physics",
+    "title": "Diatomic molecular anions of alkali-metal and alkaline-earth-metal atoms",
+    "abstract": "Studies of anions are inherently more challenging than investigations of neutrals and cations because of the diffuse and weakly bound character of an anionic electron. Here, we present a comprehensive computational examination of ground-state diatomic molecular anions composed of alkali-metal (Li, Na, K, Rb, Cs, Fr) and alkaline-earth-metal (Be, Mg, Ca, Sr, Ba, Ra) atoms. We study 21 alkali-metal diatomic anions in the X$^{2}\\Sigma^{+}$ electronic state and 36 alkali-metal--alkaline-earth-metal diatomic anions in the X$^{1}\\Sigma^{+}$ electronic state. The calculations employ a hierarchy of the coupled cluster methods, combined with large Gaussian basis sets and small-core relativistic energy-consistent pseudopotentials for heavier elements. We compute potential energy curves, permanent electric dipole moments, and static polarizabilities, and we assess convergence and uncertainties of our results. Additionally, using the multireference configuration interaction and equation-of-motion electron-attachment coupled cluster methods, we investigate excited electronic states of alkali-metal molecular anions, including valence-bound and dipole-bound states. We predict crossings between ground neutral and excited anionic states, which may enhance resonant electron attachment and subsequent anion dissociation. This finding may be relevant for experiments with mixtures of ultracold ground-state alkali-metal molecules and Rydberg atoms.",
+    "url": "https://arxiv.org/abs/2608.05067",
+    "authors": [
+      {
+        "name": "Sana Akkari"
+      },
+      {
+        "name": "Hela Ladjimi"
+      },
+      {
+        "name": "Wissem Zrafi"
+      },
+      {
+        "name": "Hamid Berriche"
+      },
+      {
+        "name": "Marcin Gronowski"
+      },
+      {
+        "name": "Michał Tomza"
+      }
+    ],
+    "subjects": "Atomic Physics (physics.atom-ph) ; Chemical Physics (physics.chem-ph)",
+    "author_count": 6,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "rydberg"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Sana Akkari"
+      },
+      {
+        "name": "Hela Ladjimi"
+      },
+      {
+        "name": "Wissem Zrafi"
+      },
+      {
+        "name": "Hamid Berriche"
+      },
+      {
+        "name": "Marcin Gronowski"
+      },
+      {
+        "name": "Michał Tomza"
+      }
+    ],
+    "summaries": {
+      "en": "This paper presents comprehensive computational studies of ground-state diatomic molecular anions composed of alkali-metal and alkaline-earth-metal atoms, calculating their potential energy curves, dipole moments, polarizabilities, and excited states, and predicting crossings between neutral and anionic states that could impact ultracold chemistry.",
+      "zh": "本文对由碱金属和碱土金属原子组成的基态双原子分子阴离子进行了全面的计算研究，计算了其势能曲线、电偶极矩、极化率及激发态，并预测了中性态与阴离子激发态之间的交叉，这可能对超冷化学产生影响。",
+      "ja": "本論文では、アルカリ金属とアルカリ土類金属原子からなる基底状態の二原子分子アニオンについて、ポテンシャルエネルギー曲線、双極子モーメント、分極率、励起状態を包括的に計算し、中性状態とアニオン励起状態の交差を予測しており、これは超冷化学に影響を与える可能性があります。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05073",
+    "category": "physics",
+    "title": "Mask-free fast patterning of organic light-emitting diode pixels using laser-assisted close-space sublimation",
+    "abstract": "Existing patterning processes for organic light-emitting diode displays offer micrometer-scale precision but are constrained by long processing times for large-area substrates. In this work, we study a fast growth method for patterned organic film deposition, aimed at applications including active-matrix organic light-emitting diode displays. The approach employs a specially engineered donor substrate in a close-space sublimation configuration combined with laser heating. The donor substrate incorporates spatially patterned absorber and reflector layers that enable selective, one-step or two-step transfer of organic material onto a receiver substrate. We analyze the optical response and heat-transfer dynamics that govern the selective transfer mechanism and demonstrate precise pixel patterning with micrometer-scale spatial fidelity. The reliability and practical applicability of the method are validated by fabricating light-emitting diode devices by using this rapid transfer process and benchmarking their performance against devices produced via conventional vacuum thermal evaporation. The resulting devices exhibit comparable optoelectronic performance, confirming the robustness and technological relevance of the proposed strategy for scalable fabrication of patterned organic light-emitting diodes for display application.",
+    "url": "https://arxiv.org/abs/2608.05073",
+    "authors": [
+      {
+        "name": "Subhamoy Sahoo"
+      },
+      {
+        "name": "Jain Jose"
+      },
+      {
+        "name": "Mani R"
+      },
+      {
+        "name": "Arghya Saha"
+      },
+      {
+        "name": "Kanimozhi V"
+      },
+      {
+        "name": "Dhruvajyoti Barah"
+      },
+      {
+        "name": "R. Bairava Ganesh"
+      },
+      {
+        "name": "Amitava Majumdar"
+      },
+      {
+        "name": "Jayeeta Bhattacharyya"
+      },
+      {
+        "name": "G Rajeswaran"
+      },
+      {
+        "name": "Debdutta Ray"
+      }
+    ],
+    "subjects": "Optics (physics.optics) ; Applied Physics (physics.app-ph)",
+    "author_count": 11,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "laser",
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Subhamoy Sahoo"
+      },
+      {
+        "name": "Jain Jose"
+      },
+      {
+        "name": "Mani R"
+      },
+      {
+        "name": "Jayeeta Bhattacharyya"
+      },
+      {
+        "name": "G Rajeswaran"
+      },
+      {
+        "name": "Debdutta Ray"
+      }
+    ],
+    "summaries": {
+      "en": "This paper presents a mask-free laser-assisted close-space sublimation method for rapid, pixel-precise patterning of organic light-emitting diode films, achieving performance comparable to conventional vacuum thermal evaporation.",
+      "zh": "本文提出了一种基于激光辅助近空间升华的无掩模快速图案化方法，用于有机发光二极管像素制备，其性能与传统真空热蒸发相当。",
+      "ja": "本論文は、レーザー支援近接昇華法を用いたマスク不要の高速パターニング技術を提示し、有機発光ダイオード画素を従来の真空蒸着法と同等の性能で作製できることを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04081",
+    "category": "quant-ph",
+    "title": "Guiding Compiler Optimizations for Neutral Atom Quantum Computers Through Visualizations",
+    "abstract": "The scale of Neutral Atom (NA) quantum computers requires automated compilation tools. Designing the required heuristic methods demands a deep understanding of complex hardware trade-offs, for which visualizations can provide crucial insights. This work introduces NAViz, the first publicly available app to visualize quantum computations on NA devices in real-time. A case study demonstrates how NAViz was instrumental in identifying and resolving inefficiencies in an existing compilation strategy, leading to a new, more performant one. The tool is available as part of the Munich Quantum Toolkit (MQT) at this https URL .",
+    "url": "https://arxiv.org/abs/2608.04081",
+    "authors": [
+      {
+        "name": "Yannick Stade"
+      },
+      {
+        "name": "Robert Wille"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Emerging Technologies (cs.ET)",
+    "author_count": 2,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "neutral atom"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Yannick Stade"
+      },
+      {
+        "name": "Robert Wille"
+      }
+    ],
+    "summaries": {
+      "en": "The paper introduces NAViz, the first publicly available real-time visualization tool for neutral atom quantum computers, which helped identify and resolve inefficiencies in a compilation strategy, leading to improved performance.",
+      "zh": "本文介绍了NAViz，这是首个公开可用的用于中性原子量子计算机的实时可视化工具，它帮助识别并解决了编译策略中的低效问题，从而提升了性能。",
+      "ja": "この論文では、中性原子量子コンピュータ向けの初の公開リアルタイム可視化ツールNAVizを紹介し、既存のコンパイル戦略の非効率性を特定・解決して性能を向上させたことを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04089",
+    "category": "quant-ph",
+    "title": "Revealing Noise in Axial Motion Through Quantum Noise Spectroscopy on a Trapped Ion Processor",
+    "abstract": "Native noise processes in quantum processors are often difficult to isolate because multiple error mechanisms contribute to the same measured loss of coherence. Here we use dephasing-robust quantum noise spectroscopy to identify and characterize control noise induced by axial motion in an individually-addressed trapped-ion processor. When the ion motion is transverse to the addressing beam, thermal axial motion couples to the beam profile and produces effective amplitude control noise. We show that this noise is governed primarily by the local beam curvature and appears as a low-frequency contribution to the reconstructed control-noise spectrum. By varying the ion position within the beam profile, we separate curvature-dependent axial-motion noise from curvature-independent native control noise and extract motional parameters that are otherwise difficult to access on this platform. We also apply the protocol in parallel to a four-ion register, demonstrating a spectroscopic method for simultaneous characterization of position-dependent control noise across multiple qubits. The results of this study identify beam inflection points as operating regions that suppress axial-motion-induced noise at the cost of reduced Rabi rate, as found in PRX Quantum 3, 010334 (2022).",
+    "url": "https://arxiv.org/abs/2608.04089",
+    "authors": [
+      {
+        "name": "Vivian Maloney"
+      },
+      {
+        "name": "Matthew Chow"
+      },
+      {
+        "name": "Leigh Norris"
+      },
+      {
+        "name": "Melissa Revelle"
+      },
+      {
+        "name": "Daniel Lobser"
+      },
+      {
+        "name": "Brian McFarland"
+      },
+      {
+        "name": "Edward Tortorici"
+      },
+      {
+        "name": "Christopher Yale"
+      },
+      {
+        "name": "Susan Clark"
+      },
+      {
+        "name": "Gregory Quiroz"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 10,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "trapped ion"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Vivian Maloney"
+      },
+      {
+        "name": "Matthew Chow"
+      },
+      {
+        "name": "Leigh Norris"
+      },
+      {
+        "name": "Christopher Yale"
+      },
+      {
+        "name": "Susan Clark"
+      },
+      {
+        "name": "Gregory Quiroz"
+      }
+    ],
+    "summaries": {
+      "en": "This paper uses dephasing-robust quantum noise spectroscopy on a trapped-ion processor to identify and characterize control noise induced by thermal axial motion coupling to the addressing beam's profile, and demonstrates that operating at beam inflection points suppresses this noise at the cost of reduced Rabi rate.",
+      "zh": "本文利用抗退相干的量子噪声谱学对 trapped-ion 处理器进行测量，识别并表征了轴向热运动与寻址光束轮廓耦合引起的控制噪声，并展示了在光束拐点处工作可以抑制该噪声，但会以降低拉比频率为代价。",
+      "ja": "本論文では、trapされたイオンプロセッサにおいてdephasingロバストな量子ノイズ分光法を用いて、軸方向の熱運動がアドレスビームのプロファイルと結合することで引き起こされる制御ノイズを同定・特性評価し、ビーム変曲点で動作させるとこのノイズが抑制されるが、ラビ周波数が低下することを示した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04093",
+    "category": "quant-ph",
+    "title": "An optical-fibre-integrated buffer for packet-switched quantum networks",
+    "abstract": "Packet-switched quantum networks require buffers that can delay qubit payloads while routing information is read out in real time. Previous approaches have not provided this functionality in a fully fibre-integrated architecture compatible with telecom infrastructure. Here we demonstrate an optical-fibre-integrated buffer, based on a recirculating loop and a fibre storage line, in which the storage time of a polarisation-encoded qubit payload is determined by readout of an attached packet header. The key component behind this achievement is an ultra-low-loss poled fibre phase modulator, which provides fast, polarisation-insensitive switching directly in fibre and allows header and payload to be processed within the buffer. We demonstrate storage and retrieval of polarisation-encoded qubit payloads for storage times up to 47 $\\mu$s, with an average quantum bit error rate of 1.8% together with stable operation over several hours. These results establish a practical fibre-based architecture for packet-level quantum network buffering that can easily integrate into the current telecommunication infrastructure opening up new paths for deployment of the quantum internet.",
+    "url": "https://arxiv.org/abs/2608.04093",
+    "authors": [
+      {
+        "name": "Daniel Spegel-Lexne"
+      },
+      {
+        "name": "Joakim Argillander"
+      },
+      {
+        "name": "Martin Clason"
+      },
+      {
+        "name": "Åsa Claesson"
+      },
+      {
+        "name": "Kenny Hey Tow"
+      },
+      {
+        "name": "Gustavo Lima"
+      },
+      {
+        "name": "João M. B. Pereira"
+      },
+      {
+        "name": "Guilherme B. Xavier"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Optics (physics.optics)",
+    "author_count": 8,
+    "topics": [
+      "Other Optics"
+    ],
+    "topic_hits": {
+      "Other Optics": [
+        "optical",
+        "optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Daniel Spegel-Lexne"
+      },
+      {
+        "name": "Joakim Argillander"
+      },
+      {
+        "name": "Martin Clason"
+      },
+      {
+        "name": "Gustavo Lima"
+      },
+      {
+        "name": "João M. B. Pereira"
+      },
+      {
+        "name": "Guilherme B. Xavier"
+      }
+    ],
+    "summaries": {
+      "en": "The paper demonstrates an optical-fibre-integrated buffer that delays polarization-encoded qubit payloads while routing information is read out, achieving storage times up to 47 microseconds with a low error rate.",
+      "zh": "该论文展示了一种光纤集成缓冲器，可在读出路由信息时延迟偏振编码的量子比特载荷，实现长达47微秒的存储时间且错误率较低。",
+      "ja": "この論文は、ルーティング情報の読み出し中に偏光符号化された量子ビットのペイロードを遅延させる光ファイバー一体型バッファを実証し、最大47マイクロ秒の記憶時間と低いエラー率を達成した。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04112",
+    "category": "quant-ph",
+    "title": "Poled-fibre phase modulator for efficient high-dimensional quantum measurements",
+    "abstract": "Efficient detection of quantum states underpins advanced device-independent quantum-information protocols that provide the ultimate level of security for tasks including quantum random number generation and quantum key distribution (QKD). High-dimensional encoding is a natural route to boost the performance of such protocols, offering enhanced noise resilience and higher information capacity, yet their practical implementation remains challenging. A key experimental bottleneck in higher dimensions is the typical need of active modulators for basis selection, which incur substantial optical losses and polarization-sensitive operation. Poled optical fiber phase modulators (PFPMs) are a fiber-native electro-optic technology that naturally addresses these challenges, combining sub-dB insertion loss, intrinsic polarization independence, and direct compatibility with standard telecommunications fiber. Here we report the first use of a PFPM for active quantum-state measurements in a fully fiber-integrated platform. Basis selection in our receiver for four-dimensional qudits is achieved using a single PFPM, substantially simplifying the receiver architecture. As a benchmark, we perform a four-dimensional QKD session and obtain a finite secret-key rate per pulse that, to the best of our knowledge, surpasses all previously reported QKD demonstrations. Our results establish poled-fiber electro-optic modulation as a broadly applicable platform for high-efficiency detection in fiber-integrated quantum information processing.",
+    "url": "https://arxiv.org/abs/2608.04112",
+    "authors": [
+      {
+        "name": "Nayda Guerrero"
+      },
+      {
+        "name": "Nelson Villalba"
+      },
+      {
+        "name": "Gustavo H. dos Santos"
+      },
+      {
+        "name": "Carlos J. Salazar"
+      },
+      {
+        "name": "Cristobal Melo"
+      },
+      {
+        "name": "Fernando Castillo"
+      },
+      {
+        "name": "Jaime Cariñe"
+      },
+      {
+        "name": "Guilherme B. Xavier"
+      },
+      {
+        "name": "Esteban S. Gómez"
+      },
+      {
+        "name": "Stephen P. Walborn"
+      },
+      {
+        "name": "João Pereira"
+      },
+      {
+        "name": "Gabriel Saavedra"
+      },
+      {
+        "name": "Gustavo Lima"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 13,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "electro-optic"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Nayda Guerrero"
+      },
+      {
+        "name": "Nelson Villalba"
+      },
+      {
+        "name": "Gustavo H. dos Santos"
+      },
+      {
+        "name": "João Pereira"
+      },
+      {
+        "name": "Gabriel Saavedra"
+      },
+      {
+        "name": "Gustavo Lima"
+      }
+    ],
+    "summaries": {
+      "en": "A poled-fiber phase modulator enables efficient high-dimensional quantum measurements, achieving record finite secret-key rates in a four-dimensional QKD demonstration.",
+      "zh": "极化光纤相位调制器可实现高效的高维量子测量，在四维 QKD 演示中实现创纪录的有限密钥率。",
+      "ja": "ポーリングファイバ位相変調器は効率的な高次元量子測定を可能にし、4次元QKDデモンストレーションにおいて記録的な有限秘密鍵レートを達成します。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04134",
+    "category": "quant-ph",
+    "title": "Photon localization: a comparative study",
+    "abstract": "We compare different measures for photon localization in terms of two-dimensional Gaussian wave packets. We find that all measures start to coalesce if the wave packet has evolved for times which are larger than a few times the inverse momentum-space width of the package. However, the Landau-Peierls wave function yields the largest positive offset <r>-ct>0 while the scalar Fourier transform of the wave packet yields the smallest offset and converges towards <r>-ct=0 fastest. We also discuss local detection of photons through a model detector consisting of ions in ion traps. The position-dependent detection probabilities are inferred from the scattering matrix. We find that the local detection probability for photons can be expressed in terms of three of the proposed localization measures, viz. the Landau-Peierls wave function, the energy wave function, and the Hawton density. Those three porposals also remain close throughout the time evolution of the single-photon wave packet.",
+    "url": "https://arxiv.org/abs/2608.04134",
+    "authors": [
+      {
+        "name": "Laura M. Ferguson"
+      },
+      {
+        "name": "Ricardo Rojas Castellano"
+      },
+      {
+        "name": "Kayla Oltman"
+      },
+      {
+        "name": "Joshua G. Fenwick"
+      },
+      {
+        "name": "Rainer Dick"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 5,
+    "topics": [
+      "Quantum Optics & Quantum Computing",
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "single-photon"
+      ],
+      "AMO Physics": [
+        "ion trap",
+        "ion traps"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Laura M. Ferguson"
+      },
+      {
+        "name": "Ricardo Rojas Castellano"
+      },
+      {
+        "name": "Kayla Oltman"
+      },
+      {
+        "name": "Joshua G. Fenwick"
+      },
+      {
+        "name": "Rainer Dick"
+      }
+    ],
+    "summaries": {
+      "en": "This paper compares different measures of photon localization in two-dimensional Gaussian wave packets, finding that they converge over time, with local detection probabilities expressible via three specific measures.",
+      "zh": "本文比较了二维高斯波包中光子局域化的不同度量，发现它们随时间趋于一致，且局部探测概率可由三种特定度量表达。",
+      "ja": "この論文は、2次元ガウス波束における光子の局在化の様々な尺度を比較し、時間とともに収束することを見出し、局所検出確率が3つの特定の尺度で表現できることを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04197",
+    "category": "quant-ph",
+    "title": "Applications of Spin-Dependent Generalized Squeezing in Hybrid Spin-Oscillator Quantum Processors",
+    "abstract": "Generalized squeezing interactions are foundational to quantum optics, and have recently come under experimental control in hybrid spin-oscillator quantum processors [O. Băzăvan, et al., Nat. Phys. 22, 757 (2026); S. Saner, et al., Phys. Rev. X 16, 021049 (2026)]. These interactions open the door for new applications in the processing of discrete- and continuous-variable quantum information, four of which we propose and investigate in this work: geometric phase gates mediated by spin-dependent generalized squeezing acting on two spins and a common oscillator; genuine N-body spin interactions mediated by individually addressed spin-dependent generalized squeezing; oscillator thermometry via spin readout; and the preparation of high-fidelity quantum states of the oscillator via spin-dependent generalized squeezing and mid-circuit measurement. A unifying feature of these applications is the geometric phase induced by generalized squeezing interactions, which is nonlinear in the Fock occupation of the oscillator and the interaction order of the generalized squeezing. This work provides a foundation for fast, high-fidelity discrete- and continuous-variable quantum computation and sensing in the hybrid spin-oscillator platform via generalized squeezing.",
+    "url": "https://arxiv.org/abs/2608.04197",
+    "authors": [
+      {
+        "name": "Kai Shinbrough"
+      },
+      {
+        "name": "Donovan J. Webb"
+      },
+      {
+        "name": "Iver R. Øvergaard"
+      },
+      {
+        "name": "Oana Băzăvan"
+      },
+      {
+        "name": "Sebastian Saner"
+      },
+      {
+        "name": "Christopher J. Ballance"
+      },
+      {
+        "name": "Raghavendra Srinivas"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Atomic Physics (physics.atom-ph)",
+    "author_count": 7,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "quantum optics"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Kai Shinbrough"
+      },
+      {
+        "name": "Donovan J. Webb"
+      },
+      {
+        "name": "Iver R. Øvergaard"
+      },
+      {
+        "name": "Sebastian Saner"
+      },
+      {
+        "name": "Christopher J. Ballance"
+      },
+      {
+        "name": "Raghavendra Srinivas"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes and analyzes four applications of spin-dependent generalized squeezing in hybrid spin-oscillator quantum processors, including geometric phase gates, N-body spin interactions, oscillator thermometry, and quantum state preparation, all enabled by the nonlinear geometric phase.",
+      "zh": "本文提出并分析了混合自旋-振子量子处理器中自旋依赖广义压缩的四种应用，包括几何相位门、N体自旋相互作用、振子测温以及量子态制备，这些应用均得益于广义压缩引起的非线性几何相位。",
+      "ja": "本論文では、ハイブリッドスピン-振動子量子プロセッサにおけるスピン依存一般化スクイージングの4つの応用を提案・解析し、幾何学的位相ゲート、N体スピン相互作用、振動子温度測定、量子状態準備を、一般化スクイージングによる非線形幾何学的位相を利用して実現する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04476",
+    "category": "quant-ph",
+    "title": "Heralded Non-Gaussian Squeezed-State Inputs for Parity-Detection SU(1,1) Interferometry",
+    "abstract": "Non-Gaussian operations can reshape the photon statistics of continuous-variable probes, but their metrological advantage is meaningful only when heralding probability and photon-number resources are counted consistently. We compare photon subtraction, photon addition, and photon catalysis as input-side heralding operations in a balanced SU(1,1) interferometer with parity detection. A unified finite-transmissivity map supplies closed conditional moments and the corresponding quantum Fisher information at arbitrary operation order; internal loss is absorbed into a single effective parity observable whose lossless limit recovers the ideal pulled-back measurement. At fixed preparation parameters, single-photon subtraction and addition improve the conditional phase information over the Gaussian reference across most of the high-transmissivity regime, while multi-photon catalysis opens useful low-transmissivity windows. However, when the coherent--squeezed allocation is independently optimized at fixed conditional-probe energy and fixed interferometer gain, the success-weighted Fisher information of all three non-Gaussian operations remains below the optimized Gaussian benchmark. This conclusion is subject to the tested constraints: single-photon operations, a coherent-plus-squeezed-vacuum Gaussian family, fixed gain, and parity readout. Photon catalysis separately generates a conditional branch with high local quantum Fisher information that dark-point parity extracts poorly, identifying a measurement mismatch rather than a state-preparation failure. The result draws a sharp boundary between conditional non-Gaussian enhancement and practically available precision under explicitly stated resource constraints.",
+    "url": "https://arxiv.org/abs/2608.04476",
+    "authors": [
+      {
+        "name": "Lifen Guo"
+      },
+      {
+        "name": "Qingqian Kang"
+      },
+      {
+        "name": "Teng Zhao"
+      },
+      {
+        "name": "Cunjin Liu"
+      },
+      {
+        "name": "Xin Su"
+      },
+      {
+        "name": "Liyun Hu"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 6,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "single-photon"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Lifen Guo"
+      },
+      {
+        "name": "Qingqian Kang"
+      },
+      {
+        "name": "Teng Zhao"
+      },
+      {
+        "name": "Cunjin Liu"
+      },
+      {
+        "name": "Xin Su"
+      },
+      {
+        "name": "Liyun Hu"
+      }
+    ],
+    "summaries": {
+      "en": "At fixed resources, photon subtraction, addition, and catalysis do not outperform a coherent-plus-squeezed Gaussian benchmark in balanced SU(1,1) interferometry with parity detection, despite local enhancements in specific regimes.",
+      "zh": "在固定资源下，光子减法、光子加法和光子催化在平衡SU(1,1)干涉仪和奇偶检测中并未优于相干加压缩高斯基准，尽管在特定区域有局部增强。",
+      "ja": "固定リソースの下では、光子減算、光子加算、光子触媒は、平衡SU(1,1)干渉計とパリティ検出において、コヒーレント＋スクイーズド真空ガウス基準を上回らないが、特定の領域では局所的な向上が見られる。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04578",
+    "category": "quant-ph",
+    "title": "Measurement-induced generation of Schrödinger cat states in cavity QED",
+    "abstract": "Schrödinger cat states, representing coherent superpositions of macroscopically distinguishable states, are indispensable nonclassical resources for continuous-variable quantum information processing. Existing generation protocols typically rely on strong nonlinear interactions, complicated control techniques, or engineered dissipation, posing challenges for experimental implementation. Here, we propose a simple measurement-based protocol for generating Schrödinger cat states in a cavity-QED system by combining coherent driving, dispersive atom--cavity interactions, and atomic postselection. The atom--cavity interaction establishes coherent correlations between the atomic and photonic degrees of freedom, while the subsequent atomic postselection projects the cavity field onto a non-Gaussian superposition state with pronounced Wigner negativity. Numerical simulations based on the Lindblad master equation show that the generated Schrödinger cat states remain robust against moderate cavity dissipation. Our results demonstrate that conditional atomic measurements provide an effective and experimentally accessible approach for preparing nonclassical cavity states without relying on strong optical nonlinearities or engineered dissipation.",
+    "url": "https://arxiv.org/abs/2608.04578",
+    "authors": [
+      {
+        "name": "Tong Wang"
+      },
+      {
+        "name": "Peng-Fei Wei"
+      },
+      {
+        "name": "Hai-Jun Xing"
+      },
+      {
+        "name": "Zhihai Wang"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 4,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "cavity qed"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Tong Wang"
+      },
+      {
+        "name": "Peng-Fei Wei"
+      },
+      {
+        "name": "Hai-Jun Xing"
+      },
+      {
+        "name": "Zhihai Wang"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes a measurement-based protocol for generating Schrödinger cat states in cavity QED using coherent driving, dispersive interactions, and atomic postselection, with robustness against moderate cavity losses.",
+      "zh": "本文提出了一种基于测量的方案，通过在腔QED中结合相干驱动、色散作用和原子后选择来生成薛定谔猫态，并对中等腔损耗具有鲁棒性。",
+      "ja": "本論文は、コヒーレント駆動、分散相互作用、原子のポストセレクションを組み合わせて空洞QEDでシュレーディンガーの猫状態を生成する測定ベースのプロトコルを提案し、中程度の空洞損失に対して頑健であることを示す。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04684",
+    "category": "quant-ph",
+    "title": "Spectral evolution of two-photon emission in microresonators",
+    "abstract": "High-Q silicon nitride microresonators are versatile sources for generating photon pairs via four-wave mixing. We investigate the spectral coherence of this process, tracking the transition from the spontaneous quantum regime to the onset of optical parametric oscillation. By combining time-correlation measurements with phase-sensitive measurements, we continuously monitor the emission linewidth as it evolves from a cavity-lifetime-limited linewidth toward the pump-linewidth scale. This characterization is essential for optimizing integrated sources for scalable quantum networks.",
+    "url": "https://arxiv.org/abs/2608.04684",
+    "authors": [
+      {
+        "name": "Francesca Famà"
+      },
+      {
+        "name": "Stefano Dello Russo"
+      },
+      {
+        "name": "Stefano Giaccari"
+      },
+      {
+        "name": "Salvatore Virzì"
+      },
+      {
+        "name": "Lorenzo Lucia"
+      },
+      {
+        "name": "Cecilia Clivati"
+      },
+      {
+        "name": "Chiara Gionco"
+      },
+      {
+        "name": "Mario Siciliani de Cumis"
+      },
+      {
+        "name": "Stefano Condio"
+      },
+      {
+        "name": "Erik Cerrato"
+      },
+      {
+        "name": "Gianluca Bertaina"
+      },
+      {
+        "name": "Alice Meda"
+      },
+      {
+        "name": "Marco Gramegna"
+      },
+      {
+        "name": "Marco Genovese"
+      },
+      {
+        "name": "Filippo Levi"
+      },
+      {
+        "name": "Ivo Pietro Degiovanni"
+      },
+      {
+        "name": "Davide Calonico"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 17,
+    "topics": [
+      "Nonlinear Optics",
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "four-wave mixing",
+        "optical parametric",
+        "parametric oscillation"
+      ],
+      "Quantum Optics & Quantum Computing": [
+        "photon pair",
+        "photon pairs"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Francesca Famà"
+      },
+      {
+        "name": "Stefano Dello Russo"
+      },
+      {
+        "name": "Stefano Giaccari"
+      },
+      {
+        "name": "Filippo Levi"
+      },
+      {
+        "name": "Ivo Pietro Degiovanni"
+      },
+      {
+        "name": "Davide Calonico"
+      }
+    ],
+    "summaries": {
+      "en": "This paper investigates the spectral coherence evolution of two-photon emission in silicon nitride microresonators from the spontaneous quantum regime to optical parametric oscillation, showing that the emission linewidth transitions from cavity-lifetime-limited to pump-linewidth-limited, which is crucial for scalable quantum networks.",
+      "zh": "本文研究了氮化硅微谐振器中双光子发射的光谱相干性演化，从自发量子区到光学参量振荡，发现发射线宽从腔寿命限制过渡到泵浦线宽限制，这对可扩展量子网络的集成光源优化至关重要。",
+      "ja": "本論文は、シリコン窒化物マイクロ共振器における二光子放出のスペクトルコヒーレンスの進化を、自発量子領域から光パラメトリック発振まで調査し、発光線幅がキャビティ寿命制限からポンプ線幅制限へと遷移することを示し、スケーラブルな量子ネットワークのための集積光源の最適化に不可欠です。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04797",
+    "category": "quant-ph",
+    "title": "High-cooperativity coupling and spin-resolved extinction of tin-vacancy centers in a diamond-like microcavity",
+    "abstract": "The tin-vacancy (SnV) center in diamond is a promising spin-photon interface for quantum networks, combining favorable optical properties with spin coherence above 1K. Unfolding the full potential requires cavity enhancement to increase photon-emitter coupling efficiency. Here, we demonstrate cavity-enhanced light-matter coupling of SnV centers in a fully tunable Fabry-Pérot microcavity operating at temperatures down to 1K with in-situ magnetic field control. We access the diamond-like regime of hybrid cavity modes through integration of low-roughness diamond membranes, where the field is concentrated inside the diamond and Purcell enhancement is maximized. Diamond-like modes deliver a more than two-fold increase in the effective Purcell factor over air-like modes, reaching $C_0 = 4.1(1)$ compared to $C_0 = 1.85(5)$ in the air-like case, while simultaneously relaxing mechanical stability requirements. Resonant probing reveals coherent cavity-emitter coupling with 96% extinction contrast and a coherent cooperativity of $C = 4.0(14)$. By applying a magnetic field, we further achieve spin-resolved cavity extinction, observing spin-selective optical transitions with a contrast of ${\\cal C}_{\\rm spin} = 0.91$. These results establish SnV centers in diamond coupled to open Fabry-Pérot microcavities as a promising platform for efficient spin-photon interfaces.",
+    "url": "https://arxiv.org/abs/2608.04797",
+    "authors": [
+      {
+        "name": "Kerim Köster"
+      },
+      {
+        "name": "András Laukó"
+      },
+      {
+        "name": "Federico Rapisarda"
+      },
+      {
+        "name": "Philipp Graßhoff"
+      },
+      {
+        "name": "Vladislav Bushmakin"
+      },
+      {
+        "name": "Jens Fuhrmann"
+      },
+      {
+        "name": "Ou Wang"
+      },
+      {
+        "name": "Dominic Reinhardt"
+      },
+      {
+        "name": "Doğuşcan Ahiboz"
+      },
+      {
+        "name": "Peter Knittel"
+      },
+      {
+        "name": "Thomas Hümmer"
+      },
+      {
+        "name": "Wolfgang Wernsdorfer"
+      },
+      {
+        "name": "Jörg Wrachtrup"
+      },
+      {
+        "name": "Fedor Jelezko"
+      },
+      {
+        "name": "Tommaso Pregnolato"
+      },
+      {
+        "name": "Tim Schröder"
+      },
+      {
+        "name": "Jan Meijer"
+      },
+      {
+        "name": "Cyril Popov"
+      },
+      {
+        "name": "David Hunger"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 19,
+    "topics": [
+      "Optical Materials"
+    ],
+    "topic_hits": {
+      "Optical Materials": [
+        "optical properties"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Kerim Köster"
+      },
+      {
+        "name": "András Laukó"
+      },
+      {
+        "name": "Federico Rapisarda"
+      },
+      {
+        "name": "Jan Meijer"
+      },
+      {
+        "name": "Cyril Popov"
+      },
+      {
+        "name": "David Hunger"
+      }
+    ],
+    "summaries": {
+      "en": "This paper demonstrates cavity-enhanced coupling of tin-vacancy centers in diamond to a tunable Fabry-Pérot microcavity, achieving high cooperativity and spin-resolved extinction, which is promising for quantum networks.",
+      "zh": "本文展示了金刚石中锡-空位中心与可调法布里-珀罗微腔的腔增强耦合，实现了高协同性和自旋分辨消光，为量子网络提供了有前景的平台。",
+      "ja": "この論文は、ダイヤモンド中のスズ-空孔中心を調整可能なファブリ・ペロー微小共振器に結合させ、高い協調性とスピン分解消光を実現し、量子ネットワークに有望なプラットフォームを提供することを示している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.04812",
+    "category": "quant-ph",
+    "title": "Motional refocusing for trap-off Rydberg gates",
+    "abstract": "Rydberg entangling gates in optical-tweezer arrays are commonly executed with the trapping light switched off, so every gate contains a release--and--recapture cycle that heats the atomic motion and can ultimately limit circuit depth. We develop a motional refocusing protocol that exactly removes this heating in the harmonic approximation using only programmable intensity switching of the trapping light. The protocol closes the release--and--recapture cycle for every matched harmonic mode, returning arbitrary motional populations and coherences exactly up to ordinary evolution under the static trap. We derive the recovery sequence in closed form for arbitrary catch depth and prove that, within the experimentally relevant regime, it is the unique globally time-optimal solution under bounded trap intensity. The harmonic theory is then extended in two directions. First, we construct exact common-intensity recovery sequences that simultaneously refocus several nondegenerate harmonic modes, including radial--axial and fully anisotropic three-dimensional traps. Second, we derive a composite sequence that suppresses the leading anharmonic correction of weakly anharmonic traps by canceling all first-order motional transitions induced by the quartic anharmonicity, changing the residual heating law from $U_0^{-2}$ to $U_0^{-4}$. Wave-packet simulations in realistic Gaussian tweezers validate the analytic theory and quantify the residual effects of anharmonicity, finite switching ramps, trap ellipticity, and control errors. Applied to representative cesium Rydberg gates, the protocol suppresses the dominant recapture heating to the anharmonic floor and prevents the associated motional Doppler contribution from increasing with circuit depth. The resulting framework provides a practical route toward heating-free trap-off neutral-atom gates using only trap-intensity modulation.",
+    "url": "https://arxiv.org/abs/2608.04812",
+    "authors": [
+      {
+        "name": "Yoav Sagi"
+      },
+      {
+        "name": "Ofer Firstenberg"
+      },
+      {
+        "name": "Nir Davidson"
+      },
+      {
+        "name": "Guy Raz"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Atomic Physics (physics.atom-ph)",
+    "author_count": 4,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "rydberg"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Yoav Sagi"
+      },
+      {
+        "name": "Ofer Firstenberg"
+      },
+      {
+        "name": "Nir Davidson"
+      },
+      {
+        "name": "Guy Raz"
+      }
+    ],
+    "summaries": {
+      "en": "This paper presents a motional refocusing protocol using programmable trap-intensity switching that exactly cancels heating in released-and-recaptured Rydberg gates under harmonic approximation, and extends it to anharmonic traps with composite sequences that reduce residual heating from U0^-2 to U0^-4.",
+      "zh": "本文提出一种仅通过可编程阱强度开关实现的运动重聚焦方案，在谐振近似下精确消除里德堡门释放-再捕获过程中的加热，并扩展到弱非谐振阱，通过复合序列将残余加热从U0^-2降低到U0^-4。",
+      "ja": "本論文は、プログラマブルなトラップ強度スイッチングのみを用いた運動リフォーカスプロトコルを提案し、調和近似の下でリュードベリゲートの解放・再捕捉における加熱を正確に除去し、弱い非調和トラップへの拡張として、複合シーケンスにより残留加熱をU0^-2からU0^-4へ低減することを示す。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05003",
+    "category": "quant-ph",
+    "title": "Universal linear manipulation via routing and projective measurements",
+    "abstract": "Multiport interferometers with $N$ ports are basic devices in both classical and quantum photonics. Ideally, they implement a linear unitary transformation between the input and output electric field vectors with $N$ components, each associated with a spatial mode of classical coherent light or a single photon. Standard designs for a fully reconfigurable universal multiport interferometer are given by the Reck or the Clements schemes. In this work, we introduce routing schemes to implement a generic unitary transformation on classical coherent light or single photons using linear or tree geometries via multiple projective measurements on a single detector with the minimum number of components. Then, we generalize this result to the case of any multi-photon state for scattershot boson sampling experiments with multi-routing schemes. Finally, we test the robustness of routing schemes compared to universal schemes with respect to losses and phase noise.",
+    "url": "https://arxiv.org/abs/2608.05003",
+    "authors": [
+      {
+        "name": "Alessio Baldazzi"
+      },
+      {
+        "name": "Sonia Mazzucchi"
+      },
+      {
+        "name": "Lorenzo Pavesi"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 3,
+    "topics": [
+      "Quantum Optics & Quantum Computing"
+    ],
+    "topic_hits": {
+      "Quantum Optics & Quantum Computing": [
+        "boson sampling",
+        "quantum photonics",
+        "single photon",
+        "single photons"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Alessio Baldazzi"
+      },
+      {
+        "name": "Sonia Mazzucchi"
+      },
+      {
+        "name": "Lorenzo Pavesi"
+      }
+    ],
+    "summaries": {
+      "en": "This paper introduces routing-based schemes that implement generic unitary transformations on light or single photons using linear or tree geometries and projective measurements on a single detector, achieving universal linear manipulation with fewer components and extending to multi-photon scattershot boson sampling.",
+      "zh": "本文提出了基于路由的方案，通过线性或树状几何结构以及单个探测器上的投影测量来实现光或单光子的通用酉变换，以最少的组件实现通用线性操控，并将其扩展到多光子散粒噪声玻色子采样。",
+      "ja": "本論文は、線形またはツリー状のジオメトリと単一検出器での射影測定を用いて、古典的なコヒーレント光や単一光子に対する一般的なユニタリ変換を実装するルーティング方式を導入し、最小限のコンポーネントで普遍的な線形操作を実現し、多光子散乱サンプリングにも拡張する。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05010",
+    "category": "quant-ph",
+    "title": "Neutral Atom Quantum Computing: Principles, Routes, Progress, and Challenges",
+    "abstract": "Neutral atom quantum computing utilizes laser-trapped neutral atoms as qubits and realizes quantum logic gate operations through Rydberg-state interactions. In recent years, it has become one of the most vibrant directions in quantum computing hardware. This paper systematically reviews the working principles of neutral-atom quantum computers, including qubit encoding, atom trapping and manipulation, Rydberg states and interactions, the Rydberg blockade quantum gate mechanism, and atom rearrangement with reconfigurable architectures. The mainstream technical routes are surveyed, represented by optical tweezer arrays combined with Rydberg interactions, optical lattice schemes, and dipole trap arrays. A panoramic review is provided of domestic and international research progress from theoretical foundations in 2000 to the latest achievements in 2026, including thousand-qubit-scale systems, logical qubits, and quantum error correction experiments. Key breakthroughs are highlighted, such as the 6100-atom qubit array, continuous operation of a 3000-qubit system, quantum simulation of the Kitaev honeycomb model, toric code error correction demonstrations, encoding rates exceeding 1/2, and fault-tolerant architectures. The core bottlenecks are analyzed in depth, including the scalability--fidelity trade-off, engineering implementation of quantum error correction, atom loss and mid-circuit replenishment, laser system industrialization, control electronics scalability, and long-distance quantum interconnection. This paper aims to provide a systematic reference for academic research and technological development in this field.",
+    "url": "https://arxiv.org/abs/2608.05010",
+    "authors": [
+      {
+        "name": "Junchao Wang"
+      },
+      {
+        "name": "Zeyuan Wang"
+      },
+      {
+        "name": "Lei Li"
+      },
+      {
+        "name": "Feng Wang"
+      },
+      {
+        "name": "Shibo Liang"
+      },
+      {
+        "name": "Keduo Yan"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 6,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "neutral atom",
+        "neutral atoms",
+        "optical lattice",
+        "optical tweezer",
+        "rydberg"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Junchao Wang"
+      },
+      {
+        "name": "Zeyuan Wang"
+      },
+      {
+        "name": "Lei Li"
+      },
+      {
+        "name": "Feng Wang"
+      },
+      {
+        "name": "Shibo Liang"
+      },
+      {
+        "name": "Keduo Yan"
+      }
+    ],
+    "summaries": {
+      "en": "This paper provides a comprehensive review of neutral atom quantum computing, covering principles, technical routes, research progress, and core challenges, highlighting achievements such as 6100-atom arrays and fault-tolerant architectures.",
+      "zh": "本文系统综述了中性原子量子计算的工作原理、技术路线、研究进展和核心挑战，重点介绍了6100原子阵列和容错架构等关键成果。",
+      "ja": "本論文は、中性原子量子計算の動作原理、技術的経路、研究の進展、そして中心的な課題を体系的にレビューし、6100原子アレイやフォールトトレラントアーキテクチャなどの重要な成果を強調している。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05046",
+    "category": "quant-ph",
+    "title": "Preparation geometry and slow-sector routing in driven Kerr resonators: an operational spectral theory of Liouvillians",
+    "abstract": "Liouvillian eigenvalues determine decay rates and oscillation frequencies, but not how the corresponding modes are excited, propagated, and detected in a chosen protocol. We develop an operational spectral theory based on matched left and right eigenoperators. Left eigenoperators determine excitation by an input or source; right eigenoperators determine the propagated density deformation and readout overlap; their product is a gauge-invariant modal weight. For bosonic systems, coherent preparations turn left eigenoperators into phase-space excitation maps whose zeros identify mode-selective suppression, while right eigenoperators yield the corresponding Wigner deformations. Resolved slow subspaces define operational coordinates and, when positivity and Markov-admissibility hold, a projected routing generator. In driven Kerr resonators, the framework identifies preparations that suppress a switching mode, separates symmetry-resolved relaxation channels, and reveals bias-induced crossovers in projected multichannel routing while the coherent-preparation partition continues to deform. Preparation geometry and slow-sector propagation thus provide complementary operational information beyond Liouvillian eigenvalues alone.",
+    "url": "https://arxiv.org/abs/2608.05046",
+    "authors": [
+      {
+        "name": "Kilian Seibold"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph)",
+    "author_count": 1,
+    "topics": [
+      "Nonlinear Optics"
+    ],
+    "topic_hits": {
+      "Nonlinear Optics": [
+        "kerr"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Kilian Seibold"
+      }
+    ],
+    "summaries": {
+      "en": "This paper develops an operational spectral theory for Liouvillians using left and right eigenoperators, showing how coherent preparations can selectively suppress modes and influence routing in driven Kerr resonators.",
+      "zh": "本文发展了一种基于左、右本征算符的Liouvillian算符操作谱理论，展示了相干制备如何选择性抑制模式并影响驱动Kerr谐振器中的路由。",
+      "ja": "本論文は、左・右固有演算子を用いたLiouvillianの操作スペクトル理論を展開し、コヒーレント準備がモードを選択的に抑制し、駆動Kerr共振器のルーティングに影響を与えることを示す。"
+    },
+    "summary_source": "deepseek"
+  },
+  {
+    "id": "2608.05147",
+    "category": "quant-ph",
+    "title": "Fast Quantum Interconnects via Neutral Atom Ensembles",
+    "abstract": "Distributing entanglement between distant qubits is a crucial element of scalable quantum computing. Here, we describe a scalable quantum interconnect that generates remote entanglement at rates approaching those compatible with two-qubit gates of current neutral-atom quantum processors. The proposed approach exploits the strong dipole-dipole interactions between atomic Rydberg states to generate entanglement between stationary qubits and propagating photons, without the need for an optical cavity. We provide a thorough description of the optimal conditions for the developed entanglement-generation protocol for realistic experimental parameters and demonstrate that entanglement-generation rates $\\gtrsim 3\\times 10^5$ s$^{-1}$ can be achieved using Rydberg states of ytterbium atoms. Given the inherent scalability and design flexibility of the proposed interconnect, our results suggest a promising approach towards distributed networks based on neutral-atom quantum architectures.",
+    "url": "https://arxiv.org/abs/2608.05147",
+    "authors": [
+      {
+        "name": "Sina Zeytinoglu"
+      },
+      {
+        "name": "Wenchao Xu"
+      },
+      {
+        "name": "Thomas Pohl"
+      }
+    ],
+    "subjects": "Quantum Physics (quant-ph) ; Atomic Physics (physics.atom-ph)",
+    "author_count": 3,
+    "topics": [
+      "AMO Physics"
+    ],
+    "topic_hits": {
+      "AMO Physics": [
+        "neutral atom",
+        "rydberg"
+      ]
+    },
+    "featured_authors": [
+      {
+        "name": "Sina Zeytinoglu"
+      },
+      {
+        "name": "Wenchao Xu"
+      },
+      {
+        "name": "Thomas Pohl"
+      }
+    ],
+    "summaries": {
+      "en": "This paper proposes a scalable quantum interconnect for neutral-atom quantum processors that uses Rydberg dipole-dipole interactions to generate remote entanglement at rates exceeding 3 × 10^5 s^-1 without needing an optical cavity.",
+      "zh": "本文提出了一种基于中性原子量子处理器的可扩展量子互连方案，利用里德堡偶极-偶极相互作用，在无需光学腔的情况下，实现了超过3×10^5 s^-1的远程纠缠产生速率。",
+      "ja": "本論文は、中性原子量子プロセッサのためのスケーラブルな量子インターコネクトを提案し、光キャビティを必要とせずに、リュードベリ原子の双極子-双極子相互作用を用いて、每秒3×10^5以上のリモートエンタングルメント生成率を達成することを示している。"
+    },
+    "summary_source": "deepseek"
+  }
+]
