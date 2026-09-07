@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ArXiv Optics Daily - 2026-09-07</title>
+  <style>
+    :root {
+      --bg: #f2ece4;
+      --panel: rgba(255, 252, 247, 0.94);
+      --line: rgba(62, 45, 30, 0.14);
+      --text: #2c221c;
+      --muted: #6f5e50;
+      --accent: #8a3f2d;
+      --accent-2: #1c6270;
+      --shadow: 0 18px 48px rgba(58, 38, 24, 0.12);
+      --radius: 24px;
+      --ui-font: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
+      --title-font: "Iowan Old Style", "Georgia", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--ui-font);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.82), transparent 34%),
+        radial-gradient(circle at 84% 12%, rgba(28,98,112,0.12), transparent 22%),
+        linear-gradient(180deg, #faf6ef 0%, var(--bg) 44%, #eee4d8 100%);
+      min-height: 100vh;
+    }
+    .shell { width: min(1240px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0 64px; }
+    .hero {
+      padding: 30px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,248,240,0.76)),
+        linear-gradient(135deg, rgba(138,63,45,0.08), rgba(28,98,112,0.08));
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-family: var(--title-font);
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 960px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.72;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .stat {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+    }
+    .stat .label { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .stat .value { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; }
+    .controls {
+      position: sticky;
+      top: 12px;
+      z-index: 3;
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: rgba(249, 243, 235, 0.92);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 24px rgba(58, 38, 24, 0.08);
+    }
+    .control-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 16px;
+    }
+    .field { display: flex; flex-direction: column; gap: 10px; }
+    .field label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .search {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.92);
+      color: var(--text);
+      font: inherit;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.86);
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+    .chip.active {
+      border-color: rgba(138,63,45,0.34);
+      background: rgba(138,63,45,0.12);
+      color: #5e2619;
+    }
+    .meta-row {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .meta-row a { color: var(--accent); text-decoration: none; }
+    .paper-grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 18px;
+    }
+    .paper {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 10px 24px rgba(58, 38, 24, 0.06);
+    }
+    .paper-top { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .tag.category {
+      background: rgba(44,34,28,0.08);
+      color: var(--text);
+    }
+    .tag.topic {
+      background: rgba(28,98,112,0.1);
+      color: var(--accent-2);
+      border: 1px solid rgba(28,98,112,0.14);
+    }
+    .paper .id { color: var(--muted); font-size: 13px; }
+    .paper h2 {
+      margin: 0;
+      font-family: var(--title-font);
+      font-size: 23px;
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+    }
+    .paper h2 a { color: inherit; text-decoration: none; }
+    .paper h2 a:hover { color: var(--accent); }
+    .subtle {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+    }
+    .subtle .label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .author-line,
+    .subject-line,
+    .abstract-line {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.68;
+    }
+    .summary-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .summary-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+    }
+    .summary-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .summary-item p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.68;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.74);
+      padding: 14px 16px;
+    }
+    details summary {
+      cursor: pointer;
+      list-style: none;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      line-height: 1.72;
+    }
+    .paper footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .paper footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .empty {
+      display: none;
+      margin-top: 24px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      border-radius: 22px;
+      border: 1px dashed var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    @media (max-width: 980px) {
+      .control-grid { grid-template-columns: 1fr; }
+      .controls { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="eyebrow">ArXiv Optics Daily · 2026-09-07</div>
+      <h1>Daily ArXiv Papers in Optics</h1>
+      <p>
+        Data comes from arXiv's daily <code>new submissions</code> pages across
+        <code>cond-mat</code>, <code>physics</code>, <code>quant-ph</code>, and <code>eess</code>.
+        This version uses optics keywords as the baseline filter and provides one-sentence summaries in English, Chinese, and Japanese for each paper.
+      </p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="controls">
+      <div class="control-grid">
+        <div class="field">
+          <label for="search">Search</label>
+          <input id="search" class="search" type="search" placeholder="Search by title, author, topic, abstract, or arXiv ID">
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <div class="chip-row" id="category-filters"></div>
+        </div>
+        <div class="field">
+          <label>Topic</label>
+          <div class="chip-row" id="topic-filters"></div>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div id="result-count">Loading...</div>
+        <div><a href="../index.html">Back to archive</a></div>
+      </div>
+    </section>
+
+    <section class="paper-grid" id="paper-grid"></section>
+    <section class="empty" id="empty-state">No papers matched your current filters.</section>
+  </div>
+
+  <script>
+    const papers = [{"id": "2609.04744", "category": "cond-mat", "title": "Orientation selection and superconducting properties of epitaxial Al on ferromagnetic semiconductor (In,Fe)As", "abstract": "Superconductor/ferromagnet heterostructures provide a versatile platform for exploring spin-dependent superconducting phenomena arising from interfacial proximity effects. In this article, we investigate the structural and superconducting properties of Al thin films grown in situ by molecular beam epitaxy on strained Fe-doped ferromagnetic semiconductor (FMS) (In,Fe)As layers. X-ray diffraction and transmission electron microscopy reveal the epitaxial growth of single-crystalline Al layers, with the growth orientation changing from (110) to (111) as the in-plane lattice constant of (In,Fe)As increases. The superconducting critical temperature of Al varies systematically with the film surface morphology and grain size. In addition, the critical magnetic field of Al exhibits an anomalous decrease below 0.5 K, possibly reflecting magnetic coupling to the underlying FMS (In,Fe)As layer. These findings provide a guideline for material design of epitaxial Al/(In,Fe)As heterostructures, which may serve as a promising platform for investigating proximity-induced superconducting and magnetic phenomena in semiconductor-based hybrid quantum devices.", "url": "https://arxiv.org/abs/2609.04744", "authors": [{"name": "Hirotaka Hara"}, {"name": "Keita Ishihara"}, {"name": "Masaaki Tanaka"}, {"name": "Le Duc Anh"}], "subjects": "Superconductivity (cond-mat.supr-con)", "author_count": 4, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["microscopy"]}, "featured_authors": [{"name": "Hirotaka Hara"}, {"name": "Keita Ishihara"}, {"name": "Masaaki Tanaka"}, {"name": "Le Duc Anh"}], "summaries": {"en": "This paper reports the epitaxial growth of single-crystalline Al on ferromagnetic semiconductor (In,Fe)As, showing that the Al orientation changes from (110) to (111) with increasing substrate lattice constant and that its superconducting properties are influenced by surface morphology, grain size, and magnetic coupling to the underlying (In,Fe)As layer.", "zh": "本文报道了在铁磁半导体(In,Fe)As上外延生长单晶Al的研究，发现随着衬底晶格常数的增加，Al的生长取向从(110)变为(111)，并且其超导性质受到表面形貌、晶粒尺寸以及与底层(In,Fe)As层的磁耦合的影响。", "ja": "この論文は、強磁性半導体(In,Fe)As上へのエピタキシャル成長した単結晶Alを報告し、基板の格子定数の増加に伴いAlの配向が(110)から(111)へ変化し、その超伝導特性が表面形態、結晶粒径、および下層の(In,Fe)Asとの磁気結合に影響されることを示している。"}, "summary_source": "deepseek"}, {"id": "2609.04854", "category": "cond-mat", "title": "Excitation caging in a vertex-frustrated quasiperiodic Einstein artificial spin ice", "abstract": "Naturally occurring bulk quasicrystals are rare, and magnetic instances are rarer still, with chemical constraints typically permitting the synthesis of approximants rather than true quasicrystalline magnets. Here, we present an artificial spin ice based on a recently discovered Einstein lattice, the Hat tiling, which is built from the first known shape - the hat - that tiles the plane only aperiodically. The Einstein artificial spin ice has long-range structural order with no translational symmetry, and low-connectivity vertices with well-defined local ground states and excitations. Together, these properties provide a model two-dimensional quasicrystalline magnet, with magnetic correlations that we probe with magnetic force microscopy and parallel-tempered Monte Carlo simulations. We identify a two-stage partial ordering process, driven by the competition between two possible positions for magnetic excitations. This competition is resolved in the ground-state manifold, where exactly one magnetic excitation is caged on each antihat, yet the manifold remains macroscopically degenerate. This yields an unusual type of medium-range order, where the underlying quasiperiodic long-range order is randomly modulated by a strictly constrained disorder. Our findings establish the Einstein artificial spin ice as a blueprint for understanding quasicrystalline magnetism, demonstrating how quasiperiodic monotile geometries can be exploited to engineer unconventional magnetic phases with no direct equivalent in periodic systems.", "url": "https://arxiv.org/abs/2609.04854", "authors": [{"name": "T. Wang"}, {"name": "F. Museur"}, {"name": "G. M. Macauley"}, {"name": "J. Colbois"}, {"name": "L. Berchialla"}, {"name": "F. Flicker"}, {"name": "P. M. Derlet"}, {"name": "L. J. Heyderman"}], "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall) ; Statistical Mechanics (cond-mat.stat-mech)", "author_count": 8, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["microscopy"]}, "featured_authors": [{"name": "T. Wang"}, {"name": "F. Museur"}, {"name": "G. M. Macauley"}, {"name": "F. Flicker"}, {"name": "P. M. Derlet"}, {"name": "L. J. Heyderman"}], "summaries": {"en": "An artificial spin ice based on the aperiodic Hat tiling exhibits a two-stage partial ordering where magnetic excitations are caged on each antihat, leading to a macroscopically degenerate ground state with unusual medium-range order.", "zh": "基于非周期Hat平铺的人工自旋冰表现出两阶段部分有序过程，其中磁激发被限制在每个antihat上，导致具有宏观简并的基态和异常的中程有序。", "ja": "非周期ハットタイルに基づく人工スピンアイスは、二段階の部分秩序化を示し、磁気励起がアンチハットごとに閉じ込められ、巨視的に縮退した基底状態と特異な中距離秩序をもたらす。"}, "summary_source": "deepseek"}, {"id": "2609.04951", "category": "cond-mat", "title": "Cascade spin dynamics of excitons localized in indirect-band-gap (In,Al)As/AlAs quantum dots with type-I band alignment", "abstract": "We investigate the spin dynamics of excitons localized in type I (In,Al)As/AlAs quantum dots with an indirect in momentum space band structure. Polarized selective photoluminescence spectroscopy, i.e. fluorescence line narrowing, under magnetic fields up to 5 T applied in the Faraday geometry is employed. The experiment reveals a cascade spin evolution process of excitons in the indirect band-gap quantum dots: an initial short term spin dynamics associated with excited direct exciton states possessing a large oscillator strength is followed by electron relaxation into the X valley of the Brillouin zone and subsequent long term spin dynamics of indirect excitons. The two step mechanism manifests itself in the distinct features of the magnetic field dependences of photoluminescence: two component recovery of optical orientation, two component linear to circular polarization conversion and the presence of the linear polarization plane rotation. At the same time, suppression of the optical alignment shows one-component behavior governed by the spin dynamics of the indirect exciton states. Within the pseudospin formalism, we derive analytical expressions that quantitatively describe the observed dependences and yield estimates for the anisotropic exchange splitting: 210 {\\mu}eV for direct excitons and 1.3 {\\mu}eV for indirect excitons. Further analysis using the density matrix formalism agrees well with the pseudospin model calculations and shows that the finite optical orientation at zero magnetic field is due to comparable magnitudes of the anisotropic splitting of the indirect exciton states and the splitting of the X-valley electron states caused by the hyperfine interaction with nuclei.", "url": "https://arxiv.org/abs/2609.04951", "authors": [{"name": "S. V. Nekrasov"}, {"name": "I. V. Kalitukha"}, {"name": "A. A. Golovatenko"}, {"name": "Ya. A. Kuznetsova"}, {"name": "N. O. Mikhailenko"}, {"name": "M. D. Ragoza"}, {"name": "T. S. Shamirzaev"}, {"name": "Yu. G. Kusrayev"}], "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 8, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["luminescence", "photoluminescence"]}, "featured_authors": [{"name": "S. V. Nekrasov"}, {"name": "I. V. Kalitukha"}, {"name": "A. A. Golovatenko"}, {"name": "M. D. Ragoza"}, {"name": "T. S. Shamirzaev"}, {"name": "Yu. G. Kusrayev"}], "summaries": {"en": "This paper reveals a two-step cascade spin dynamics of excitons in type-I (In,Al)As/AlAs quantum dots with indirect band gaps, characterized by distinct magnetic-field-dependent photoluminescence features that allow estimation of anisotropic exchange splittings and hyperfine-induced valley splitting.", "zh": "本文揭示了具有间接带隙的I型(In,Al)As/AlAs量子点中激子的两级级联自旋动力学，其表现为光致发光随磁场的不同特征，从而可估算各向异性交换劈裂和超精细引起的谷劈裂。", "ja": "本論文は、間接バンドギャップを持つタイプI (In,Al)As/AlAs量子ドットにおける励起子の二段階カスケードスピン動力学を明らかにし、磁場依存のフォトルミネッセンス特徴から異方性交換分裂と超微細相互作用による谷分裂を推定できることを示す。"}, "summary_source": "deepseek"}, {"id": "2609.04954", "category": "cond-mat", "title": "Nonreciprocal plasmonic response of drift-biased two-dimensional metals", "abstract": "We develop a nonlocal electrodynamic framework for drift-biased two-dimensional electron gases (2DEGs) with Dirac (linear) and parabolic (quadratic) dispersions, deriving closed-form drift-dependent conductivity tensors from the Boltzmann transport equation. We obtain the plasmon dispersion and near-field emission of a point dipole, revealing nonreciprocal propagation in both systems. At equal drift parameter, the parabolic 2DEG exhibits stronger nonreciprocity than the Dirac system, although we find that a larger drift parameter does not by itself produce stronger nonreciprocity: the response is set by the interplay of drift and plasmon nonlocality. As such, the combination of strong nonlocality and experimentally accessible drift velocities of semiconductor 2DEGs identifies parabolic systems as a promising platform for tunable, nonreciprocal plasmonics.", "url": "https://arxiv.org/abs/2609.04954", "authors": [{"name": "Gonzalo Álvarez-Pérez"}, {"name": "Joel D. Cox"}], "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall) ; Materials Science (cond-mat.mtrl-sci); Optics (physics.optics)", "author_count": 2, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["plasmonic", "plasmonics"]}, "featured_authors": [{"name": "Gonzalo Álvarez-Pérez"}, {"name": "Joel D. Cox"}], "summaries": {"en": "Drift-biased two-dimensional electron gases with parabolic dispersion exhibit stronger nonreciprocal plasmonic response than Dirac systems due to the interplay of drift and nonlocality, offering a tunable platform for nonreciprocal plasmonics.", "zh": "漂移偏置的二维电子气中，抛物线色散系统比狄拉克系统表现出更强的非互易等离激元响应，这是漂移与非局域性相互作用的结果，为可调谐的非互易等离激元学提供了有前景的平台。", "ja": "ドリフトバイアスをかけた二次元電子ガスでは、パラボリック分散系がディラック系よりも強い非相反プラズモン応答を示し、これはドリフトと非局所性の相互作用によるもので、調整可能な非相反プラズモニクスの有望なプラットフォームとなる。"}, "summary_source": "deepseek"}, {"id": "2609.05177", "category": "cond-mat", "title": "Transparency-engineered SQUID cells for Kerr-free three-wave-mixing Josephson metamaterials", "abstract": "We introduce a transparency-engineered rf-SQUID cell for Kerr-free three-wave-mixing Josephson metamaterials. This design replaces the conventional tunnel-junction element with an effective Josephson element formed by two junctions in series, yielding a non-sinusoidal energy-phase relation that can be used as a tunable nonlinear design resource. We show that the asymmetry between the two series junctions and the applied flux bias provide independent control over the local expansion of the rf-SQUID potential, enabling operating points where the leading quartic Kerr term is suppressed while the cubic nonlinearity remains finite. We derive the corresponding Kerr-free condition, identify the resulting operating ridge in parameter space, and analyze the local stability and passive-matching constraints that bound its physically accessible portion. Our results provide a compact unit-cell design principle for three-wave-mixing Josephson metamaterials and suggest a route toward Kerr-suppressed Josephson traveling-wave parametric amplifiers.", "url": "https://arxiv.org/abs/2609.05177", "authors": [{"name": "Claudio Guarcello"}, {"name": "A. Mert Bozkurt"}, {"name": "Carlo Barone"}, {"name": "Giovanni Filatrella"}, {"name": "Alessandro Bruno"}, {"name": "Sergio Pagano"}], "subjects": "Superconductivity (cond-mat.supr-con) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 6, "topics": ["Nonlinear Optics"], "topic_hits": {"Nonlinear Optics": ["kerr"]}, "featured_authors": [{"name": "Claudio Guarcello"}, {"name": "A. Mert Bozkurt"}, {"name": "Carlo Barone"}, {"name": "Giovanni Filatrella"}, {"name": "Alessandro Bruno"}, {"name": "Sergio Pagano"}], "summaries": {"en": "We introduce a transparency-engineered rf-SQUID cell that suppresses the Kerr term while preserving three-wave mixing for improved Josephson traveling-wave parametric amplifiers.", "zh": "我们提出了一种透明工程化的 rf-SQUID 单元，它在保持三波混频的同时抑制了克尔项，有望改进约瑟夫森行波参数放大器。", "ja": "我々は、三波混合を維持しつつカー項を抑制する透過性工学化rf-SQUIDセルを導入し、ジョセフソン進行波パラメトリック増幅器の改善を示唆する。"}, "summary_source": "deepseek"}, {"id": "2609.05188", "category": "cond-mat", "title": "Electrostatic splitting of an Edge Magnetoplasmon Resonator", "abstract": "Edge-magnetoplasmon resonators have been proposed as a powerful tool to detect anyons by introducing a quantum point contact into an isolated quantum Hall system probed via radiofrequency radiation. In this paper, we study the effect of a quantum point contact embedded within an edge-magnetoplasmon resonator and how its polarization influences the propagating magnetoplasmonic mode. Combining dc and rf measurements, we unambiguously evidence the signature of both integer ($\\nu = 1$ and $2$) and fractional quantum Hall states ($\\nu = 4/3$ and $2/3$) within the radiofrequency transmission signal. Using electrostatic gating, we determine the physical parameters characterizing the electrostatic edge of an AlGaAs/GaAs based two-dimensional electron gas. We extract the dependence of the cavity perimeter with the gate voltage of the quantum point contact and fully characterize the path followed by edge magnetoplasmons in this system. Finally, we provide a geometric model in good agreement with experimental results.", "url": "https://arxiv.org/abs/2609.05188", "authors": [{"name": "Sloän Kouamé"}, {"name": "Elric Frigerio"}, {"name": "Giacomo Rebora"}, {"name": "Suvankar Purkait"}, {"name": "Yong Jin"}, {"name": "Ulf Gennser"}, {"name": "Antonella Cavanna"}, {"name": "Jean-Marc Berroir"}, {"name": "Emmanuel Baudin"}, {"name": "Pascal Degiovanni"}, {"name": "François D. Parmentier"}, {"name": "Gwendal Fève"}, {"name": "Gerbold C. Ménard"}], "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 13, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["plasmonic"]}, "featured_authors": [{"name": "Sloän Kouamé"}, {"name": "Elric Frigerio"}, {"name": "Giacomo Rebora"}, {"name": "François D. Parmentier"}, {"name": "Gwendal Fève"}, {"name": "Gerbold C. Ménard"}], "summaries": {"en": "This paper experimentally and theoretically investigates how a quantum point contact embedded in an edge-magnetoplasmon resonator electrostatically splits the propagating mode, revealing signatures of integer and fractional quantum Hall states and characterizing the edge geometry of a two-dimensional electron gas.", "zh": "本文实验和理论研究嵌入边缘磁等离子体谐振器中的量子点接触如何静电分裂传播模式，揭示了整数量子霍尔和分数量子霍尔态的特征，并表征了二维电子气的边缘几何特性。", "ja": "本論文は、エッジ磁気プラズモン共振器に埋め込まれた量子ポイントコンタクトが伝搬モードを静電的に分割することを実験的・理論的に研究し、整数・分数量子ホール状態のシグネチャを明らかにし、二次元電子ガスのエッジ幾何学を特徴付けるものである。"}, "summary_source": "deepseek"}, {"id": "2609.05394", "category": "cond-mat", "title": "Variable Charge State, Magnetic Excitations, and Kondo Effect of Sm/g/Ir(111)", "abstract": "Using low-temperature scanning tunneling microscopy we investigate the charge state, magnetic excitations, and Kondo features of individual Sm adatoms on graphene/Ir(111). Depending on the number and distance of their neighbors, Sm atoms can be in two discrete charge states. At certain distances, a reversible transition between these two states is induced by the electric field of the STM tip leading to concentric charge rings in the images. Only atoms in one of the two charge states exhibit magnetic excitations in d$I$/d$V$ spectra. Two such excitations are located at 35~meV and 54~meV and related to transitions from the $J = 1/2$ ground state doublet to the first crystal field split $J = 3/2$ multiplet. Together with the intra-atomic exchange excitations at higher energy, these observations indicate that Sm transfers one $6s$ electron to the substrate while it retains its gas-phase $4f$ filling. New for lanthanide adatoms, we observe a Kondo resonance. The Zeeman splitting of the Kondo peak reveals that Sm retains its large gas-phase $g$-factor. Comparison of d$I$/d$V$ spectra to cotunneling theory yields the crystal field acting on the $4f$ shell and, consequently, on the $J = 3/2$ quadruplet, confirms Sm$^+$ as the ground state, and identifies Sm$^{2+}$ as being energetically close, thereby rationalizing our observation of variable charge states.", "url": "https://arxiv.org/abs/2609.05394", "authors": [{"name": "Shixuan Shan"}, {"name": "Tamara de Ara"}, {"name": "Lina Liu"}, {"name": "Zhipeng Wang"}, {"name": "Marina Pivetta"}, {"name": "François Patthey"}, {"name": "Tadahiro Komeda"}, {"name": "Daria Kývala"}, {"name": "Jindřich Kolorenč"}, {"name": "Harald Brune"}], "subjects": "Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 10, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["microscopy"]}, "featured_authors": [{"name": "Shixuan Shan"}, {"name": "Tamara de Ara"}, {"name": "Lina Liu"}, {"name": "Daria Kývala"}, {"name": "Jindřich Kolorenč"}, {"name": "Harald Brune"}], "summaries": {"en": "This study uses low-temperature scanning tunneling microscopy to investigate individual Sm adatoms on graphene/Ir(111), revealing two discrete charge states, tip-induced reversible transitions with charge rings, magnetic excitations in the Sm+ state, and a Kondo resonance, supported by cotunneling theory.", "zh": "本研究利用低温扫描隧道显微镜研究 graphene/Ir(111) 上的单个 Sm 原子，发现其存在两种电荷态、针尖诱导的可逆转变及电荷环，并在 Sm+ 态中观察到磁激发和近藤共振，与共隧穿理论相符。", "ja": "本研究では、低温走査トンネル顕微鏡を用いて graphene/Ir(111) 上の単一 Sm 原子を調べ、2つの離散的な電荷状態、探針誘起の可逆転移と電荷リング、Sm+ 状態における磁気励起と近藤共鳴を観測し、共トンネル理論と一致することを示した。"}, "summary_source": "deepseek"}, {"id": "2609.04403", "category": "physics", "title": "Ultrafast Control of Lifetime in High Q Anisotropic Plasmon Polaritons", "abstract": "Losses are a major roadblock in the technological implementation of surface plasmons at optical frequencies. The recent emergence of MoOCl2, a correlated van-der-Waals material with strongly anisotropic optical properties, offers new avenues to circumvent this limit. We report the far-field observation of high-Q surface plasmon polaritons in this material, arising from the anisotropic hybridisation of surface plasmons and dielectric modes. We then explore nonlinear pumping of intraband electrons to the conduction band in these structures, leading, contrary to intuition, to an abrupt increase in the lifetime of the polariton resonance, despite the injection of hot electrons. This counterintuitive phenomenon stems from the competition between photon and plasmon excitations in a lenticular polariton resonance, yielding a largely tuneable lifetime at ultrafast speeds.", "url": "https://arxiv.org/abs/2609.04403", "authors": [{"name": "Romain Tirole"}, {"name": "Giacomo Venturi"}, {"name": "Emroz Khan"}, {"name": "Lin Jing"}, {"name": "Lin Nan"}, {"name": "Nicola Melchioni"}, {"name": "Andrea Mancini"}, {"name": "Antonio Ambrosio"}, {"name": "Andrea Alù"}], "subjects": "Optics (physics.optics)", "author_count": 9, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["optical properties", "polariton", "polaritons"]}, "featured_authors": [{"name": "Romain Tirole"}, {"name": "Giacomo Venturi"}, {"name": "Emroz Khan"}, {"name": "Andrea Mancini"}, {"name": "Antonio Ambrosio"}, {"name": "Andrea Alù"}], "summaries": {"en": "This paper reports the observation of high-Q surface plasmon polaritons in the anisotropic van-der-Waals material MoOCl2 and shows that ultrafast nonlinear pumping can counterintuitively increase the polariton lifetime, enabling rapid tunability.", "zh": "该论文报道了在具有各向异性的范德华材料MoOCl₂中观察到高Q值表面等离激元极化子，并发现通过超快非线性泵浦可反常地延长其寿命，从而实现快速的寿命调控。", "ja": "本論文では、異方性を持つファンデルワールス材料MoOCl₂において高Q値の表面プラズモン・ポラリトンを観測し、超高速の非線形ポンピングが逆説的にその寿命を延ばし、高速な寿命制御を可能にすることを報告している。"}, "summary_source": "deepseek"}, {"id": "2609.04571", "category": "physics", "title": "Nonlinear Photoemission for Bright Beams in X-Band Photoinjectors", "abstract": "The ongoing development of low-cost and compact x-ray light sources is vital for increasing the number of experiments that can be performed at the atomic scale. Smaller sources can be operated in blow-out mode, in which a high-charge, short-bunch length electron beam self compresses into a uniformly ellipsoidal shape. This mode necessitates a photoinjector whose laser has a pulse duration on the order of $10^2$ fs. In this case, linear photoemission with an ultraviolet laser presents significant technical challenges, as many optical substrates degrade at these wavelengths. In this paper, we present an alternative design that uses nonlinear photoemission to produce electron beams with high charge and short bunch length. This photoinjector design produces an electron beam with a bunch charge of up to $200$ pC, an RMS bunch length of $140$ fs, a normalized transverse emittance of $1$ to $1.4$ mm$\\cdot$mrad, and an energy spread of $10^{-4}$. This results in a beam brightness of $9.74\\times10^{18}$ A/m$^2$, which is bright enough for our beamline's purposes. Ongoing efforts are aimed at further increasing the electron beam brightness by using a spatial light modulator to shape the laser", "url": "https://arxiv.org/abs/2609.04571", "authors": [{"name": "Casey Timms"}, {"name": "Lucas Malin"}, {"name": "Kevin Eckrosh"}, {"name": "Sean E. Tilton"}, {"name": "Lidia C. Santander"}, {"name": "Hyung Seo Lee"}, {"name": "Rejul Jaswal"}, {"name": "Alex Gardeck"}, {"name": "Eric Everett"}, {"name": "Alan Dupre"}, {"name": "Mukhtar Hussain"}, {"name": "Sami Tantawi"}, {"name": "William Graves"}, {"name": "Henrik Loos"}, {"name": "Mark Holl"}, {"name": "Arvinder Sandhu"}, {"name": "Robert Kaindl"}, {"name": "Samuel Teitelbaum"}], "subjects": "Optics (physics.optics) ; Accelerator Physics (physics.acc-ph)", "author_count": 18, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical", "optics"]}, "featured_authors": [{"name": "Casey Timms"}, {"name": "Lucas Malin"}, {"name": "Kevin Eckrosh"}, {"name": "Arvinder Sandhu"}, {"name": "Robert Kaindl"}, {"name": "Samuel Teitelbaum"}], "summaries": {"en": "This paper proposes an X-band photoinjector design that uses nonlinear photoemission to generate high-charge, short-bunch electron beams for compact x-ray sources, achieving a brightness of 9.", "zh": "本文提出了一种X波段光注入器设计，利用非线性光发射产生高电荷、短束团的电子束，用于紧凑型X射线源，实现了9.", "ja": "本論文では、非線形光電子放出を用いて高電荷・短バンチの電子ビームを生成するXバンド光注入器の設計を提案し、9."}, "summary_source": "deepseek"}, {"id": "2609.04587", "category": "physics", "title": "Band Gaps and Localization of Surface Waves at Hyperbolic Material and Topological Insulator Interfaces", "abstract": "We develop analytical criteria for surface electromagnetic waves at interfaces between hyperbolic materials and topological insulators. The analysis identifies propagation conditions, field penetration depths, and spectral band gaps. In the lossless model, the band edge is governed primarily by dielectric contrast, while the bulk topological coupling produces only a small shift and a weak correction to the dispersion. For structures combining hexagonal boron nitride with bismuth selenide, a thin topological insulator film on a dielectric substrate with low permittivity can substantially broaden the accessible propagation window. We also analyze a dissipative titanium and silicon hyperbolic effective medium interfaced with bismuth selenide. To make the complex branch structure visible, this lossy calculation uses an intentionally enhanced interface response and is therefore illustrative rather than a quantitative prediction for a conventional topological insulator. In the lossy case, a root of the dispersion relation represents a physical guided mode only when the fields decay away from the interface, attenuate consistently along the propagation direction, have finite penetration depths, and exhibit a consistent energy flow profile. Apparent gaps and jumps can occur when the complex quantities controlling transverse decay approach square root branch cuts. These results provide design guidelines for controlling dispersion, confinement, band gaps, and propagation loss in mid-infrared photonic structures.", "url": "https://arxiv.org/abs/2609.04587", "authors": [{"name": "Andrei I. Maimistov"}, {"name": "Ildar R. Gabitov"}, {"name": "Ilia Kuk"}], "subjects": "Optics (physics.optics) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 3, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["permittivity"]}, "featured_authors": [{"name": "Andrei I. Maimistov"}, {"name": "Ildar R. Gabitov"}, {"name": "Ilia Kuk"}], "summaries": {"en": "This paper develops analytical criteria for surface electromagnetic waves at hyperbolic material and topological insulator interfaces, clarifying band gaps and localization while providing design guidelines for mid-infrared photonic structures.", "zh": "本文为双曲材料与拓扑绝缘体界面上的表面电磁波建立了解析判据，阐明了带隙和局域化特性，并为中红外光子结构提供了设计指导。", "ja": "この論文は、双曲メタマテリアルとトポロジカル絶縁体の界面における表面電磁波の解析基準を開発し、バンドギャップと局在性を明らかにして、中赤外フォトニック構造の設計指針を提供する。"}, "summary_source": "deepseek"}, {"id": "2609.04656", "category": "physics", "title": "High-Performance Photonic Crystal Biosensors using Sub-wavelength Nanopillars", "abstract": "Photonic-crystal (PC) slabs composed of subwavelength silicon pillars erected on a thin silicon backing layer, with heights of only one or half lattice constant, are simulated for optical biosensing by numerical solution of Maxwell's equations. Localized optical cavity modes that form waveguides in the direction of biofluid flow, with quality factors surpassing \\(10^4\\), are embedded within the 2D photonic band gap of the 3D structure. Remarkable sensitivity to analyte binding is achieved using fragmented thin silicon pillars in regions of maximum localized optical-field intensity. Exceptional quality factors are realized through destructive wave interference of vertical radiation loss. This provides a rare combination of high sensitivity and low limit of detection in a device with minimal time requirement for analyte binding. The sensitivity to analyte binding is a frequency shift of nearly \\(0.004\\,[2\\pi c/a]\\) per analyte-thickness increment \\(0.1a\\). The sensitivity to background biofluid change is about \\(4800\\) nm per refractive index unit (RIU) for a specific lattice constant \\(a = 5\\,\\mu\\mathrm{m}\\) using light of wavelength \\(16.5\\,\\mu\\mathrm{m}\\).", "url": "https://arxiv.org/abs/2609.04656", "authors": [{"name": "Zhengzheng Zhai"}, {"name": "Sajeev John"}], "subjects": "Optics (physics.optics)", "author_count": 2, "topics": ["Integrated Optics", "Optical Materials"], "topic_hits": {"Integrated Optics": ["waveguide", "waveguides"], "Optical Materials": ["photonic crystal", "refractive index"]}, "featured_authors": [{"name": "Zhengzheng Zhai"}, {"name": "Sajeev John"}], "summaries": {"en": "A photonic-crystal biosensor with subwavelength silicon nanopillars achieves ultrahigh sensitivity and quality factors above 10^4 by localizing optical modes and tuning wave interference to reduce radiation loss.", "zh": "一种采用亚波长硅纳米柱的光子晶体生物传感器，通过局域光学模式并调节波干涉以降低辐射损耗，实现了超高灵敏度和超过10^4的品质因子。", "ja": "サブ波長シリコンナノピラーを用いたフォトニック結晶バイオセンサーは、光学モードを局在させ、放射損失を低減するために波動干渉を調整することで、超高感度と10^4を超えるQ値を達成する。"}, "summary_source": "deepseek"}, {"id": "2609.04666", "category": "physics", "title": "Research and simulation of analytical polarization control enabled by optical computing on an integrated photonics chip", "abstract": "Dynamic polarization controllers are key devices with broad applications in many fields. However, most on-chip polarization controllers still rely on traditional blind-search methods, whereas analytical optical-computing approaches remain insufficiently explored, particularly with respect to calibration and endless polarization control. With the accurate relative phase of Mach-Zehnder interferometer (MZI) being fully controllable on an integrated photonics chip, we present an analytical polarization control (APC) method using four phase shifters and optical computing, eliminating the need for the traditional inefficient blind-search procedure. The basic structures and operations of APC are clarified. The proposed calibration method and endless control method enable continuous APC while compensating for phase differences within the MZI structures. We simulate the influence of the endless control unit on polarization control and quantify the effect of the fourth phase difference on the output extinction ratio. With the fourth phase shifter, the phase difference encountered during Stokes vector measurement can be effectively compensated, and rotations around all three axes on the Poincaré sphere can be realized. These results establish a practical APC architecture based on optical computing for photonics chips. The proposed APC methods, combined with a FPGA-based hardware acceleration, will enable high speed on-chip polarization controllers.", "url": "https://arxiv.org/abs/2609.04666", "authors": [{"name": "Xueying Ren"}, {"name": "Junxin Yan"}, {"name": "Xuyang Wang"}, {"name": "Bailin Shen"}, {"name": "Lingyan Zhang"}, {"name": "Minyue Yang"}, {"name": "Nannan Ning"}, {"name": "Jiaxin Huang"}, {"name": "Zhenguo Lu"}, {"name": "Jun Zou"}, {"name": "Yongmin Li"}], "subjects": "Optics (physics.optics) ; Quantum Physics (quant-ph)", "author_count": 11, "topics": ["Integrated Optics", "Optical Computing"], "topic_hits": {"Integrated Optics": ["integrated photonic", "integrated photonics"], "Optical Computing": ["optical computing"]}, "featured_authors": [{"name": "Xueying Ren"}, {"name": "Junxin Yan"}, {"name": "Xuyang Wang"}, {"name": "Zhenguo Lu"}, {"name": "Jun Zou"}, {"name": "Yongmin Li"}], "summaries": {"en": "This paper presents an analytical polarization control method for integrated photonic chips that uses four phase shifters and optical computing to achieve calibration and endless polarization control without traditional blind-search procedures.", "zh": "本文提出了一种集成光子芯片上的解析偏振控制方法，利用四个移相器和光学计算，无需传统盲搜索过程即可实现校准和无限偏振控制。", "ja": "本論文は、集積フォトニクスチップ上で4つの位相シフタと光計算を用いた解析的偏波制御法を提案し、従来のブラインドサーチ法を用いずに校正と無限偏波制御を実現する。"}, "summary_source": "deepseek"}, {"id": "2609.04818", "category": "physics", "title": "Modulation-Frequency Dependence of Spatial Resolution in Optical Correlation-Domain Reflectometry", "abstract": "The spatial resolution of optical correlation-domain reflectometry (OCDR) has conventionally been described by an expression that is independent of the modulation frequency $f_m$, source linewidth $\\delta\\nu$, and receiver resolution bandwidth (RBW). However, our previous measurements showed that the spatial resolution $\\Delta z$ improves with increasing $f_m$. Here, we develop a theoretical model for OCDR with a frequency shifter by evaluating the electrical power detected by an electrical spectrum analyzer and explicitly including $\\delta\\nu$ and the RBW $B$. The model predicts two regimes. At low $f_m$, $\\Delta z$ decreases approximately in proportion to $1/f_m$, with the proportionality determined by the combined source and receiver spectral response. At high $f_m$, $\\Delta z$ approaches a constant value determined by the modulation amplitude $\\Delta f$ and independent of the source linewidth and RBW filter. Measurements at RBW = 1 MHz reproduced the transition between these regimes over correlation orders up to 2048. At RBW = 10 MHz, a Voigt representation of the spectral response overestimated $\\Delta z$, whereas direct use of the measured unmodulated beat spectrum reduced the discrepancy to approximately 10 to 20%. These results provide a quantitative description of the modulation-frequency dependence of OCDR spatial resolution and clarify its trade-off with measurement range.", "url": "https://arxiv.org/abs/2609.04818", "authors": [{"name": "Keisuke Motoda"}, {"name": "Takaki Kiyozumi"}, {"name": "Yosuke Mizuno"}], "subjects": "Optics (physics.optics) ; Applied Physics (physics.app-ph)", "author_count": 3, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["optical", "optics"]}, "featured_authors": [{"name": "Keisuke Motoda"}, {"name": "Takaki Kiyozumi"}, {"name": "Yosuke Mizuno"}], "summaries": {"en": "A theoretical model reveals that the spatial resolution in optical correlation-domain reflectometry depends on modulation frequency at low frequencies, while approaching a constant limited by modulation amplitude at high frequencies.", "zh": "理论模型揭示了光学相关域反射测量中的空间分辨率在低调制频率下随频率变化，在高频下则趋近于由调制幅度决定的常数。", "ja": "理論モデルにより、光相関領域反射測定の空間分解能は低変調周波数では周波数に依存し、高周波では変調振幅で決まる一定値に近づくことが明らかになった。"}, "summary_source": "deepseek"}, {"id": "2609.04863", "category": "physics", "title": "Frugal Effective Models for Nanophotonic Scattering: Optimizing Global Polarizability Matrices for Metasurface Design", "abstract": "Accurate nano-photonics simulations of large scale devices like optical metasurfaces require high accuracy reduced models for the device constituents. We present an automated framework for the optimization of Global Polarizability Matrix (GPM) models, which represent a complex scatterer as a small set of non-local effective dipoles. Our goal is to find the most frugal model that reproduces a particle's scattering response within a user-defined accuracy. The method iteratively removes redundant dipoles while re-adapting the positions of the remaining ones via gradient based optimization, stopping at the smallest model that still meets the target. Automatic differentiation, combined with an untrained neural network that reparametrizes the dipole positions, helps to place the dipoles at physically intuitive locations. We demonstrate the versatility of this approach across diverse geometries, from two dimensional ridges over simple spheres to complex three-dimensional particles, achieving compression factors of typically two orders of magnitude compared to full-wave simulations, for target accuracies in the order of few percent. We finally demonstrate how accurate, frugal effective models enable large-scale meta-deflector optimization without periodic approximations. This robust recipe for constructing frugal effective models paves the way for the rapid simulation of large-scale photonic assemblies, required for example for metasurface design.", "url": "https://arxiv.org/abs/2609.04863", "authors": [{"name": "Sofia Ponomareva"}, {"name": "Peter R. Wiecha"}], "subjects": "Optics (physics.optics) ; Computational Physics (physics.comp-ph)", "author_count": 2, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["metasurface", "metasurfaces"]}, "featured_authors": [{"name": "Sofia Ponomareva"}, {"name": "Peter R. Wiecha"}], "summaries": {"en": "The paper presents an automated framework that optimizes global polarizability matrix models for nanophotonic scatterers to create the most frugal effective dipole representations that meet user-defined accuracy, facilitating large-scale metasurface design and simulation with compression factors around two orders of magnitude over full-wave methods.", "zh": "该论文提出了一种自动化框架，用于优化纳米光子散射体的全局极化率矩阵模型，以找到满足用户设定精度的最简有效偶极子表示，从而实现大规模超表面设计与模拟，压缩倍数约为全波方法的一百倍。", "ja": "本論文は、ナノフォトニック散乱体の大域分極率行列モデルを最適化し、ユーザーが定義した精度を満たす最小限の有効双極子表現を構築する自動フレームワークを提示し、全波シミュレーションと比較して約2桁の圧縮係数を達成し、大規模メタサーフェス設計を可能にする。"}, "summary_source": "deepseek"}, {"id": "2609.04924", "category": "physics", "title": "Relaxing Coherence Requirements on Laser Sources for Nanoscopy through Optical Fiber Technique", "abstract": "High numerical-aperture (NA) focusing of cylindrical vector beams (CVBs) typically requires costly, high-quality lasers to supply a stable vector pupil field. Here, we introduce fiber-conditioned vectorial nanofocusing, in which an optical-fiber-based mode-selective coupler projects a strongly distorted beam of a diode that costs two orders of magnitude less than the reference laser into radially or azimuthally polarized CVBs. A three-tolerance analysis clarifies its operating principle by establishing separate requirements for spatial state, temporal coherence and residual wavefront error. The resulting fields reproduce expected high-NA focal signatures and generate orientation-sensitive single-molecule excitation patterns consistent with reference-laser measurements, lowering the barrier to structured-light experiments.", "url": "https://arxiv.org/abs/2609.04924", "authors": [{"name": "Kaifa Xin"}, {"name": "Mengdie Hou"}, {"name": "Ao Yang"}, {"name": "Márton Gelléri"}, {"name": "Hyun-Keun Lee"}, {"name": "Antonio Virgilio Failla"}, {"name": "Jiafeng Lu"}, {"name": "Xianglong Zeng"}, {"name": "Mischa Bonn"}, {"name": "Jesper Lægsgaard"}, {"name": "Xiaomin Liu"}], "subjects": "Optics (physics.optics)", "author_count": 11, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "lasers", "optical", "optics"]}, "featured_authors": [{"name": "Kaifa Xin"}, {"name": "Mengdie Hou"}, {"name": "Ao Yang"}, {"name": "Mischa Bonn"}, {"name": "Jesper Lægsgaard"}, {"name": "Xiaomin Liu"}], "summaries": {"en": "This paper introduces fiber-conditioned vectorial nanofocusing using a mode-selective coupler to generate cylindrical vector beams from a low-cost, distorted laser diode, achieving equivalent high-NA focusing and single-molecule excitation patterns with reduced coherence and wavefront requirements.", "zh": "本文提出通过光纤模式选择性耦合器将低成本、畸变的激光二极管光束转换为径向或方位偏振柱矢量光束，实现等效的高数值孔径聚焦和单分子激发图案，从而放宽对激光源相干性和波前质量的要求。", "ja": "本論文は、光ファイバー型モード選択カプラを用いて、低コストで歪んだレーザーダイオードのビームをラジアルまたはアジムシャル偏光の円筒ベクトルビームに変換し、高NA集光と単分子励起パターンを同等に再現することで、レーザー光源のコヒーレンスと波面品質の要件を緩和する手法を紹介する。"}, "summary_source": "deepseek"}, {"id": "2609.04977", "category": "physics", "title": "Operando imaging of intercalation memory in MXenes", "abstract": "Ion intercalation enables reversible control of charge, structure and function in layered solids. Yet layered materials contain nanosheets with different thicknesses and stacking, whose intercalation pathways are averaged out in ensemble measurements. This becomes critical under Angstrom-scale confinement, where ion transport couples to solvent reorganization and host deformation, leaving the origins of kinetics, reversibility and activation unresolved. Here we combine operando interferometric scattering and interference reflection microscopy to resolve proton-driven dynamics in individual single- and multilayer Ti3C2Tx MXene flakes and show that even a few stacked layers introduce a significant kinetic barrier. Cycling then separates nanosheets into three persistent behaviors: reversible monolayers, restacked multilayers with incomplete recovery and delayed deintercalation, and coherently stacked multilayers that self-stabilize through reversible folding. Operando synchrotron X-ray diffraction shows this memory at electrode scale, where the interlayer structure converges towards a reproducible state. Our findings reveal cycling-induced structural memory that governs subsequent intercalation in layered MXenes.", "url": "https://arxiv.org/abs/2609.04977", "authors": [{"name": "Franz Groebmeyer"}, {"name": "Mohsen Beladi"}, {"name": "Christoph G. Gruber"}, {"name": "Ruocun Wang"}, {"name": "Pol Salles"}, {"name": "Nhu Quynh Nguyen"}, {"name": "Jakub Drnec"}, {"name": "Yury Gogotsi"}, {"name": "Emiliano Cortes"}], "subjects": "Chemical Physics (physics.chem-ph) ; Materials Science (cond-mat.mtrl-sci); Applied Physics (physics.app-ph)", "author_count": 9, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["microscopy"]}, "featured_authors": [{"name": "Franz Groebmeyer"}, {"name": "Mohsen Beladi"}, {"name": "Christoph G. Gruber"}, {"name": "Jakub Drnec"}, {"name": "Yury Gogotsi"}, {"name": "Emiliano Cortes"}], "summaries": {"en": "Operando imaging reveals that proton intercalation into individual MXene flakes leaves distinct intercalation memory states—reversible monolayers, restacked multilayers, and folding multilayers—that govern subsequent electrochemical cycling through kinetic barriers and structural deformation.", "zh": "原位成像揭示了质子嵌入单个MXene薄片会留下不同的嵌入记忆状态，包括可逆单层、再堆叠多层和折叠多层，这些状态通过动力学势垒和结构变形调控后续电化学循环。", "ja": "オペランドイメージングにより、MXeneフレークへのプロトン挿入が可逆単層、再スタック多層、折りたたみ多層という異なる挿入メモリ状態を残し、それらが速度論的障壁と構造変形を通じてその後の電気化学サイクルを支配することが明らかになった。"}, "summary_source": "deepseek"}, {"id": "2609.04989", "category": "physics", "title": "Sub-2-Cycle, Terawatt Pulses via Double-Stage Multi-Pass Cell Compression of an Yb Laser", "abstract": "We report a terawatt-class, sub-2-cycle post-compressed Yb-based laser system operating at kHz repetition rate. 18 mJ, 400 fs pulses delivered at 1 kHz by a commercial Yb:YAG laser are spectrally broadened and temporally compressed in a double-stage multi-pass cell setup featuring an argon-filled Herriott-type cell followed by a helium-filled array-type cell, achieving an overall compression factor of 65. The resulting compressed pulses are measured to have 6.2 fs duration (1.8 optical cycles at 1030 nm) and 12.5 mJ energy, corresponding to 1.4 TW effective peak power. To the best of our knowledge, this constitutes the highest peak power reported to date for a few-cycle, kHz-repetition-rate, post-compressed Yb laser system. Focused intensity measurements yield a normalized vector potential of a0 = 3.0, confirming the applicability of this light source for laser wakefield acceleration.", "url": "https://arxiv.org/abs/2609.04989", "authors": [{"name": "Victor Koltalo"}, {"name": "Jaismeen Kaur"}, {"name": "Louis Daniault"}, {"name": "Antoine Cavagna"}, {"name": "Mickael Allemand"}, {"name": "Florent Pallas"}, {"name": "Antoine Courjaud"}, {"name": "Emilien Gontier"}, {"name": "Cédric Sire"}, {"name": "François Sylla"}, {"name": "Rodrigo Lopez-Martens"}], "subjects": "Optics (physics.optics)", "author_count": 11, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical", "optics"]}, "featured_authors": [{"name": "Victor Koltalo"}, {"name": "Jaismeen Kaur"}, {"name": "Louis Daniault"}, {"name": "Cédric Sire"}, {"name": "François Sylla"}, {"name": "Rodrigo Lopez-Martens"}], "summaries": {"en": "A double-stage multi-pass cell compression scheme broadens and compresses 18 mJ, 400 fs pulses from a commercial Yb:YAG laser to 6.", "zh": "采用双级多通池压缩方案，将商用Yb:YAG激光器输出的18 mJ、400 fs脉冲展宽并压缩至6.", "ja": "二段マルチパスセル圧縮法により、商用Yb:YAGレーザーの18 mJ、400 fsパルスを、6."}, "summary_source": "deepseek"}, {"id": "2609.05001", "category": "physics", "title": "Fabrication-Aware Design of a Hybrid Metasurface-Bragg Mirror for Low-Noise Precision Optics", "abstract": "High-reflectivity coatings for precision interferometry must simultaneously minimize optical losses and thermally driven displacement noise. Dielectric Bragg mirrors provide robust high reflectance but rely on thick multilayer coatings, whereas metasurface mirrors provide high reflectance and low noise but are sensitive to fabrication-induced deviations. A fabrication-aware hybrid mirror concept is introduced that combines a resonant single-layer metasurface, an etch-stop layer, an antiresonant spacer, and a reduced Bragg reflector. Fabrication effects, including geometric tolerances and line-edge roughness, are explicitly considered in the optical design. Full-wave electromagnetic simulations are combined with a truncated-Gaussian Monte Carlo analysis to determine the performance distribution under the assumed fabrication conditions. The ideal metasurface design exceeds $99.999\\%$ reflectance. After roughness-aware reoptimization, the modeled non-reflected power remains below $2.88\\cdot10^{-4}$ at $95\\%$ fabrication yield. For the cryogenic ETpathfinder gravitational-wave testbed, three Bragg layer pairs reduce the non-reflected power of the complete stack to approximately $6.4\\,\\mathrm{ppm}$. The estimated thermal displacement-noise amplitude spectral density is $8.4\\cdot10^{-21}\\,\\mathrm{m\\,Hz^{-1/2}}$ at $100\\,\\mathrm{Hz}$. The architecture connects fabrication robustness, optical performance, and thermal-noise reduction within a single design framework.", "url": "https://arxiv.org/abs/2609.05001", "authors": [{"name": "Mika Gaedtke"}, {"name": "Christian Kranhold"}, {"name": "Markus Walther"}, {"name": "Falk Eilenberger"}, {"name": "Stefanie Kroker"}, {"name": "Thomas Siefke"}], "subjects": "Optics (physics.optics)", "author_count": 6, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["metasurface"]}, "featured_authors": [{"name": "Mika Gaedtke"}, {"name": "Christian Kranhold"}, {"name": "Markus Walther"}, {"name": "Falk Eilenberger"}, {"name": "Stefanie Kroker"}, {"name": "Thomas Siefke"}], "summaries": {"en": "This paper introduces a fabrication-aware hybrid metasurface-Bragg mirror design that reduces thermal noise while maintaining high reflectance and robustness to fabrication errors for precision optics.", "zh": "本文提出了一种考虑制造工艺的混合超表面-布拉格反射镜设计，在保持高反射率和制造鲁棒性的同时降低了热噪声，适用于精密光学。", "ja": "本論文は、製造誤差を考慮したハイブリッドメタサーフェス-ブラッグミラー設計を提案し、高反射率と製造堅牢性を維持しつつ熱雑音を低減する精密光学用ミラーを実現する。"}, "summary_source": "deepseek"}, {"id": "2609.05052", "category": "physics", "title": "Bounds on Propagation Constants in Dielectric Gratings", "abstract": "We establish analytical bounds on the normalized longitudinal propagation constants $\\beta=k_z/k_0$ of modes in lossless dielectric diffraction gratings. If $\\epsilon_{\\max}$ denotes the maximum relative permittivity, we show that regular modes ($\\beta^2\\in\\mathbb{R}$) satisfy $\\beta^2\\le\\epsilon_{\\max}$ despite the lack of a scalar dispersion relation. We further show that the so-called ghost modes ($\\beta^2\\notin\\mathbb{R}$), admitted by the non-Hermitian nature of the associated eigenproblem, satisfy $|\\mathrm{Re}(\\beta)|\\le\\sqrt{\\epsilon_{\\max}}/2$. Both bounds are obtained directly from the Fourier-series formulation of the fully coupled vectorial eigenproblem.", "url": "https://arxiv.org/abs/2609.05052", "authors": [{"name": "Ehsan Faghihifar"}], "subjects": "Optics (physics.optics)", "author_count": 1, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["permittivity"]}, "featured_authors": [{"name": "Ehsan Faghihifar"}], "summaries": {"en": "The paper establishes analytical bounds on propagation constants in lossless dielectric gratings, showing regular modes satisfy beta^2 ≤ epsilon_max and ghost modes satisfy |Re(beta)| ≤ sqrt(epsilon_max)/2.", "zh": "本文建立了无损耗介质光栅中模式传播常数的解析界限，证明常规模式满足 β² ≤ εmax，而幽灵模式满足 |Re(β)| ≤ √εmax / 2。", "ja": "この論文は、無損失誘電体グレーティングにおけるモードの伝搬定数の解析的限界を確立し、通常モードは β² ≤ εmax を満たし、ゴーストモードは |Re(β)| ≤ √εmax / 2 を満たすことを示す。"}, "summary_source": "deepseek"}, {"id": "2609.05218", "category": "physics", "title": "Screening bolt loosening in a four-bolt plate with global FRF correlation and local FRAC maps from full-field laser Doppler vibrometry", "abstract": "Full-field laser Doppler vibrometry (LDV) can reveal how bolt torque loss redistributes a frequency response function (FRF) over an entire structure rather than only at a few sensor positions. This work presents a screening procedure for a four-bolt aluminum plate using pointwise amplitude and phase exports of scanned H1 FRFs. Candidate resonances were selected from the all-tight spatial RMS spectrum and tracked in four single-bolt 0 Nm cases. Seven baseline responses remained trackable within prescribed group-specific search windows and were retained as experimental resonance groups RG1-RG7; a dimensionless plate-frequency coefficient was reported alongside each measured frequency. Global changes were quantified using amplitude-only and complex, phase-retaining modal-assurance dissimilarities, and local changes were evaluated using matched-window FRAC-deficit maps and a normalized hotspot-area fraction. The retained groups separate into low-, intermediate-, and high-distortion responses, while the local maps distinguish compact joint-centered changes from distributed FRF redistribution. The workflow therefore links global FRF distortion with spatially resolved interpretation without relying on a trained classifier or specimen-specific node labels.", "url": "https://arxiv.org/abs/2609.05218", "authors": [{"name": "Berkay Kullukcu"}, {"name": "Robin Pianowski"}, {"name": "Mehmet Sait Özer"}, {"name": "Ercan Altinsoy"}, {"name": "Dina Hannebauer"}], "subjects": "Optics (physics.optics) ; Signal Processing (eess.SP)", "author_count": 5, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optics"]}, "featured_authors": [{"name": "Berkay Kullukcu"}, {"name": "Robin Pianowski"}, {"name": "Mehmet Sait Özer"}, {"name": "Ercan Altinsoy"}, {"name": "Dina Hannebauer"}], "summaries": {"en": "This study introduces a screening method for bolt loosening in a four-bolt plate that combines global FRF correlation metrics with local FRAC-deficit hotspot maps derived from full-field laser Doppler vibrometry data, enabling spatially resolved monitoring without machine learning or node labels.", "zh": "本研究提出了一种针对四螺栓板螺栓松动的筛查方法，该方法结合了基于全场激光多普勒测振数据的全局频响函数相关指标与局部FRAC缺陷热点图，无需机器学习或节点标签即可实现空间分辨监测。", "ja": "本研究は、全視野レーザードップラー振動計測から得たグローバルFRF相関指標と局所的なFRAC欠陥ホットスポットマップを組み合わせた4ボルトプレートのボルト緩みスクリーニング手法を提案し、機械学習やノードラベルなしで空間分解能のあるモニタリングを可能にします。"}, "summary_source": "deepseek"}, {"id": "2609.04368", "category": "quant-ph", "title": "Three-Photon and Hybrid Coherent-Fock Interference in a Two-Phase Six-Port Mach-Zehnder Interferometer", "abstract": "We present a unified theoretical analysis of three-photon quantum interference in a Six-Port Mach-Zehnder Interferometer (6p-MZI) constructed from two cascaded tritters, with two independent phase modulators placed between the tritter arms. We analytically derive the transfer matrix of the 6p-MZI and show how they organize into three symmetry classes, governed by the discrete Fourier transform (DFT) structure of the tritter and the conjugate relations. Furthermore, we analyze two input regimes: First, three indistinguishable single photons are injected into the tritter, and the output probability distributions $P_{[111]}$, $P_{[\\{300\\}]}$, and $P_{[\\{210\\}]}$ are derived as functions of the two relative phases $(\\phi_1, \\phi_2)$. At $\\phi_2 = 0$, the single-phase limit is recovered, which confirms 100\\% visibility of the even-distribution fringe. Second, a hybrid coherent-Fock input $|\\alpha\\rangle_1|\\alpha\\rangle_2|1\\rangle_3$ is analyzed via the density matrix formalism. The average photon number at each output port exhibits amplitude-dependent phase shifts. Our results establish the 6p-MZI as a programmable platform for tripartite quantum state manipulation and coherent amplitude sensing.", "url": "https://arxiv.org/abs/2609.04368", "authors": [{"name": "P. O. Amadi"}, {"name": "P. Pewkhom"}, {"name": "N. Sitpathom"}, {"name": "R. Endut"}, {"name": "N. Ali"}, {"name": "S. A. Aljunid"}, {"name": "S. Suryadi"}, {"name": "P. Kalasuwan"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 8, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["single photon", "single photons"]}, "featured_authors": [{"name": "P. O. Amadi"}, {"name": "P. Pewkhom"}, {"name": "N. Sitpathom"}, {"name": "S. A. Aljunid"}, {"name": "S. Suryadi"}, {"name": "P. Kalasuwan"}], "summaries": {"en": "This paper theoretically analyzes three-photon quantum interference in a six-port Mach-Zehnder interferometer, deriving output probability distributions for indistinguishable photons and revealing amplitude-dependent phase shifts for hybrid coherent-Fock inputs, establishing it as a platform for tripartite quantum state manipulation.", "zh": "本文对六端口马赫-曾德尔干涉仪中的三光子量子干涉进行了统一理论分析，推导了不可区分光子的输出概率分布，并揭示了混合相干-福克输入下的振幅相关相移，确立了该干涉仪作为三体重子态操纵平台的潜力。", "ja": "本論文は、6ポート・マッハ・ツェンダー干渉計における3光子量子干渉を理論的に解析し、区別できない光子の出力確率分布を導出し、ハイブリッドなコヒーレント・フォック入力における振幅依存の位相シフトを明らかにして、三体重子状態操作のプラットフォームとして確立した。"}, "summary_source": "deepseek"}, {"id": "2609.04447", "category": "quant-ph", "title": "Proof-of-principle long-distance Sagnac twin-field quantum key distribution network", "abstract": "Twin-field (TF) quantum key distribution (QKD) offers a promising approach to long-distance QKD networks due to its superior performance over large channel losses. Due to specialized hardware requirements, nearly all long-distance TFQKD demonstrations have only two users exchanging keys, rather than a network with three or more users. In this work, we experimentally demonstrate a proof-of-principle three-user-pair Sagnac TFQKD network spanning 127-km using single-photon avalanche detectors without any active phase stabilization or postcompensation. We implement efficient procedures for maintaining polarization stability and circumventing Rayleigh backscattering noise to achieve a stable Sagnac interference visibility of $93\\pm1$% over one hour. A secure key rate of $1.398\\times10^{-5}$ bits per pulse is achieved over an asymmetric communication channel with 102-km fiber and 45-dB overall loss. To our knowledge, this is the first TFQKD network without active phase stabilization or postcompensation achieved over long fibers. Our results represent a highly practical and cost-effective approach to long-distance QKD networks.", "url": "https://arxiv.org/abs/2609.04447", "authors": [{"name": "Reem Mandil"}, {"name": "Yen-An Shih"}, {"name": "Abhay Verma"}, {"name": "Li Qian"}, {"name": "Hoi-Kwong Lo"}], "subjects": "Quantum Physics (quant-ph) ; Applied Physics (physics.app-ph); Optics (physics.optics)", "author_count": 5, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["single-photon"]}, "featured_authors": [{"name": "Reem Mandil"}, {"name": "Yen-An Shih"}, {"name": "Abhay Verma"}, {"name": "Li Qian"}, {"name": "Hoi-Kwong Lo"}], "summaries": {"en": "This paper demonstrates a proof-of-principle three-user-pair Sagnac twin-field quantum key distribution network over 127 km, achieving a secure key rate of 1.", "zh": "本文展示了基于Sagnac结构的双场量子密钥分发网络的三用户对原理验证，跨越127公里，在无主动相位稳定或后补偿条件下实现了每脉冲1.", "ja": "本論文は、127kmにわたる3ユーザーペアのSagnac型ツインフィールド量子鍵配送ネットワークの原理実証を示し、能動的位相安定化や後補償なしで毎パルス1."}, "summary_source": "deepseek"}, {"id": "2609.04492", "category": "quant-ph", "title": "Gradient-based optimal control of the non-Hermitian skin effect in optomechanical arrays", "abstract": "In single-port non-Hermitian sensors the Petermann factor offsets susceptibility gains, imposing a strict resource bound on metrological precision. We test whether a multi-port geometry can evade this bound: a double-chain optomechanical ladder with opposing non-reciprocal hoppings spatially separates signal amplification from quantum-noise drainage, and gradient-based differentiable optimal control (DOC) maximizes the resource-normalized Fisher information $\\Fnorm$ subject to a Hurwitz-stability constraint. Across system sizes $N\\in\\{\\num{6},\\dots,\\num{16}\\}$ the optimizer returns $\\Fnorm>0$ in every case, with two coexisting solution classes whose selection is initialization-dependent: deep-stability configurations achieve $\\Fnorm\\in\\numrange{0.937}{0.987}$ with attenuated transmission, while marginal-stability configurations deliver directional gain $\\Gfwd\\in\\qtyrange{13.5}{15.5}{\\dB}$ with isolation $\\Iso\\in\\qtyrange{40}{64}{\\dB}$. A multi-restart ensemble reveals these classes are the endpoints of a precision--gain frontier. All solutions remain Hurwitz-stable under \\qty{5}{\\percent} disorder (\\qty{87.5}{\\percent} recovery), and the deep-stability advantage survives realistic preamplifier noise at $\\Fnormeff\\approx\\num{0.3}$--$\\num{0.5}$. Mapped onto circuit-QED parameters, the architecture enables sub-attonewton force sensing and broadband axion searches across the \\qtyrange{1}{10}{\\giga\\hertz} band.", "url": "https://arxiv.org/abs/2609.04492", "authors": [{"name": "Juste Deuyekbe"}, {"name": "Philippe Djorwé"}, {"name": "A.-H. Abdel-Aty"}, {"name": "A. Elrashidi"}, {"name": "Nsangou Mama"}, {"name": "Serge Guy Nana Engo"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 6, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["optomechanical"]}, "featured_authors": [{"name": "Juste Deuyekbe"}, {"name": "Philippe Djorwé"}, {"name": "A.-H. Abdel-Aty"}, {"name": "A. Elrashidi"}, {"name": "Nsangou Mama"}, {"name": "Serge Guy Nana Engo"}], "summaries": {"en": "This paper explores whether a multi-port optomechanical ladder can bypass the Petermann-factor limit in non-Hermitian sensors, using gradient-based optimal control to maximize resource-normalized Fisher information while maintaining stability across various system sizes.", "zh": "本文探讨了多端口光机梯子阵列是否能绕过非厄米传感器中的Petermann因子限制，通过基于梯度的最优控制来最大化资源标准化Fisher信息，同时在不同系统尺寸下保持稳定性。", "ja": "この論文は、非エルミートセンサーにおけるペーターマン因子の限界を多ポート光機械ラダーアレイが回避できるかどうかを探り、勾配ベースの最適制御を用いてリソース正規化フィッシャー情報を最大化しつつ、様々なシステムサイズで安定性を維持することを目的としています。"}, "summary_source": "deepseek"}, {"id": "2609.04580", "category": "quant-ph", "title": "Residual detuning in the laboratory-frame anti-Jaynes--Cummings model with a squeezed vacuum", "abstract": "The laboratory-frame anti-Jaynes--Cummings (AJC) interaction retains a residual detuning $2f\\lambda$ that is absent from the rotating-frame model. We map two proposed remedies---a Kerr shift $\\chi(\\hat a^\\dagger\\hat a)^2$ and collective Dicke coupling of $N$ two-level emitters---for a squeezed vacuum on that ladder ($r=1$, $\\langle n\\rangle=\\sinh^2 r\\simeq 1.38$). All quoted contrasts are the amplitude of the first turning point of the atomic ground-state population, which coincides with the two-level formula $\\mathcal{C}=1/[1+(2f+\\chi)^2]$ at $r=0$ to $10^{-9}$. Three results follow. (i)~A single Kerr strength never restores unit contrast at $r=1$; the $r=0$ $n$-dependent shift $\\chi(2n+1)$ cannot cancel $2f\\lambda$ on every occupied Fock component. (ii)~The exact $r=1$ contrast at $\\chi=0$ is not reproduced by an incoherent sum $\\sum_n P_n(r)\\,\\mathcal{C}_n$ built from the $r=0$ two-level formula; pointwise deviations are several tenths. (iii)~Collective coupling raises the contrast systematically. At $f=5$ one finds $\\mathcal{C}=0.140$ ($N=1$) and $\\mathcal{C}=0.575$ ($N=8$), above the unsqueezed value $8/[8+(2f)^2]=0.074$. The $N=16$ point at this $f$ remains truncation-limited and is not quoted to three digits. The same $N\\sim(2f)^2$ estimate for $\\mathcal{C}=1/2$ places trapped-ion values $f\\sim 10^{2}$--$10^{3}$ outside the present construction. The relevant platform is ultrastrong circuit QED with $f\\sim 1$--$10$. The calculation is a numerical control landscape, not a new solvable limit.", "url": "https://arxiv.org/abs/2609.04580", "authors": [{"name": "Onyango Stephen Okeyo"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 1, "topics": ["Nonlinear Optics"], "topic_hits": {"Nonlinear Optics": ["kerr"]}, "featured_authors": [{"name": "Onyango Stephen Okeyo"}], "summaries": {"en": "The laboratory-frame anti-Jaynes-Cummings model with a squeezed vacuum retains a residual detuning, and while a Kerr shift or collective Dicke coupling can improve atomic inversion contrast, only collective coupling systematically restores it for feasible parameters, relevant to ultrastrong circuit QED.", "zh": "实验室坐标系中的anti-Jaynes-Cummings模型在压缩真空中存在残余失谐，虽然Kerr位移或集体Dicke耦合可提高原子反转对比度，但只有集体耦合能在可行参数下系统地恢复对比度，这与超强耦合电路QED相关。", "ja": "実験室系の反Jaynes-Cummingsモデルは圧縮真空において残留離調を持ち、Kerrシフトや集団Dicke結合は原子反転のコントラストを改善できるが、実行可能なパラメータでコントラストを体系的に回復するのは集団結合のみであり、これは超強結合回路QEDに関連する。"}, "summary_source": "deepseek"}, {"id": "2609.04733", "category": "quant-ph", "title": "Nitrogen Vacancy Centers in Diamond for Quantum Biosensing: Magnetometry Techniques, Platforms and Applications", "abstract": "Quantum sensing using nitrogen-vacancy (NV) centers in diamond has emerged as a powerful platform for detecting ultra-low magnetic fields under ambient conditions. Owing to their long spin coherence times, optical addressability, and compatibility with aqueous environments, it has found widespread applications in biosensing and bio-imaging. This review presents the fundamental principles and recent advances in NV-based quantum magnetometry for biosensing applications, with a particular focus on measurements in aqueous medium and at cellular and molecular length scales. We discuss the underlying spin physics of NV centers and highlight two primary detection modalities: optically detected magnetic resonance (ODMR) and T1 relaxometry-based sensing and how these approaches aids in the detection of both static magnetic fields and dynamic magnetic noise arising from biological processes. The review explores key application areas, including nanoscale nuclear magnetic resonance (NMR), monitoring of neural activity, detection of abnormal or rogue cells using NV-based platforms etc. In addition, strategies for enhancing sensitivity, such as surface functionalization of nanodiamonds, femtosecond (fs) laser-written photonic structures, and integration with microfluidic and lab-on-chip systems have also been discussed in depth. We also address the critical challenges, including surface-induced decoherence, charge-state instability, and signal-to-noise limitations in biofluids associated with NV-based biosensing applications. Finally, we outline future prospects, highlighting how NV-based magnetic biosensing provides a promising pathway for translating quantum sensing technologies into practical biomedical applications.", "url": "https://arxiv.org/abs/2609.04733", "authors": [{"name": "Sirsendu Ghosal"}, {"name": "Umakant Prajapati"}, {"name": "Sachin Negi"}, {"name": "Saifian Farooq Bhat"}, {"name": "Thejas B"}, {"name": "Vibhav Bharadwaj"}], "subjects": "Quantum Physics (quant-ph) ; Optics (physics.optics)", "author_count": 6, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical", "optics", "photonic"]}, "featured_authors": [{"name": "Sirsendu Ghosal"}, {"name": "Umakant Prajapati"}, {"name": "Sachin Negi"}, {"name": "Saifian Farooq Bhat"}, {"name": "Thejas B"}, {"name": "Vibhav Bharadwaj"}], "summaries": {"en": "This review details the principles and applications of nitrogen-vacancy centers in diamond for quantum biosensing, focusing on magnetometry techniques like ODMR and T1 relaxometry, as well as their use in detecting biological signals and addressing challenges toward practical biomedical implementation.", "zh": "本综述详细介绍了金刚石中氮-空位中心在量子生物传感中的应用原理，重点讨论了磁测量技术（如ODMR和T1弛豫法）以及它们在检测生物信号中的用途，并提出了实现实际生物医学应用所面临的挑战。", "ja": "このレビューは、ダイヤモンド中の窒素-空孔中心を用いた量子バイオセンシングの原理と応用を詳述し、ODMRやT1緩和法などの磁気測定技術と、生物学的信号の検出における応用に焦点を当て、実用的な生物医学的応用に向けた課題を考察しています。"}, "summary_source": "deepseek"}, {"id": "2609.04907", "category": "quant-ph", "title": "Microkelvin resolution thermometry at the nanometre scale", "abstract": "Accurate temperature readings of transient events at the nanometer scale are challenging due to the low sensitivity of available sensors. Nanodiamonds containing nitrogen-vacancy (NV) centers have been used for nanoscale thermometry in complex environments, including inside living cells. However, their performance has been limited by short coherence times and low photon counts. In this work, we use isotopically-purified dual-NV nanodiamonds and a bespoke quantum sensing chip to showcase an order of magnitude improvement in temperature measurement sensitivity compared with previous reports. We demonstrate robust temperature measurements with an error of 682 $\\mu$K, experimental sensitivities below 50 mK/$\\surd \\text{Hz}$ and a shot-noise limited sensitivity of 9.6 mK/$\\surd \\text{Hz}$. To confirm the utility of these high-performance nanothermometers, we quantify the temperature change induced by the thermometry measurement itself, specifically the optical excitation laser used to probe the NV spin state. In addition, we observe directly at the nanometre scale the transient heating caused by the exothermic mixing of dimethyl sulfoxide in water. Sub-millikelvin resolution and millikelvin sensitivity thermometry unlock the possibility of monitoring minute thermal fluctuations in living systems and assessing catalyst performance at the nanometre scale.", "url": "https://arxiv.org/abs/2609.04907", "authors": [{"name": "Jack W. Hart"}, {"name": "Soham Pal"}, {"name": "Julien R. E. Roth"}, {"name": "Katie Ninham"}, {"name": "Abbie H. Aleksandrova"}, {"name": "Xander Peetroons"}, {"name": "Soumen Mandal"}, {"name": "Oliver A. Williams"}, {"name": "Gavin W. Morley"}, {"name": "Mete Atature"}, {"name": "Helena S. Knowles"}], "subjects": "Quantum Physics (quant-ph) ; Applied Physics (physics.app-ph); Instrumentation and Detectors (physics.ins-det)", "author_count": 11, "topics": ["Other Optics"], "topic_hits": {"Other Optics": ["laser", "optical"]}, "featured_authors": [{"name": "Jack W. Hart"}, {"name": "Soham Pal"}, {"name": "Julien R. E. Roth"}, {"name": "Gavin W. Morley"}, {"name": "Mete Atature"}, {"name": "Helena S. Knowles"}], "summaries": {"en": "By using isotopically-purified dual-NV nanodiamonds and a bespoke quantum sensing chip, we achieve nanoscale thermometry with sub-millikelvin resolution (682 μK error) and millikelvin sensitivity (as low as 9.", "zh": "通过使用同位素纯化的双氮-空位（NV）纳米金刚石和定向量子传感芯片，我们实现了纳米尺度温度测量，误差为682微开尔文，散粒噪声极限灵敏度为9.", "ja": "同位体精製されたデュアルNVナノダイヤモンドと特注の量子センシングチップを用いることで、誤差682μK、ショットノイズ限界感度9."}, "summary_source": "deepseek"}, {"id": "2609.05379", "category": "quant-ph", "title": "Coincidence-based spectral engineering for spectral matching in cascaded downconversion", "abstract": "Three-photon states generated via cascaded spontaneous parametric downconversion provide a direct route to multipartite entanglement. However, current implementations require careful spectral matching between successive nonlinear stages, which constrains the choice of downconversion sources. In this work, we show that coincidence-based spectral filtering relaxes this requirement by conditionally tailoring the spectrum of the pump photon entering the second stage. By filtering the herald photon, we conditionally tailor the spectrum of its partner to match the acceptance bandwidth of the secondary nonlinear process, enabling efficient coupling between broadband and narrowband stages without altering the sources themselves. Using an electro-optically gated spectrometer, we directly measure the conditional spectra that govern the cascaded process, allowing us to quantitatively predict the enhancement in second-stage conversion probability per detected herald. We then verify this prediction through photon-triplet measurements, demonstrating improved performance at fixed heralding rates. Our results establish coincidence-based spectral engineering as a practical tool for optimizing cascaded downconversion, particularly in regimes limited by detector saturation or spectral incompatibility.", "url": "https://arxiv.org/abs/2609.05379", "authors": [{"name": "Mohammed Charafi"}, {"name": "Alexandre Z. Leger"}, {"name": "Samridhi Gambhir"}, {"name": "Deny R. Hamel"}], "subjects": "Quantum Physics (quant-ph)", "author_count": 4, "topics": ["Optical Materials"], "topic_hits": {"Optical Materials": ["electro-optic"]}, "featured_authors": [{"name": "Mohammed Charafi"}, {"name": "Alexandre Z. Leger"}, {"name": "Samridhi Gambhir"}, {"name": "Deny R. Hamel"}], "summaries": {"en": "This paper demonstrates that coincidence-based spectral filtering can conditionally shape the pump photon spectrum in cascaded spontaneous parametric downconversion, overcoming spectral-matching constraints and improving triple-photon generation efficiency.", "zh": "本文通过在级联自发参量下转换中基于符合的频谱滤波，条件性地塑造进入第二级的泵浦光子频谱，克服了频谱匹配限制，并提高了三光子产生效率。", "ja": "本論文は、カスケード自発的パラメトリック下方変換において、コインシデンスに基づくスペクトルフィルタリングが第二段に入射するポンプ光子のスペクトルを条件的に整形し、スペクトル整合の制約を克服して三光子生成効率を向上させることを示しています。"}, "summary_source": "deepseek"}, {"id": "2609.05387", "category": "quant-ph", "title": "A photonic source with half-a-GHz single-photon flux", "abstract": "Advanced optical quantum technologies demands high quality quantum light generation at very high rates. Here, we report on a deterministic single-photon source that simultaneously combines high excitation rates with high system efficiency to reach over 500 MHz of in-fibre single-photon flux. The source delivers optical power of over 100 pW, as is measured with an off-the-shelf powermeter, enabling a simple and direct way of determining the single-photon source fiber efficiency.", "url": "https://arxiv.org/abs/2609.05387", "authors": [{"name": "P. Zahalka"}, {"name": "S. Huijser"}, {"name": "A. Pancaldi"}, {"name": "S. Kruger"}, {"name": "X. Zhao"}, {"name": "Z. Liu"}, {"name": "I. Suleiman"}, {"name": "R. Jensen"}, {"name": "L. Stefan"}, {"name": "A. Ludwig"}, {"name": "V. Remesh"}, {"name": "J. C. Loredo"}, {"name": "P. Lodahl"}], "subjects": "Quantum Physics (quant-ph) ; Mesoscale and Nanoscale Physics (cond-mat.mes-hall)", "author_count": 13, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["single-photon"]}, "featured_authors": [{"name": "P. Zahalka"}, {"name": "S. Huijser"}, {"name": "A. Pancaldi"}, {"name": "V. Remesh"}, {"name": "J. C. Loredo"}, {"name": "P. Lodahl"}], "summaries": {"en": "A deterministic single-photon source combines high excitation rates and high system efficiency to achieve over 500 MHz of in-fiber single-photon flux, with output power exceeding 100 pW measurable by a standard power meter.", "zh": "一种确定性单光子源结合了高激发速率和高系统效率，实现了超过500 MHz的光纤内单光子通量，其输出功率超过100 pW，可用标准功率计直接测量。", "ja": "決定論的单一光子源は、高い励起率と高いシステム効率を組み合わせ、500 MHzを超えるファイバー内の単一光子フラックスを達成し、出力パワーは100 pWを超え、標準的なパワーメーターで直接測定可能である。"}, "summary_source": "deepseek"}, {"id": "2609.05402", "category": "quant-ph", "title": "Parametric and feedback-controlled multiparameter quantum estimation in a double cavity optomechanics: steady and dynamical state", "abstract": "Multiparameter quantum estimation in open optomechanical systems is fundamentally constrained by dissipation, thermal fluctuations, and measurement incompatibility. In this work, we investigate a coupled-cavity optomechanical platform in which two mechanical modes interact with driven optical cavities, two-mode squeezed vacuum, intracavity degenerate parametric amplification, and coherent optical feedback. Using the continuous-variable Gaussian-state formalism, we derive the linearized quantum Langevin dynamics and steady-state covariance matrix and evaluate the quantum Fisher information matrices associated with simultaneous estimation of the optomechanical coupling strength and cavity dissipation rate. We characterize the precision bounds using the symmetric and right logarithmic derivative formalisms and employ $\\mathcal{B}_{\\rm MI}=\\max\\{\\mathcal{B}_S,\\mathcal{B}_R\\}$ as a comparative figure of merit within the SLD/RLD framework. We find that parametric amplification can substantially reduce , demonstrating an enhancement of multiparameter sensitivity over a broad range of operating conditions. In contrast, coherent feedback produces a nonmonotonic modification of the estimation precision, with its effect depending sensitively on the feedback reflectivity, phase, squeezing strength, and thermal occupation. This behavior reveals that coherent feedback acts not simply as an enhancing or degrading mechanism, but as a tunable resource for engineering the quantum fluctuations and parameter-dependent correlations of the optomechanical state. We further analyze the transient and steady-state regimes and identify parameter regions in which squeezing and parametric amplification provide the largest metrological gain.", "url": "https://arxiv.org/abs/2609.05402", "authors": [{"name": "Hamza Harraf"}, {"name": "Mohamed Amazioug"}, {"name": "Amjad Sohail"}, {"name": "Mojtaba Mazaheri"}, {"name": "Rachid Ahl Laamara"}], "subjects": "Quantum Physics (quant-ph) ; Optics (physics.optics)", "author_count": 5, "topics": ["Quantum Optics & Quantum Computing"], "topic_hits": {"Quantum Optics & Quantum Computing": ["cavity optomechanics", "optomechanical"]}, "featured_authors": [{"name": "Hamza Harraf"}, {"name": "Mohamed Amazioug"}, {"name": "Amjad Sohail"}, {"name": "Mojtaba Mazaheri"}, {"name": "Rachid Ahl Laamara"}], "summaries": {"en": "A double-cavity optomechanical system with parametric amplification and coherent feedback is studied for multiparameter estimation, revealing that amplification enhances sensitivity while feedback acts as a tunable resource that can non-monotonically modify precision.", "zh": "对具有参量放大和相干反馈的双腔光机系统进行多参数估计研究，发现参量放大能提高灵敏度，而相干反馈作为可调资源可非单调地改变精度。", "ja": "二重キャビティ光機械システムにおけるパラメトリック増幅とコヒーレントフィードバックを用いた多パラメータ推定を研究し、増幅は感度を向上させ、フィードバックは可変リソースとして精度を非単調に変化させることを明らかにした。"}, "summary_source": "deepseek"}, {"id": "2609.04512", "category": "eess", "title": "Explainable Multimodal Deep Learning Integrating Imaging and Clinical Data for Oral Potentially Malignant Disorder Detection", "abstract": "Oral potentially malignant disorders (OPMDs) are critical precursors to oral cancer, yet clinical detection remains challenging because of substantial phenotypic heterogeneity and overlap with benign conditions. Although image-based deep learning shows promise for automated screening, visual information alone may be insufficient in real-world settings, where diagnostic decisions also rely on patient-specific risk factors. We developed M2-OPMDNet, a multimodal deep learning framework that integrates co-registered white-light and autofluorescence intraoral images with structured clinical information for OPMD detection. A customized questionnaire was designed to capture clinically relevant risk factors and symptoms in a standardized, reproducible format for integration with image-derived features. Multiple image encoders, including conventional convolutional neural networks and foundation model-based architectures, were evaluated using a prospectively collected dataset reflecting real-world screening conditions. Model interpretability was assessed using SHapley Additive exPlanations (SHAP) to quantify feature- and modality-level contributions. M2-OPMDNet achieved an AUC of 0.952, outperforming unimodal approaches and showing improved performance for visually subtle lesions. SHAP analysis demonstrated that structured clinical variables contributed substantially to risk estimation and complemented imaging features. These results demonstrate that explainable multimodal learning combining white-light and autofluorescence imaging with structured clinical data can provide accurate, transparent, and clinically grounded OPMD detection. M2-OPMDNet offers a scalable framework for real-world oral cancer screening and decision support.", "url": "https://arxiv.org/abs/2609.04512", "authors": [{"name": "Ruilin You"}, {"name": "Yihan Wang"}, {"name": "Jiabin Chen"}, {"name": "Cherie Wink"}, {"name": "Petra Wilder-Smith"}, {"name": "Rongguang Liang"}, {"name": "Bofan Song"}], "subjects": "Image and Video Processing (eess.IV) ; Computer Vision and Pattern Recognition (cs.CV)", "author_count": 7, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["fluorescence imaging"]}, "featured_authors": [{"name": "Ruilin You"}, {"name": "Yihan Wang"}, {"name": "Jiabin Chen"}, {"name": "Petra Wilder-Smith"}, {"name": "Rongguang Liang"}, {"name": "Bofan Song"}], "summaries": {"en": "This paper proposes M2-OPMDNet, an explainable multimodal deep learning framework that integrates white-light and autofluorescence images with structured clinical data to improve detection of oral potentially malignant disorders, achieving an AUC of 0.", "zh": "该论文提出了M2-OPMDNet，一种可解释的多模态深度学习框架，整合白光和自体荧光图像与结构化临床数据以改进口腔潜在恶性病变检测，取得了0.", "ja": "本論文は、白色光と自家蛍光画像を構造化臨床データと統合する説明可能なマルチモーダル深層学習フレームワークM2-OPMDNetを提案し、AUC 0."}, "summary_source": "deepseek"}, {"id": "2609.04968", "category": "eess", "title": "Mutual-Coupling-Aware Movable and Fluid Antennas on Holographic Surfaces: A Wavenumber-Domain Circuit-Field Unification", "abstract": "Movable and fluid antenna systems turn antenna position into a design variable. At sub-wavelength spacings, however, their behavior is governed by mutual coupling, modeled today by two disjoint traditions: circuit-theoretic impedance matrices with element-level constants, and field-theoretic kernels with norm-type power constraints. This paper unifies the two. Starting from the impedance kernel of a holographic surface, a Poynting-anchored balance identifies its resistive part with ohmic plus radiated power and its reactive part with stored-energy imbalance, and a circuit-field equivalence shows that the multiport impedance matrix is the kernel sampled at the port separations, in a single closed spherical-Hankel form. In the wavenumber domain the resistive kernel asymptotically diagonalizes in the aperture size: visible modes radiate at closed-form prices, evanescent modes only dissipate, and a flexible port becomes a constant-modulus codeword whose coupling is the pullback of the spectral weight. Coupling-aware multi-user sum-rate maximization over precoders and port positions is then formulated under physical power and voltage constraints and solved by weighted-MMSE and projected-gradient steps with closed-form gradients. A modal relaxation upper-bounds every port configuration and seeds the search by FFT-based codeword projection. A half-wavelength corollary and a superdirectivity margin quantify when coupling hurts, and when it helps.", "url": "https://arxiv.org/abs/2609.04968", "authors": [{"name": "Giovanni Iacovelli"}, {"name": "Chandan Kumar Sheemar"}, {"name": "Symeon Chatzinotas"}], "subjects": "Signal Processing (eess.SP)", "author_count": 3, "topics": ["Optical Imaging"], "topic_hits": {"Optical Imaging": ["holographic"]}, "featured_authors": [{"name": "Giovanni Iacovelli"}, {"name": "Chandan Kumar Sheemar"}, {"name": "Symeon Chatzinotas"}], "summaries": {"en": "This paper unifies circuit-theoretic and field-theoretic models of mutual coupling in movable and fluid antenna systems on holographic surfaces by deriving a wavenumber-domain impedance kernel, leading to a coupling-aware optimization framework for multi-user sum-rate maximization.", "zh": "本文通过推导波数域阻抗核，统一了全息表面上可移动和流体天线系统中互耦的电路理论和场论模型，并提出了考虑互耦的多用户和速率最大化优化框架。", "ja": "本論文は、ホログラフィック面上の可動・流体アンテナ系における相互結合の回路理論的・場理論的モデルを、波数領域インピーダンス核の導出により統合し、結合を考慮したマルチユーザー和レート最大化の最適化フレームワークを提案する。"}, "summary_source": "deepseek"}];
+    const categoryOrder = ["cond-mat", "physics", "quant-ph", "eess"];
+    const topicOrder = ["Integrated Optics", "Nonlinear Optics", "Quantum Optics & Quantum Computing", "Optical Computing", "Optical Imaging", "Optical Materials", "AMO Physics", "Other Optics"];
+    const state = {
+      search: "",
+      categories: new Set(categoryOrder),
+      topics: new Set(topicOrder),
+    };
+
+    const statsEl = document.getElementById("stats");
+    const gridEl = document.getElementById("paper-grid");
+    const resultCountEl = document.getElementById("result-count");
+    const emptyStateEl = document.getElementById("empty-state");
+    const searchEl = document.getElementById("search");
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function statCard(label, value) {
+      return `<article class="stat"><div class="label">${label}</div><div class="value">${value}</div></article>`;
+    }
+
+    function renderStats() {
+      const categoryCounts = Object.fromEntries(categoryOrder.map((cat) => [cat, 0]));
+      const topicCounts = Object.fromEntries(topicOrder.map((topic) => [topic, 0]));
+      papers.forEach((paper) => {
+        categoryCounts[paper.category] = (categoryCounts[paper.category] || 0) + 1;
+        (paper.topics || []).forEach((topic) => {
+          topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+        });
+      });
+      statsEl.innerHTML = [
+        statCard("Papers", papers.length),
+        ...categoryOrder.map((cat) => statCard(cat, categoryCounts[cat] || 0)),
+        ...topicOrder.map((topic) => statCard(topic, topicCounts[topic] || 0)),
+      ].join("");
+    }
+
+    function renderChips(containerId, values, selectedSet, onToggle) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = values.map((value) => {
+        const active = selectedSet.has(value) ? "active" : "";
+        return `<button class="chip ${active}" type="button" data-value="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
+      }).join("");
+      container.querySelectorAll(".chip").forEach((button) => {
+        button.addEventListener("click", () => onToggle(button.dataset.value));
+      });
+    }
+
+    function toggleFromSet(set, value) {
+      if (set.has(value)) {
+        if (set.size > 1) set.delete(value);
+      } else {
+        set.add(value);
+      }
+    }
+
+    function matches(paper) {
+      const authorText = (paper.authors || []).map((author) => author.name).join(" ");
+      const summaryText = [paper.summaries?.en, paper.summaries?.zh, paper.summaries?.ja].join(" ");
+      const topicText = (paper.topics || []).join(" ");
+      const haystack = [
+        paper.id,
+        paper.category,
+        paper.title,
+        paper.abstract,
+        paper.subjects,
+        authorText,
+        topicText,
+        summaryText,
+      ].join(" ").toLowerCase();
+      const topicMatch = (paper.topics || []).some((topic) => state.topics.has(topic));
+      return state.categories.has(paper.category) && topicMatch && haystack.includes(state.search);
+    }
+
+    function renderPapers() {
+      const filtered = papers.filter(matches);
+      resultCountEl.textContent = `Showing ${filtered.length} of ${papers.length} papers`;
+      emptyStateEl.style.display = filtered.length ? "none" : "block";
+      gridEl.innerHTML = filtered.map((paper) => {
+        const safeUrl = escapeHtml(paper.url);
+        const authors = (paper.featured_authors || []).map((author) => author.name).join(", ") || "Unknown";
+        const topics = (paper.topics || []).map((topic) => `<span class="tag topic">${escapeHtml(topic)}</span>`).join("");
+        const subjectHtml = paper.subjects
+          ? `<div class="subtle"><div class="label">Subjects</div><p class="subject-line">${escapeHtml(paper.subjects)}</p></div>`
+          : "";
+        return `
+        <article class="paper">
+          <div class="paper-top">
+            <span class="tag category">${escapeHtml(paper.category)}</span>
+            ${topics}
+          </div>
+          <div class="id">arXiv:${escapeHtml(paper.id)}</div>
+          <h2><a href="${safeUrl}" target="_blank" rel="noreferrer">${escapeHtml(paper.title)}</a></h2>
+          <div class="subtle">
+            <div class="label">Authors</div>
+            <p class="author-line">${escapeHtml(authors)}</p>
+          </div>
+          ${subjectHtml}
+          <div class="summary-grid">
+            <section class="summary-item">
+              <strong>English Summary</strong>
+              <p>${escapeHtml(paper.summaries?.en || "")}</p>
+            </section>
+            <section class="summary-item">
+              <strong>Chinese Summary</strong>
+              <p>${escapeHtml(paper.summaries?.zh || "")}</p>
+            </section>
+            <section class="summary-item">
+              <strong>Japanese Summary</strong>
+              <p>${escapeHtml(paper.summaries?.ja || "")}</p>
+            </section>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>${escapeHtml(paper.abstract)}</p>
+          </details>
+          <footer>
+            <span>Summary source: ${escapeHtml(paper.summary_source || "fallback")}</span>
+            <a href="${safeUrl}" target="_blank" rel="noreferrer">Open on arXiv</a>
+          </footer>
+        </article>`;
+      }).join("");
+    }
+
+    function rerenderFilters() {
+      renderChips("category-filters", categoryOrder, state.categories, (value) => {
+        toggleFromSet(state.categories, value);
+        rerenderFilters();
+        renderPapers();
+      });
+      renderChips("topic-filters", topicOrder, state.topics, (value) => {
+        toggleFromSet(state.topics, value);
+        rerenderFilters();
+        renderPapers();
+      });
+    }
+
+    searchEl.addEventListener("input", (event) => {
+      state.search = event.target.value.trim().toLowerCase();
+      renderPapers();
+    });
+
+    renderStats();
+    rerenderFilters();
+    renderPapers();
+  </script>
+</body>
+</html>
